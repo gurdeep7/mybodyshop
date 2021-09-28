@@ -4,32 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
     <title>Cruelty-Free &amp; Beauty Products| The Body Shop</title>
 </head>
 <style>
+    body{
+        height : 2000px;
+        /* position: relative; */
+    }
     #gs_main{
         width: 90%;
         /* background-color: aqua; */
-        margin: auto;
-        display: flex;
-        border: green solid;
+        margin: auto 5%;
+        position: fixed;
+        /* display: flex; */
+    }
+    #gs_mainflex{
+        width: 100%;
     }
     #gs_mainflex > div{
         display: inline-block
         
     }
     .gs_maintxt{
-        border: solid yellowgreen;
         box-sizing: border-box;
         margin-top: 0%;
-        background-color: aqua;
         display: inline-block;
         vertical-align: top;
-        margin-top: 5%;
     }
     #gs_mainleft > div{
         display: inline-block;
     }
+    #gs_mainleft{
+       align-items: baseline;
+    }
+    #gs_mainright{
+        float: right;   
+    }
+    #gs_mainright > div{
+        display: inline-block;
+        margin-left: 10px;
+    }
+    #gs_dropdown_navbar{
+        margin-top: 1%;
+    }
+    .gs_dropbtn {
+        width: 100%;
+        background-color: white;
+  color: black;
+  padding: 12px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  text-decoration:solid;
+  font-weight: bold;
+}
+.gs_dropdown {
+    /* width: 7%; */
+  position: relative;
+  display: inline-block;
+}
+.gs_dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.gs_dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.gs_dropdown-content a:hover {color: #c7c1c1}
+.gs_dropdown:hover .gs_dropdown-content {
+  display: block;
+}
+.gs_dropdown:hover .gs_dropbtn {
+  text-decoration: underline;
+}
+#gs_btn_essential{
+    padding: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: white;
+  text-decoration:solid;
+    border: none;
+  color: red;
+}
+#gs_btn_essential:hover{
+    text-decoration: underline;
+}
+#gs_offer{
+    background-color: #b8cb84;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 11px;
+}
 </style>
 <body>
     <div id = "gs_main">
@@ -39,20 +113,124 @@
         <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/icons/stores.png"/>
         <span class="gs_maintxt">Stores</span>
     </div>
-    <div id = "gs_bodyclub">
+    <div id = "gs_bodyclub" style="box-sizing: border-box; vertical-align: top;">
         <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/icons/loyality-card.png"/>
-        <span class="gs_maintxt">Love Your Body Club</span>
+        <span class="gs_maintxt"> Love Your Body™ Club</span>
     </div>
     <div id = "gs_bodyclub">
     <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/truck1.jpg"/>
-    <span class="gs_maintxt">Love Your Body Club</span>
+    <span class="gs_maintxt">Track Order</span>
 </div>
     </div>
-    <div id ="gs_mainlog">
-        <img src ="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/logo.svg"/>
+    <div id ="gs_mainlog" style="width: 30%; margin-left: 10%;" >
+        <img style="width: 100%;" src ="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/logo.svg"/>
+    </div>
+    <div id ="gs_mainright">
+        <div id = "gs_user">
+            <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/myaccount.png"/>
+        </div>
+        <div id = "gs_wishlist">
+            <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/wish-list.png"/>
+        </div>
+        <div id = "gs_cart">
+            <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/body-shop-icons-thick_bag.png"/>
+        </div>
     </div>
 </div>
-</div>
+<div id="gs_dropdown_navbar">
+    <button id="gs_btn_essential" onclick="">Daily Essential</button>
+    <div class="gs_dropdown">
+        <button class="gs_dropbtn">TRENDING</button>
+        <div class="gs_dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">SKIN CARE</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">BODY</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">HAIR</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">MAKE UP</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">FRAGRANCE</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">GIFTS</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">RANGE</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">TIPS & ADVICE</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">ABOUT US</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_search-container" style="float: right;">
+              <input type="text" style="height: 30px; vertical-align:top" placeholder="Search.." name="search">
+              <button class="material-icons" style="height: 35px;">
+                search</button>
+          </div>
     </div>
+    <div id= "gs_offer">
+        FREE STRAWBERRY BODY BUTTER ON ORDER ABOVE RS 3999*- SHOP NOW | T&C APPLY
+    </div>
+</div>
+
+    </div>
+    
 </body>
 </html>
