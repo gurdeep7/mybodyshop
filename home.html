@@ -10,13 +10,15 @@
 <style>
     body{
         height : 2000px;
-        /* position: relative; */
+        position: relative;
     }
     #gs_main{
         width: 90%;
         /* background-color: aqua; */
         margin: auto 5%;
         position: fixed;
+        top: 10px;
+        background-color: white;
         /* display: flex; */
     }
     #gs_mainflex{
@@ -36,7 +38,8 @@
         display: inline-block;
     }
     #gs_mainleft{
-       align-items: baseline;
+       vertical-align: bottom;
+      margin-top: 25px;
     }
     #gs_mainright{
         float: right;   
@@ -103,6 +106,39 @@
     font-weight: bold;
     text-align: center;
     padding: 11px;
+}
+.gs-content{
+    max-width:80%; margin: 165px auto auto auto;
+}
+
+.gs_mySlides {display:none}
+
+.gs-badge {cursor:pointer}
+.gs-badge {height:13px;width:13px;padding:0}
+.gs-center{text-align:center}
+.gs-container:after,.gs-container:before,
+.gs-container{margin-top:16px;margin-bottom:16px ; position: relative;}
+.gs-section,.gs-code{margin-top:16px;margin-bottom:16px}
+.gs-large{font-size:18px}
+.gs-text-white,.gs-hover-text-white:hover{color:#fff}
+.gs-display-middle{ position:relative;left:50%;bottom:-110%;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%);color: black;}
+.gs-badge{ background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center; border-radius:50%}
+.gs-border{border:1px solid #ccc}
+.gs-transparent,.gs-hover-none:hover{background-color:transparent}
+.gs-left{
+position:absolute;
+left: 0%;
+font-size: 60px;
+bottom: 1300%;
+} .gs-right{
+    position:absolute;
+right: 0%;
+font-size: 60px;
+bottom: 1300%;
+} 
+.gs-hover-text-khaki:hover{color: #b4aa50}
+.gs-badge:hover{
+background-color: black;
 }
 </style>
 <body>
@@ -226,10 +262,54 @@
           </div>
     </div>
     <div id= "gs_offer">
-        FREE STRAWBERRY BODY BUTTER ON ORDER ABOVE RS 3999*- SHOP NOW | T&C APPLY
+        FREE STRAWBERRY BODY BUTTER ON ORDER ABOVE RS 3999*- <a href = "#" style="color: black;">SHOP NOW</a> |<a href = "#" style="color: black;"> T&C APPLY</a>
     </div>
 </div>
     </div>
-    
+    <div id = "gs_underflow">
+    <div class="gs-content gs-display-container">
+        
+        <img class="gs_mySlides" src="https://staticbodyshop.gumlet.io/pub/media/weltpixel/owlcarouselslider/images/h/a/haircare_hpc_small.jpg" style="width:100%">
+        <img class="gs_mySlides" src="https://staticbodyshop.gumlet.io/pub/media/weltpixel/owlcarouselslider/images/b/b/bb_hpc_2.jpg" style="width:100%">
+        <img class="gs_mySlides" src="https://staticbodyshop.gumlet.io/pub/media/weltpixel/owlcarouselslider/images/s/u/superstar_essnetials_1.jpg" style="width:100%">
+        
+        <div class="gs-center gs-container gs-section gs-large gs-text-white gs-display-middle" style="width:100%">
+          <div class="gs-left gs-hover-text-khaki" onclick="gs_plusDivs(-1)">&larr;</div>
+          <div class="gs-right gs-hover-text-khaki" onclick="gs_plusDivs(1)">&rarr;</div>
+          <span class="gs-badge gs_demo gs-border gs-transparent gs-hover-white" onclick="gs_currentDiv(1)"></span>
+          <span class="gs-badge gs_demo gs-border gs-transparent gs-hover-white" onclick="gs_currentDiv(2)"></span>
+          <span class="gs-badge gs_demo gs-border gs-transparent gs-hover-white" onclick="gs_currentDiv(3)"></span>
+        </div>
+      </div>
+      </div>
 </body>
 </html>
+<script>
+    var gs_slideIndex = 1;
+    gs_showDivs(gs_slideIndex);
+    
+    function gs_plusDivs(n) {
+    gs_showDivs(gs_slideIndex += n);
+    }
+    
+    function gs_currentDiv(n) {
+    gs_showDivs(gs_slideIndex = n);
+    }
+    
+    function gs_showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("gs_mySlides");
+      var dots = document.getElementsByClassName("gs_demo");
+      if (n > x.length) {gs_slideIndex = 1}
+      if (n < 1) {gs_slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" gs-white", "");
+      }
+      x[gs_slideIndex-1].style.display = "block";  
+      dots[gs_slideIndex-1].className += " gs-white";
+    }
+    </script>
+    
