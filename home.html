@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
     <title>Cruelty-Free &amp; Beauty Products| The Body Shop</title>
 </head>
 <style>
@@ -156,6 +157,29 @@ background-color: black;
 }
 #gs_grid_categories>img{
     width:100%;
+}
+.gallery {
+  background: #EEE;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
 }
 </style>
 <body>
@@ -315,6 +339,15 @@ background-color: black;
         <img src="images/gs_grid_callnow.jpg"/>
       </div>
       <!-- grid categories end -->
+      <div class="gallery js-flickity"
+  data-flickity-options='{ "wrapAround": true }'>
+  <div class="gallery-cell"></div>
+  <div class="gallery-cell"></div>
+  <div class="gallery-cell"></div>
+  <div class="gallery-cell"></div>
+  <div class="gallery-cell"></div>
+</div>
+      <!-- sliding products start -->
 </body>
 </html>
 <script>
