@@ -12,6 +12,7 @@
         height : 2000px;
         position: relative;
     }
+    /* fixed above menu start */
     #gs_main{
         width: 90%;
         /* background-color: aqua; */
@@ -107,6 +108,9 @@
     text-align: center;
     padding: 11px;
 }
+/* fixed above menu end */
+
+/* slide show start */
 .gs-content{
     max-width:80%; margin: 165px auto auto auto;
 }
@@ -140,8 +144,10 @@ bottom: 1400%;
 .gs-badge:hover{
 background-color: black;
 }
+/* slideshow end */
 </style>
 <body>
+    <!-- fixed menu start -->
     <div id = "gs_main">
 <div id= "gs_mainflex"> 
 <div id ="gs_mainleft">
@@ -266,7 +272,9 @@ background-color: black;
     </div>
 </div>
     </div>
-    <div id = "gs_underflow">
+
+
+    <!-- slideshow start -->
     <div class="gs-content gs-display-container">
         
         <img class="gs_mySlides" src="https://staticbodyshop.gumlet.io/pub/media/weltpixel/owlcarouselslider/images/h/a/haircare_hpc_small.jpg" style="width:100%">
@@ -281,10 +289,11 @@ background-color: black;
           <span class="gs-badge gs_demo gs-border gs-transparent gs-hover-white" onclick="gs_currentDiv(3)"></span>
         </div>
       </div>
-      </div>
+      <!-- slideshow end -->
 </body>
 </html>
 <script>
+    // slideshow functionality start
     var gs_slideIndex = 1;
     gs_showDivs(gs_slideIndex);
     
@@ -311,5 +320,6 @@ background-color: black;
       x[gs_slideIndex-1].style.display = "block";  
       dots[gs_slideIndex-1].className += " gs-white";
     }
+    // slideshow functionality end
     </script>
     
