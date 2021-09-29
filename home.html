@@ -145,6 +145,14 @@ bottom: 1400%;
 background-color: black;
 }
 /* slideshow end */
+#gs_grid_categories{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+}
 </style>
 <body>
     <!-- fixed menu start -->
@@ -290,6 +298,18 @@ background-color: black;
         </div>
       </div>
       <!-- slideshow end -->
+      <div style="width: 100%;">
+          <img style="width:100%" src="images/gs_freedelivery.jpg">
+      </div>
+      <!-- grid categories start -->
+      <div id ="gs_grid_categories">
+        <img src="images/gs_grid_bodycare.jpg"/>
+        <img src="images/gs_grid_cruelity.jpg"/>
+        <img src="images/gs_grid_sheetmask.jpg"/>
+        <img src="images/gs_grid_travel.jpg"/>
+        <img src="images/gs_grid_makeup.jpg"/>
+        <img src="images/gs_grid_callnow.jpg"/>
+      </div>
 </body>
 </html>
 <script>
@@ -315,7 +335,7 @@ background-color: black;
         x[i].style.display = "none";  
       }
       for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" gs-white", "");
+        dots[i].className = dots[i].className.replace("gs-white", "");
       }
       x[gs_slideIndex-1].style.display = "block";  
       dots[gs_slideIndex-1].className += " gs-white";
