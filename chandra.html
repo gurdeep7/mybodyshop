@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #main-margin{
+            margin: 0.5%;
+            background-color: white;
+            height: 190px;
+            display: flex;
+            flex-wrap: wrap
+        }
+        #main-margin > div{
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 1%;
+            vertical-align: middle;
+            
+        }
+        #main-margin > div:nth-child(1){
+            display:grid;
+            grid-template-columns: 12% 36% 25%;
+            width: 32%;
+            padding-top: 15px;
+        }
+        #main-margin > div:nth-child(2){
+            width : 30%;
+            font-size: large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin-right:3%;
+        }
+        #main-margin > div:nth-child(3){
+            display:grid;
+            width: 30%;
+            grid-template-columns: 20% 30% 25%;
+            padding-top: 15px;
+            position:relative; left:130px;
+        }
+        #main-margin > div:nth-child(4){
+            position: relative; top:-50px;
+            display:grid;
+            font-size: small;
+            grid-template-columns: 14% 8% 9% 5% 5% 8% 10% 5% 6% 11% 11% 8% 22%;
+        }
+        #main-margin > div:nth-child(5){
+            background-color:rgb(170, 172, 55);
+            width: 100%;
+            text-align: center;
+            position: relative;top:-60px;
+        }
+        #ch-products{
+            margin : 0.5%;
+        }
+        #row-1{
+            padding: 1%;
+            display: grid;
+            grid-template-columns: 33.5% 33.5% 33.5%;
+            text-align: center;
+
+        }
+        #row-1 > div {
+            padding: 2%;
+            display: grid;
+            margin-right: 3%;
+            margin-bottom : 10%;
+            color : white;
+        }
+        #newIn{
+
+            font-size:x-large;
+            text-align: center;
+        }
+        #ch-items{
+            margin:1%;
+            padding: 1%;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            text-align: center;
+        }
+        img{
+            width: 100%;
+        }
+        #newDiv{
+            margin-top: 5%;
+            font-size:x-large;
+            text-align: center;
+        }
+        #bestItems{
+
+            margin : 1%;
+            padding: 1%;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            text-align: center;
+        }
+        #ch-homedescript{
+            margin: 0.5%;
+            background-color: white;
+            display: flex;
+        }
+        #ch-homedescript > h2{
+            text-align: center;
+        }
+
+        #ch-img{
+            width: 45%;
+           margin: 2%;
+           flex-direction: row;
+        }
+        #ch-paragh{
+            width: 45%;
+            text-align: center;
+            font-size: large;
+            margin: 2%;
+        }
+        #find_more{
+            width: 12%;
+            padding: 1%;
+            font-size: large;
+            margin: auto;
+
+        }
+        .more-than{
+            margin: 1%;
+            margin-top: 3%;
+            text-align: center;
+            font-size: large;
+            margin-bottom: 2%;
+        }
+        .ch-line{
+            margin: 1%;
+            border: 1px solid grey;
+            background-color: grey;
+            margin-bottom: 5%;
+        }
+        #ch-tagbar{
+            margin: 1%;
+            display: flex;
+            background-color: #e9e9e9;
+            margin-right: 1%;
+            flex-direction: row;
+        }
+        #ch-tagbar > div{
+            font-size: 26px;
+            margin: 1%;
+        }
+        #ch-tagbar > img{
+            width:2%;
+            margin: 1%;
+        }
+        #table{
+            margin:1%;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+        #table > div{
+            display: grid;
+            font-size: small;
+        }
+        .last{
+            margin:1%;
+            display: inline-block;
+            width: 45%;
+            font-size: small;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div id="main-margin">
+
+        <div class="col-left">
+
+            <p>stores</p>
+            <p>Love your body club</p>
+            <p>track order</p>
+
+        </div>
+        <div class="col-title">
+            <h1>THE BODY SHOP</h1>
+        </div>
+        <div class="col-right">
+            <p>PROFILE</p>
+            <p>FAVOURITES</p>
+            <P>CART</P>
+        </div>
+        <div class="div-bottom">
+            <div style="color:red"><strong>DAILY ESSENTIALS</strong></div>
+            <div><strong>TRENDING</strong></div>
+            <div><strong>SKIN CARE</strong></div>
+            <div><strong>BODY</strong></div>
+            <div><strong>HAIR</strong></div>
+            <div><strong>MAKEUP</strong></div>
+            <div><strong>FRAGRANCE</strong></div>
+            <div><strong>GIFTS</strong></div>
+            <div><strong>RANGE</strong></div>
+            <div><strong>MY SKIN TYPE</strong></div>
+            <div><strong>TIPS & ADVICE</strong></div>
+            <div><strong>ABOUT US</strong></div>
+            <input type="search">
+        </div>
+        <div>
+            <h3 style="font-size:14px;">FREE STRAWBERRY BODY BUTTER ON ORDER ABOVE RS 3999*- SHOP NOW T&C APPLY</h3>
+        </div>
+    </div>
+    
+    <div id="ch-products">
+        <div id= "row-1"></div>
+    </div>
+
+    <div id="newIn"><strong>NEW IN</strong></div>
+
+    <div id="ch-items"></div>
+
+    <div id="newDiv"><strong>PERSONALIZED FOR YOU</strong></div>
+
+    <div id="bestItems"></div>
+
+
+    <h2 style="text-align: center; font-size: 24px;">COME TOGETHER ACT TOGETHER</h2>
+
+
+    <div id="ch-homedescript">
+        <div id="ch-img">
+            <img src= "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/Charity_Partner_Tile.jpg">
+        </div>
+        <div id="ch-paragh">
+            <h3><strong>Join Our Fight To End Period Shame</strong></h3>
+            <p>Menstruation is a natural bodily function and yet period shame along with lack of access to menstrual hygiene products and awareness continues to hold back millions. A staggering 88% of menstruating women in India use unhygienic materials such as ash, dried leaves, old rags and newspapers to absorb menstrual discharge. We have partnered with CRY - Child Rights and You, a leading Indian non-profit to bring menstrual products, education and awareness to adolescent girls and women in slum communities hit by the pandemic. Through #DropThePWord, we are starting a national conversation around period shame and its adverse effects on the lives of people. Every donation brings us closer to reach our goal of providing menstrual hygiene products to 10,000+ people across 4,500 households and every pledge brings us closer to winning our fight against period shame. You can also donate sealed packets of period products in our Red Period Bins across our all our stores which will be donated to local shelters through CRY.</p>
+            <p>  Join us online or in-store to support us in this fight..</p>
+        </div>
+    </div>
+
+
+    <div id="find_more"><strong>FIND OUT MORE</strong></div><br>
+
+
+    <div class="more-than">
+        <p><strong>THE BODY SHOP INDIA, ONLINE SHOPPING BODY CARE AND NATURAL BEAUTY!</strong></p>
+        <p>The Body Shop has been a manufacturer of body and beauty care products for the past Forty one years and has expanded its wings into the online world. We believe true beauty comes from the heart. For us, beauty is much more than just a pretty face. The Body Shop products are ready to meet your body care, toiletries, facials, skincare and hair care needs and are available at www.thebodyshop.in. All products have natural raw ingredients. We do not use animal products and do any animal testing for our products. The Body Shop has conducted many campaigns to ban animal testing. The Body Shop believes that true beauty comes from self-confidence, vitality and positive human thoughts.</p>
+    </div>
+
+    <div class="more-than">
+        <p><strong>NATURAL BEAUTIFUL VIEWS WITH THE PRODUCT CIRCUITS THAT WE OFFER FROM NATURE</strong></p>
+        <p>The Body Shop believes that something good comes from good intentions. The Body Shop India encourages employees to learn new skills by funding various training programs, togetherness activities and health care, we aim to improve the prosperity of our staff. To be a better person the way is simple, that is by doing good. This is also one of the reasons we have a global policy for all our staff: spend at least three days per year doing volunteer work. Great people from The Body Shop who are passionate and tireless have taken this opportunity to make a difference, working with charities like Food For Life Vrindavan, which helps poor girls for Education , And Children on the Edge, which supports the rights of children around the world. So, we make a change not only from selling a variety of care products and cosmetics are 100% natural course. But also through many volunteer activities useful. Let's spread the love with us!</p>
+    </div>
+
+    <div class="more-than">
+        <p><strong>WE GUARANTEE SAFE AND EASY PAYMENT PROCEDURES HERE!</strong></p>
+        <p>The Body Shop India also provides secure payment methods that can simplify your shopping transactions. We provide a transfer payment system with a wide selection of leading banks in India. We also take Cash on Delivery orders.</p>
+    </div>
+
+    <div class="ch-line"></div>
+
+    <div id="ch-tagbar">
+        <div>Join us on social media</div>
+        <div>
+            <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/icons/twitter.png"width=10px>
+        </div>
+        <div>
+            <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/facebook-icon.png"width="2%;">
+        </div>
+        <div>
+            <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/instagram-icon.png" width="2%">
+        </div>
+        <div>
+            <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/yt_logo_mono_light-new.png" width="3%;">
+        </div>
+        
+        <input type="search">
+    </div>
+    <div id="table">
+        <div>
+            <p><strong>LOVE YOUR BODY CLUB</strong></p>
+            <p>FAQs</p>
+            <p>Loyalty Club</p>
+        </div>
+        <div>
+            <p><strong>ABOUT US</strong></p>
+            <p>About Us</p>
+            <p>Affiliates</p>
+            <p>Careers</p>
+            <p>Dame Anita Roddick</p>
+            <p>Contact Us</p>
+        </div>
+        <div>
+            <p><strong>USING THE WEBSITE</strong></p>
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+            <p>Policy Documentation</p>
+            <p>E-GV</p>
+            <p>Sitemap</p>
+            <p>FAQ Services</p>
+        </div>
+        <div>
+            <p><strong>COMMITMENT</strong></p>
+            <p>Community Trade</p>
+            <p>Ethical Trade</p>
+            <p>Campaigns</p>
+            <p>Latest Stories</p>
+            <p>Our Commitment</p>
+        </div>
+    </div>
+    <div class="last">
+        <p><strong>© 2021 THE BODY SHOP INTERNATIONAL LIMITED</strong></p>
+        <p>® A REGISTERED TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED™ A TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED ALL RIGHTS RESERVED.
+
+            REGISTERED OFFICE: WATERSMEAD, LITTLEHAMPTON, WEST SUSSEX, BN17 6LS, UNITED KINGDOM; REGISTERED IN ENGLAND NO. 1284170</p>
+    </div>
+    <div class="last">
+        <p><strong>India</strong></p>
+        <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/payment_icons.png">
+    </div>
+</body>
+</html>
+<script>
+
+    let data = [
+        {
+            brand : "BERRYLICIOUS BODYCARE",
+            desc : "STRAWBERRY BODY BUTTER 50 ML",
+            offer: "FREE WITH PURCHASE OF ₹3999 & ABOVE",
+            line : "SHOP NOW",
+            img : "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/Body_Butter_TILE.jpg", 
+        },
+        {
+            brand : "CRUELTY FREE TREATS",
+            offer: "FLAT 50% OFF",
+            line : "SHOP NOW",
+            img : "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/50_off.jpg"
+
+        },
+        {
+            brand : "SHEET MASK & CHILL!",
+            offer : "BUY 4 SHEET MASKS FOR ₹500",
+            line : "SHOP NOW",
+            img : "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/Sheet_Mask_2_2.jpg"
+        },
+        {
+            catogory : "TRAVEL ESSENTIALS",
+            line : "SHOP NOW",
+            img : "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/Travel_Size_Essential.jpg",
+        },
+        {
+            catogory : "MAKEUP FAVOURITES!",
+            desc : "NEW LIP & CHEEK - SUNSHINE ORANGE",
+            line : "SHOP NOW",
+            img : "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/Lip_Cheek.jpg",
+        },
+        {
+            catogory : "YOUR MUST-HAVES DELIVERED HOME!",
+            call : "CALL NOW",
+            img : "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/Home_Delivery_-_tile.jpg",
+        },
+    ];
+
+    let parent = document.getElementById("row-1");
+
+    function showproducts(){
+        data.forEach(function(product){
+            
+            let div = document.createElement("div");
+    
+            let img = document.createElement("img");
+
+            img.src = product.img;
+
+            let brand = document.createElement("p");
+            brand.textContent = product.brand;
+
+            let catogory = document.createElement("p");
+            catogory.textContent = product.catogory;
+
+            let desc = document.createElement("p");
+            desc.textContent = product.desc;
+
+            let offer = document.createElement("p");
+            offer.textContent = product.offer;
+
+            let line = document.createElement("p");
+            line.textContent = product.line;
+
+            let call = document.createElement("p");
+            call.textContent = product.call;
+
+
+            div.append(img);
+
+            parent.append(div);
+        })
+    }
+    showproducts();
+
+    let items_parent = document.getElementById("ch-items");
+
+
+    let itemsData = [
+        {
+            name : "Lemon Purifying Face Wash",
+            price : "₹" + 945.00,
+            img:"https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1012282_FACE-WASH-LEMON-125ML-LH_BRNZ_INAAUPS676_-_Copy.jpg",
+        },
+        {
+            name : "Lemon Purifying Hair & Body Wash",
+            price : "₹" + 1195.00,
+            img : "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1012250_HAIR_BODY_WASH_LEMON_400ML_LH_BRNZ_INECMPS417.jpg",
+        },
+        {
+            name :"Lemon Protecting Hand & Body Lotion",
+            price : "₹" + 1195.00,
+            img : "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1012280_HAND_BODY_LOTION_LEMON_200ML_A0X_BRNZ_INECMPS424_-_Copy.jpg",
+        },
+        {
+            name : "Himalayan Charcoal Skin CLarifying Night Peel",
+            price : "₹" + 2095.00,
+            img : "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1010158_Himalayan_Charcoal_Sleeping_Serum_30ml_AOX_BRNZ_INECOPS038.jpg",
+        },
+        {
+            name : "Cool Daisy Body Yogurt",
+            price : "₹" + 995.00,
+            img : "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1098645_BODY_YOGURT_COOL_DAISY_200ML_A0X_BRNZ_INECOPS228.jpg",
+        },
+        {
+            name : "Lip & Cheek Stain Sunshine Orange",
+            price : "₹" + 995.00,
+            img : "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1010039_Lip_and_Cheek_Stain_Sunshine_orange_BRNZ_INECMPS388.jpg",
+        },
+        {
+            name : "Fresh Raspberry Hydrating Body Mist",
+            price : "₹" + 1345.00,
+            img : "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1098462_BODY_MIST_FRESH_RASPBERRY_100ML_A0X_BRNZ_INECOPS231.jpg",
+        },
+        {
+            name : "Cool Daisy Hydrating Body Mist",
+            price : "₹" + 1345.00,
+            img : "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1098646_BODY_MIST_COOL_DAISY_100ML_A0X_BRNZ_INECOPS227.jpg",
+        }
+    ];
+
+    function showItems(){
+        itemsData.forEach(function(items){
+
+            let div = document.createElement("div");
+
+            let img = document.createElement("img");
+            img.src = items.img;
+
+            let name = document.createElement("p");
+            name.textContent = items.name;
+
+            let price = document.createElement("p");
+            price.textContent = items.price;
+
+            let item_visit_btn = document.createElement("button");
+            item_visit_btn.innerText = "VIEW";
+
+
+            div.append(img, name, price, item_visit_btn);
+
+            items_parent.append(div)
+
+        })
+    }
+
+    showItems();
+
+    let best_parent = document.getElementById("bestItems");
+
+    let bestData = [
+        {
+            name : "Vitamin E Quench Sheet Mask",
+            price : "₹" + 375.00,
+            img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/e/p/eps_jpg_1089009_1_sheet_mask_vitamin_e_18ml_a0x_brnz_v2_incrhps078.jpg",
+        },
+        {
+            name : "Vitamin E Intense Moisture Cream",
+            price: "₹" + 1245.00,
+            img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/e/p/eps_jpg_1060712_1_moisturiser_intense_vit_e_50ml_brnz_innpdps576.jpg",
+        },
+        {
+            name : "Vitamin E Lip Care SPF 15",
+            price : "₹" + 395.00,
+            img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/v/i/vitamin_e_moisture-protect_lip_care_spf_15_42g_1_inrslps688_1_.jpg",
+        },
+        {
+            name : "Tea Tree Oil",
+            price : "₹" + 695.00,
+            img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/t/e/tea_tree_oil_10ml.jpg",
+        },
+        {
+            name : "Carrot Wash Energing Face Cleanser",
+            price: "₹"+945.00,
+            img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/e/p/eps_jpg_1019126_1_face_wash_carrot_100ml_a0x_brnz_incrhps302.jpg",
+        },
+        {
+            name : "Seaweed Cleansing Facial Wash",
+            price : "₹" + 945.00,
+            img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/s/bs-20014001-1.jpg",
+        },
+        {
+            name : "Tea Tree Skin Mattifying Toner",
+            price : "₹" + 795.00,
+            img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/s/bs-52110001-1.jpg",
+        },
+        {
+            name : "Tea Tree Skin Clearing Foaming Cleanser",
+            price : "₹" + 945.00,
+            img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/s/bs-52109001-1.jpg",
+        },
+    ];
+
+    function favourites(){
+        bestData.forEach(function(best_items){
+
+            let div = document.createElement("div");
+
+            let img = document.createElement("img");
+            img.src = best_items.img;
+
+            let name = document.createElement("p");
+            name.textContent = best_items.name;
+
+            let price = document.createElement("p");
+            price.textContent = best_items.price;
+
+
+            div.append(img, name, price);
+
+            best_parent.append(div)
+
+        })
+    }
+
+    favourites();
+
+
+
+
+
+</script>
