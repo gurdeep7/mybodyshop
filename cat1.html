@@ -250,7 +250,7 @@ background-color: black;
         <div id = "gs_user">
             <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/myaccount.png"/>
         </div>
-        <div id = "gs_wishlist">
+        <div id = "gs_wishlist" style="vertical-align: top;margin-top: 10px;">
             <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/wish-list.png"/>
             <div id= "gs_wishlist_value" style="margin-top: -100%; text-align: center;"></div>
         </div>
@@ -364,8 +364,8 @@ background-color: black;
 <select id = gs_sort style="margin-right: 5%; float: right;">
   <option value="select">Sort by:</option>
   <option value ="name">By Name</option>
-  <option value ="lowtohigh">Low to high price</option>
-  <option value ="hightolow">high to low price</option>
+  <option value ="lowtohigh">Price (Lowest First)</option>
+  <option value ="hightolow">Price (highest First)</option>
 
 </select>
 
@@ -478,6 +478,7 @@ background-color: black;
             let heart = document.createElement("img");
             heart.setAttribute("class","gs_heart")
             heart.src ="images/gs-heart.png"
+            heart.style.marginLeft="10px"
             heart.style.width = "30px"
             heart.style.height= "30px"
             heart.style.marginTop = "5px"
@@ -619,6 +620,7 @@ background-color: black;
             let heart = document.createElement("img");
             heart.setAttribute("class","gs_heart")
             heart.src ="images/gs-heart.png"
+            heart.style.marginLeft="10px"
             heart.style.width = "30px"
             heart.style.height= "30px"
             heart.style.marginTop = "5px"
