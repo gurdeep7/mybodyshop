@@ -547,7 +547,8 @@ background-color: black;
           name.textContent = cat4.name;
 
           let price = document.createElement("p");
-          price.textContent = cat4.price;
+          price.style.fontWeight = "bold";
+          price.textContent = "₹" + cat4.price;
 
           let product_visit_btn = document.createElement("button");
           product_visit_btn.innerText = "ADD TO BAG";
