@@ -241,7 +241,21 @@ background-color: black;
     height: 5%;
     width: 30%;
 }
-
+#table{
+    margin:1%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+#table > div{
+    display: grid;
+    font-size: small;
+}
+.last{
+            margin:1%;
+            display: inline-block;
+            width: 45%;
+            font-size: small;
+        }
 
 
 
@@ -408,6 +422,48 @@ background-color: black;
     </div>
 </div>
 
+<div id="table"style="width: 90%; margin:auto 5%">
+    <div>
+        <p><strong>LOVE YOUR BODY CLUB</strong></p>
+        <p>FAQs</p>
+        <p>Loyalty Club</p>
+    </div>
+    <div>
+        <p><strong>ABOUT US</strong></p>
+        <p>About Us</p>
+        <p>Affiliates</p>
+        <p>Careers</p>
+        <p>Dame Anita Roddick</p>
+        <p>Contact Us</p>
+    </div>
+    <div>
+        <p><strong>USING THE WEBSITE</strong></p>
+        <p>Terms & Conditions</p>
+        <p>Privacy Policy</p>
+        <p>Policy Documentation</p>
+        <p>E-GV</p>
+        <p>Sitemap</p>
+        <p>FAQ Services</p>
+    </div>
+    <div>
+        <p><strong>COMMITMENT</strong></p>
+        <p>Community Trade</p>
+        <p>Ethical Trade</p>
+        <p>Campaigns</p>
+        <p>Latest Stories</p>
+        <p>Our Commitment</p>
+    </div>
+</div>
+<div class="last"style="width: 90%; margin:auto 5%">
+    <p><strong>© 2021 THE BODY SHOP INTERNATIONAL LIMITED</strong></p>
+    <p>® A REGISTERED TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED™ A TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED ALL RIGHTS RESERVED.
+
+        REGISTERED OFFICE: WATERSMEAD, LITTLEHAMPTON, WEST SUSSEX, BN17 6LS, UNITED KINGDOM; REGISTERED IN ENGLAND NO. 1284170</p>
+</div>
+<div class="last"style="width: 90%; margin:auto 5%">
+    <p><strong>India</strong></p>
+    <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/payment_icons.png">
+</div>
      
 </body>
 </html>
@@ -419,18 +475,18 @@ background-color: black;
     let cat5Data = [
       {
         name : "Lip & Cheek Stain Sunshine Orange",
-        price : "₹" + 995.00,
+        price : 995.00,
         img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1010039_lip_and_cheek_stain_sunshine_orange_brnz_inecmps388.jpg",
       },
       {
         name : "Lip and Cheek Stain Pink Hibuscus",
-        price : "₹" + 995.00,
+        price : 995.00,
         img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/l/i/lip_amp_cheek_stain_pink_hibiscus_001_hr.jpg",
     
       },
       {
         name : "Lip And Cheek Stain Red Pomegranate",
-        price : "₹" + 995.00,
+        price : 995.00,
         img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/l/i/lip_amp_cheek_stain_red_pomegranate_003_hr.jpg",
     
       }
@@ -450,8 +506,11 @@ background-color: black;
           let name = document.createElement("p");
           name.textContent = cat5.name;
 
+
+
           let price = document.createElement("p");
-          price.textContent = cat5.price;
+          price.style.fontWeight = "bold";
+          price.textContent = "₹" + cat5.price;
 
           let product_visit_btn = document.createElement("button");
           product_visit_btn.innerText = "ADD TO BAG";
