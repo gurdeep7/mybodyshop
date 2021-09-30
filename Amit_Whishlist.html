@@ -348,7 +348,7 @@
        
         div1.style.height = "150px"
         div1.append(img)
-       div1.style.backgroundColor = "green"
+       
        
        
        div3.append(name)
@@ -378,6 +378,7 @@
       function clear(){
          wishData = []
          localStorage.setItem("wishlist",JSON.stringify(wishData));
+         location.reload()
       }
        
 
