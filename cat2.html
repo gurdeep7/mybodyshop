@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+    <title>Cruelty-Free &amp; Beauty Products| The Body Shop</title>
+</head>
+<style>
+    body{
+        height : 2000px;
+        position: relative;
+    }
+    /* fixed above menu start */
+    #gs_main{
+        width: 90%;
+        /* background-color: aqua; */
+        margin: auto 5%;
+        position: fixed;
+        top: 10px;
+        background-color: white;
+        /* display: flex; */
+    }
+    #gs_mainflex{
+        width: 100%;
+    }
+    #gs_mainflex > div{
+        display: inline-block
+        
+    }
+    .gs_maintxt{
+        box-sizing: border-box;
+        margin-top: 0%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    #gs_mainleft > div{
+        display: inline-block;
+    }
+    #gs_mainleft{
+       vertical-align: bottom;
+      margin-top: 25px;
+    }
+    #gs_mainright{
+        float: right;   
+    }
+    #gs_mainright > div{
+        display: inline-block;
+        margin-left: 10px;
+    }
+    #gs_dropdown_navbar{
+        margin-top: 1%;
+    }
+    .gs_dropbtn {
+        width: 100%;
+        background-color: white;
+  color: black;
+  padding: 12px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  text-decoration:solid;
+  font-weight: bold;
+}
+.gs_dropdown {
+    /* width: 7%; */
+  position: relative;
+  display: inline-block;
+}
+.gs_dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.gs_dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.gs_dropdown-content a:hover {color: #c7c1c1}
+.gs_dropdown:hover .gs_dropdown-content {
+  display: block;
+}
+.gs_dropdown:hover .gs_dropbtn {
+  text-decoration: underline;
+}
+#gs_btn_essential{
+    padding: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: white;
+  text-decoration:solid;
+    border: none;
+  color: red;
+}
+#gs_btn_essential:hover{
+    text-decoration: underline;
+}
+#gs_offer{
+    background-color: #b8cb84;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 11px;
+}
+/* fixed above menu end */
+
+/* slide show start */
+.gs-content{
+    max-width:90%; margin: 165px auto auto auto;
+}
+
+.gs_mySlides {display:block}
+
+.gs-badge {cursor:pointer}
+.gs-badge {height:13px;width:13px;padding:0}
+.gs-center{text-align:center}
+.gs-container:after,.gs-container:before,
+.gs-container{margin-top:16px;margin-bottom:16px ; position: relative;}
+.gs-section,.gs-code{margin-top:16px;margin-bottom:16px}
+.gs-large{font-size:18px}
+.gs-text-white,.gs-hover-text-white:hover{color:#fff}
+.gs-display-middle{ position:relative;left:50%;bottom:-110%;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%);color: black;}
+.gs-badge{ background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center; border-radius:50%}
+.gs-border{border:1px solid #ccc}
+.gs-transparent,.gs-hover-none:hover{background-color:transparent}
+.gs-left{
+position:absolute;
+left: 0%;
+font-size: 60px;
+bottom: 1400%;
+} .gs-right{
+    position:absolute;
+right: 0%;
+font-size: 60px;
+bottom: 1400%;
+} 
+.gs-hover-text-khaki:hover{color: #b4aa50}
+.gs-badge:hover{
+background-color: black;
+}
+/* slideshow end */
+#gs_grid_categories{
+    display: grid;
+    max-width: 100%;
+    margin: auto;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+}
+#gs_grid_categories>img{
+    width:100%;
+}
+#empty{
+    width: 90%;
+    margin: auto;
+    height: 8%;
+}
+#empty > img{
+    margin-bottom: 10%;
+}
+
+
+#ch-some{
+  margin-top: 40%;
+  width: 90%;
+  margin: auto;
+  font-size: medium;
+}
+#ch-innermargin{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+#ch-filter2{
+  width: 20%;
+  margin-right: 10%;
+  height:400px;
+  background-color: lightgrey;
+}
+#ch-cat2Items{
+  width: 67%;
+  margin-right: 1%;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 36% 36% 36%;
+  margin-bottom: 5%;
+}
+#ch-cat2Items > div > img{
+  width: 100%;
+}
+#ch-cat2Items > div > button{
+  width: 35%;
+  padding: 3%;
+  font-size: 12px;
+  border: 1px solid #000;
+  margin-bottom: 20%;
+}
+
+</style>
+<body>
+    <!-- fixed menu start -->
+    <div id = "gs_main">
+<div id= "gs_mainflex"> 
+<div id ="gs_mainleft">
+    <div id = "gs_stores">
+        <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/icons/stores.png"/>
+        <span class="gs_maintxt">Stores</span>
+    </div>
+    <div id = "gs_bodyclub" style="box-sizing: border-box; vertical-align: top;">
+        <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/icons/loyality-card.png"/>
+        <span class="gs_maintxt"> Love Your Body™️ Club</span>
+    </div>
+    <div id = "gs_bodyclub">
+    <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/truck1.jpg"/>
+    <span class="gs_maintxt">Track Order</span>
+</div>
+    </div>
+    <div id ="gs_mainlog" style="width: 30%; margin-left: 10%;" >
+        <img style="width: 100%;" src ="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/logo.svg"/>
+    </div>
+    <div id ="gs_mainright">
+        <div id = "gs_user">
+            <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/myaccount.png"/>
+        </div>
+        <div id = "gs_wishlist">
+            <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/wish-list.png"/>
+        </div>
+        <div id = "gs_cart">
+            <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/body-shop-icons-thick_bag.png"/>
+        </div>
+    </div>
+</div>
+<div id="gs_dropdown_navbar">
+    <button id="gs_btn_essential" onclick="">Daily Essential</button>
+    <div class="gs_dropdown">
+        <button class="gs_dropbtn">TRENDING</button>
+        <div class="gs_dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">SKIN CARE</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">BODY</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">HAIR</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">MAKE UP</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">FRAGRANCE</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">GIFTS</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">RANGE</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">TIPS & ADVICE</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">ABOUT US</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_search-container" style="float: right;">
+              <input type="text" style="height: 30px; vertical-align:top" placeholder="Search.." name="search">
+              <button class="material-icons" style="height: 35px;">
+                search</button>
+          </div>
+    </div>
+    <div id= "gs_offer">
+        FREE STRAWBERRY BODY BUTTER ON ORDER ABOVE RS 3999*- <a href = "#" style="color: black;">SHOP NOW</a> |<a href = "#" style="color: black;"> T&C APPLY</a>
+    </div>
+  </div>
+</div>
+<!-- fixed menu end -->
+<div id="empty"></div>
+<div id="ch-some">
+
+  <p>Home | Category - Buy3get1 Free</p>
+</div>
+
+<div id="ch-innermargin">
+
+  <div id="ch-filter2"></div>
+
+  <div id="ch-cat2Items"></div>
+</div>
+     
+</body>
+</html>
+<script>
+    
+
+    let parent = document.getElementById("ch-cat2Items");
+    
+    let cat2Data = [
+      {
+        name : "Body Yogurt Almond Milk",
+        price : "₹" + 945.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/e/p/eps_jpg_1091411_2_body_yogurt_almond_milk_200ml_brnz_alt_inneops041_1.jpg",
+      },
+      {
+        name : "Strawberry Clearly Glossing Conditioner",
+        price : "₹" + 695.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/e/p/eps_jpg_1081951_1_conditioner_strawberry_250ml_a0x_brnz_innedps245.jpg",
+    
+      },
+      {
+        name : "Shimmer Waves Bronze",
+        price : "₹" + 1895.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1091765_1_shimmer_waves_01_bronze_85g_a0_brnz_inneops192_1.jpg",
+    
+      },
+      {
+        name : "Camomile Fresh Micellar Cleansing Water",
+        price : "₹" + 2095.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/e/p/eps_jpg_1097260_1_camomile_micellar_water_brnz_inneqps623.jpg",
+    
+      },
+      {
+        name : "Mint Mattifying Face Mist",
+        price : "₹" + 795.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/e/p/eps_jpg_1081273_1_mint_mattifying_face_mist_brnz_inneops105.jpg",
+    
+      },
+      {
+        name : "Own Your Naturals Eyeshadow Palette",
+        price : "₹" + 345.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1088972_1_eye-palette-own-your-naturals-13g-a0x_brnz_incrhps093.png",
+    
+      },
+      {
+        name : "Lip Juicer Acai Blueberry & Dragonfruit",
+        price : "₹" + 695.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1077664_1_lip_juicer_purple_11g_brnz_innpdps374_1_1.jpg",
+    
+      },
+      {
+        name : "Shine Lip Liquid Berry Glaze",
+        price : "₹" + 695.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1088405_brnz_shine_lip_liquid_berry_glaze_8ml_a0_1.eps_1.jpg",
+    
+      },
+      {
+        name : "Rose & Cedarwood Essence Oil",
+        price : "₹" + 2445.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1088911_1_rose_amp_cedarwood_20ml_brnz_incrhps335.jpeg",
+    
+      }
+    
+    ];
+
+
+      function showcat2Items(){
+        cat2Data.forEach(function(cat2){
+          
+          let div = document.createElement("div");
+
+          let img = document.createElement("img");
+          img.src = cat2.img;
+
+          let name = document.createElement("p");
+          name.textContent = cat2.name;
+
+          let price = document.createElement("p");
+          price.textContent = cat2.price;
+
+          let product_visit_btn = document.createElement("button");
+          product_visit_btn.innerText = "ADD TO BAG";
+
+          div.append(img, name, price, product_visit_btn);
+
+          parent.append(div)
+
+
+
+
+
+        })
+      }
+
+      showcat2Items()
+</script>
