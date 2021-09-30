@@ -10,7 +10,7 @@
 <style>
     /* fixed above menu start */
     #gs_main{
-      width: 90%;
+        width: 90%;
         /* background-color: aqua; */
         margin: 0% 5%;
         position: fixed;
@@ -18,6 +18,13 @@
         top: 0px;
         background-color: white;
         /* display: flex; */
+    }
+    #gs_mainflex{
+        width: 100%;
+    }
+    #gs_mainflex > div{
+        display: inline-block
+        
     }
     #gsbagvalue{
       margin-top: -20px;
@@ -29,13 +36,6 @@
       color:white;
       text-align: center;
       text-shadow: wheat;
-    }
-    #gs_mainflex{
-        width: 100%;
-    }
-    #gs_mainflex > div{
-        display: inline-block
-        
     }
     .gs_maintxt{
         box-sizing: border-box;
@@ -76,6 +76,10 @@
   position: relative;
   display: inline-block;
 }
+.gs_heart:hover{
+        transition: .6s;
+        background-color:lightgray;
+      }
 .gs_dropdown-content {
   display: none;
   position: absolute;
@@ -167,13 +171,11 @@ background-color: black;
 }
 #empty{
     width: 90%;
-    margin: auto;
     height: 150px;
 }
 #empty > img{
     margin-bottom: 10%;
 }
-
 
 #ch-some{
   margin-top: 80%;
@@ -187,178 +189,202 @@ background-color: black;
   display: flex;
   flex-direction: row;
 }
-#ch-filter2{
+#ch-filter{
   width: 20%;
   margin-right: 10%;
   height:400px;
-  background-color: lightgrey;
+  background-color: lightcoral;
 }
-#ch-cat2Items{
-  width: 67%;
+#ch-cat1Items{
+  width: 65%;
   margin-right: 1%;
   display: grid;
   text-align: center;
-  grid-template-columns: 36% 36% 36%;
+  grid-template-columns: 35% 35% 35%;
   margin-bottom: 5%;
 }
-#ch-cat2Items > div > img{
+#ch-cat1Items > div > img{
   width: 100%;
 }
-#ch-cat2Items > div > button{
+#ch-cat1Items > div > button{
   width: 35%;
   padding: 3%;
   font-size: 12px;
   border: 1px solid #000;
   margin-bottom: 20%;
 }
-
+.gs_add_bag_btn{
+  background-color: white;
+  color: black;
+  border: black solid;
+  height: 30px;
+}
+.gs_add_bag_btn:hover{
+  background-color: black;
+  color: white;
+}
+select{
+  font-size: 20px;
+}
 </style>
 <body>
     <!-- fixed menu start -->
     <div id = "gs_main">
-      <div id= "gs_mainflex"> 
-      <div id ="gs_mainleft">
-          <div id = "gs_stores">
-              <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/icons/stores.png"/>
-              <span class="gs_maintxt">Stores</span>
-          </div>
-          <div id = "gs_bodyclub" style="box-sizing: border-box; vertical-align: top;">
-              <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/icons/loyality-card.png"/>
-              <span class="gs_maintxt"> Love Your Body™️ Club</span>
-          </div>
-          <div id = "gs_bodyclub">
-          <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/truck1.jpg"/>
-          <span class="gs_maintxt">Track Order</span>
-      </div>
-          </div>
-          <div id ="gs_mainlog" style="width: 30%; margin-left: 10%;" >
-              <img style="width: 100%;" src ="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/logo.svg"/>
-          </div>
-          <div id ="gs_mainright">
-              <div id = "gs_user">
-                  <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/myaccount.png"/>
-              </div>
-              <div id = "gs_wishlist">
-                  <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/wish-list.png"/>
-                  <div id= "gs_wishlist_value" style="margin-top: -100%; text-align: center;"></div>
-              </div>
-              <div id = "gs_cart">
-                  <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/body-shop-icons-thick_bag.png"/>
-                  <div id="gsbagvalue"></div>
-              </div>
-          </div>
-      </div>
-      <div id="gs_dropdown_navbar">
-          <button id="gs_btn_essential" onclick="">Daily Essential</button>
-          <div class="gs_dropdown">
-              <button class="gs_dropbtn">TRENDING</button>
-              <div class="gs_dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-              </div>
-              <div class="gs_dropdown">
-                  <button class="gs_dropbtn">SKIN CARE</button>
-                  <div class="gs_dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                  </div>
-              </div>
-              <div class="gs_dropdown">
-                  <button class="gs_dropbtn">BODY</button>
-                  <div class="gs_dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                  </div>
-              </div>
-              <div class="gs_dropdown">
-                  <button class="gs_dropbtn">HAIR</button>
-                  <div class="gs_dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                  </div>
-              </div>
-              <div class="gs_dropdown">
-                  <button class="gs_dropbtn">MAKE UP</button>
-                  <div class="gs_dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                  </div>
-              </div>
-              <div class="gs_dropdown">
-                  <button class="gs_dropbtn">FRAGRANCE</button>
-                  <div class="gs_dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                  </div>
-              </div>
-              <div class="gs_dropdown">
-                  <button class="gs_dropbtn">GIFTS</button>
-                  <div class="gs_dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                  </div>
-              </div>
-              <div class="gs_dropdown">
-                  <button class="gs_dropbtn">RANGE</button>
-                  <div class="gs_dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                  </div>
-              </div>
-              <div class="gs_dropdown">
-                  <button class="gs_dropbtn">TIPS & ADVICE</button>
-                  <div class="gs_dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                  </div>
-              </div>
-              <div class="gs_dropdown">
-                  <button class="gs_dropbtn">ABOUT US</button>
-                  <div class="gs_dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                  </div>
-              </div>
-              <div class="gs_search-container" style="float: right;">
-                    <input type="text" style="height: 30px; vertical-align:top" placeholder="Search.." name="search">
-                    <button class="material-icons" style="height: 35px;">
-                      search</button>
-                </div>
-          </div>
-          <div id= "gs_offer">
-              FREE STRAWBERRY BODY BUTTER ON ORDER ABOVE RS 3999*- <a href = "#" style="color: black;">SHOP NOW</a> |<a href = "#" style="color: black;"> T&C APPLY</a>
-          </div>
+<div id= "gs_mainflex"> 
+<div id ="gs_mainleft">
+    <div id = "gs_stores">
+        <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/icons/stores.png"/>
+        <span class="gs_maintxt">Stores</span>
+    </div>
+    <div id = "gs_bodyclub" style="box-sizing: border-box; vertical-align: top;">
+        <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/icons/loyality-card.png"/>
+        <span class="gs_maintxt"> Love Your Body™️ Club</span>
+    </div>
+    <div id = "gs_bodyclub">
+    <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/truck1.jpg"/>
+    <span class="gs_maintxt">Track Order</span>
+</div>
+    </div>
+    <div id ="gs_mainlog" style="width: 30%; margin-left: 10%;" >
+        <img style="width: 100%;" src ="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/logo.svg"/>
+    </div>
+    <div id ="gs_mainright">
+        <div id = "gs_user">
+            <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/myaccount.png"/>
         </div>
-      </div>
+        <div id = "gs_wishlist" style="vertical-align: top;margin-top: 10px;">
+            <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/wish-list.png"/>
+            <div id= "gs_wishlist_value" style="margin-top: -100%; text-align: center;"></div>
+        </div>
+        <div id = "gs_cart">
+            <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/body-shop-icons-thick_bag.png"/>
+            <div id="gsbagvalue"></div>
+        </div>
+    </div>
+</div>
+<div id="gs_dropdown_navbar">
+    <button id="gs_btn_essential" onclick="">Daily Essential</button>
+    <div class="gs_dropdown">
+        <button class="gs_dropbtn">TRENDING</button>
+        <div class="gs_dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">SKIN CARE</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">BODY</button>
+            <div class="gs_dropdown-content">
+              <a href="cat2.html">Body care</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">HAIR</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">MAKE UP</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">FRAGRANCE</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">GIFTS</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">RANGE</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">TIPS & ADVICE</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">ABOUT US</button>
+            <div class="gs_dropdown-content">
+              <a href="Amit_AboutUs.html">Know About uS</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_search-container" style="float: right;">
+              <input type="text" style="height: 30px; vertical-align:top" placeholder="Search.." name="search">
+              <button class="material-icons" style="height: 35px;">
+                search</button>
+          </div>
+    </div>
+    <div id= "gs_offer">
+        FREE STRAWBERRY BODY BUTTER ON ORDER ABOVE RS 3999*- <a href = "#" style="color: black;">SHOP NOW</a> |<a href = "#" style="color: black;"> T&C APPLY</a>
+    </div>
+  </div>
+</div>
 <!-- fixed menu end -->
 <div id="empty"></div>
 <div id="ch-some">
 
-  <p>Home | Category - Buy3get1 Free</p>
+  <p><a href="home.html">Home</a>| Category - Bodycare</p>
 </div>
 
+
+<select id = gs_sort style="margin-right: 5%; float: right;">
+  <option value="select">Sort by:</option>
+  <option value ="name">By Name</option>
+  <option value ="lowtohigh">Price (Lowest First)</option>
+  <option value ="hightolow">Price (highest First)</option>
+
+</select>
+<div id="productcount" style="margin-left:30%; font-size: 20px;"></div>
 <div id="ch-innermargin">
 
-  <div id="ch-filter2"></div>
-  Filter By
-  <br>
-  <select id="gs_filter">
-    <option value="select" >Select</option>
-    <option value="lessthan500">Price less than ₹500</option>
-    <option value="morethan500">Price more than ₹500</option>
-  </select>
-  <div id="ch-cat2Items"></div>
+  <div id="ch-filter">
+    <span style="font-size: 20px;">Filter By</span>
+    <br>
+    <select id="gs_filter">
+      <option value="select" >Select</option>
+      <option value="lessthan500">Price less than ₹1000</option>
+      <option value="morethan500">Price more than ₹1000</option>
+    </select>
+
+
+  </div>
+  <div id="ch-cat1Items"></div>
 </div>
      
 </body>
@@ -367,10 +393,10 @@ background-color: black;
     let gs_filter =document.getElementById("gs_filter");
       gs_filter.addEventListener("change",filterproduct);
 
-    let parent = document.getElementById("ch-cat2Items");
+    let parent = document.getElementById("ch-cat1Items");
     
     let cat1Data = [
-      {
+    {
         name : "Body Yogurt Almond Milk",
         price :945.00,
         img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/e/p/eps_jpg_1091411_2_body_yogurt_almond_milk_200ml_brnz_alt_inneops041_1.jpg",
@@ -424,12 +450,12 @@ background-color: black;
     
       }
     
+    
     ];
-
-
-    let gs_sort= document.getElementById("gs_sort");
+    
+       let gs_sort= document.getElementById("gs_sort");
         gs_sort.addEventListener("change",sortproduct)
-      
+      let productcount=document.getElementById("productcount")
       function showcat1Items(){
         parent.innerHTML = "";
         cat1Data.forEach(function(cat1){
@@ -454,9 +480,11 @@ background-color: black;
             let heart = document.createElement("img");
             heart.setAttribute("class","gs_heart")
             heart.src ="images/gs-heart.png"
+            heart.style.verticalAlign="top"
+            heart.style.marginLeft="10px"
             heart.style.width = "30px"
             heart.style.height= "30px"
-            heart.style.marginTop = "5px"
+            heart.style.marginTop = "-2spx"
             heart.onclick = function(){
               addtowishlist(cat1);
             }
@@ -465,6 +493,7 @@ background-color: black;
 
           parent.append(div)
         })
+        productcount.textContent = cat1Data.length+" Products";
       }
       showcat1Items()
           if(localStorage.getItem("bag")===null){
@@ -552,7 +581,7 @@ background-color: black;
       filter_product = [];
       if(gs_filter.value == "lessthan500"){
         filter_product = cat1Data.filter(function(product){
-          if(product.price < 500){
+          if(product.price < 1000){
             return product;
           }
         })
@@ -560,7 +589,7 @@ background-color: black;
 
       }else if(gs_filter.value == "morethan500"){
         filter_product = cat1Data.filter(function(product){
-          if(product.price > 500){
+          if(product.price > 1000){
             return product;
           }
         })
@@ -595,9 +624,11 @@ background-color: black;
             let heart = document.createElement("img");
             heart.setAttribute("class","gs_heart")
             heart.src ="images/gs-heart.png"
+            heart.style.verticalAlign="top"
+            heart.style.marginLeft="10px"
             heart.style.width = "30px"
             heart.style.height= "30px"
-            heart.style.marginTop = "5px"
+            heart.style.marginTop = "-2px"
             heart.onclick = function(){
               addtowishlist(cat1);
             }
@@ -606,6 +637,10 @@ background-color: black;
 
           parent.append(div)
         })
+        productcount.textContent = filter_product.length+" Products";
       }
     
+
+
+  //Filter functionality stop
 </script>

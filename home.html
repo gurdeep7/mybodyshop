@@ -325,7 +325,7 @@ background-color: black;
         <div class="gs_dropdown">
             <button class="gs_dropbtn">BODY</button>
             <div class="gs_dropdown-content">
-              <a href="#">Link 1</a>
+              <a href="cat2.html">Body Care</a>
               <a href="#">Link 2</a>
               <a href="#">Link 3</a>
             </div>
@@ -420,7 +420,7 @@ background-color: black;
       </div>
       <!-- grid categories start -->
       <div id ="gs_grid_categories">
-        <img src="images/gs_grid_bodycare.jpg"/>
+        <img onclick="category2()" src="images/gs_grid_bodycare.jpg"/>
         <img src="images/gs_grid_cruelity.jpg"/>
         <img src="images/gs_grid_sheetmask.jpg"/>
         <img src="images/gs_grid_travel.jpg"/>
@@ -770,6 +770,13 @@ background-color: black;
       }else {
         return true;
       }
+    }
+
+
+
+    // page changing functions
+    function category2(){
+      window.location.href="cat2.html"
     }
     </script>
     

@@ -223,7 +223,9 @@ background-color: black;
   background-color: black;
   color: white;
 }
-
+select{
+  font-size: 20px;
+}
 </style>
 <body>
     <!-- fixed menu start -->
@@ -337,7 +339,7 @@ background-color: black;
         <div class="gs_dropdown">
             <button class="gs_dropbtn">ABOUT US</button>
             <div class="gs_dropdown-content">
-              <a href="#">Link 1</a>
+              <a href="Amit_AboutUs.html">Know About uS</a>
               <a href="#">Link 2</a>
               <a href="#">Link 3</a>
             </div>
@@ -368,11 +370,11 @@ background-color: black;
   <option value ="hightolow">Price (highest First)</option>
 
 </select>
-
+<div id="productcount" style="margin-left:30%; font-size: 20px;"></div>
 <div id="ch-innermargin">
 
   <div id="ch-filter">
-    Filter By
+    <span style="font-size: 20px;">Filter By</span>
     <br>
     <select id="gs_filter">
       <option value="select" >Select</option>
@@ -382,7 +384,6 @@ background-color: black;
 
 
   </div>
-
   <div id="ch-cat1Items"></div>
 </div>
      
@@ -453,7 +454,7 @@ background-color: black;
     
        let gs_sort= document.getElementById("gs_sort");
         gs_sort.addEventListener("change",sortproduct)
-      
+      let productcount=document.getElementById("productcount")
       function showcat1Items(){
         parent.innerHTML = "";
         cat1Data.forEach(function(cat1){
@@ -478,10 +479,11 @@ background-color: black;
             let heart = document.createElement("img");
             heart.setAttribute("class","gs_heart")
             heart.src ="images/gs-heart.png"
+            heart.style.verticalAlign="top"
             heart.style.marginLeft="10px"
             heart.style.width = "30px"
             heart.style.height= "30px"
-            heart.style.marginTop = "5px"
+            heart.style.marginTop = "-2spx"
             heart.onclick = function(){
               addtowishlist(cat1);
             }
@@ -490,6 +492,7 @@ background-color: black;
 
           parent.append(div)
         })
+        productcount.textContent = cat1Data.length+" Products";
       }
       showcat1Items()
           if(localStorage.getItem("bag")===null){
@@ -620,10 +623,11 @@ background-color: black;
             let heart = document.createElement("img");
             heart.setAttribute("class","gs_heart")
             heart.src ="images/gs-heart.png"
+            heart.style.verticalAlign="top"
             heart.style.marginLeft="10px"
             heart.style.width = "30px"
             heart.style.height= "30px"
-            heart.style.marginTop = "5px"
+            heart.style.marginTop = "-2px"
             heart.onclick = function(){
               addtowishlist(cat1);
             }
@@ -632,6 +636,7 @@ background-color: black;
 
           parent.append(div)
         })
+        productcount.textContent = filter_product.length+" Products";
       }
     
 
