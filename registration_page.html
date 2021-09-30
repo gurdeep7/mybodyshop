@@ -40,7 +40,7 @@
                     <input type="password" name="password" id="password">
                     
                         <p id="password-change">Password Strength : NO Password</p>
-                        <p id="check-password"></p>
+                        <p id="check-password" style="color: red;"></p>
                     
                     
                     <br>
@@ -49,9 +49,10 @@
                     <br>
                     <br>
                     <input type="password" name="password" id="password">
+                    <p id="password-validation"></p>
                     <br>
                     <br>
-                    <br>
+                    
                     <label for="first-name">First Name <span>*</span></label>
                     <br>
                     <br>
@@ -68,7 +69,7 @@
                     <label for="Date Of Birth">Date Of Birth <span>*</span></label>
                     <br>
                     <br>
-                    <input type="date" name="date" id="date-of-birth">
+                    <input type="date" name="date"  id="date-of-birth">
                     <br>
                     <br>
                     <label for="gender">Gender <span>*</span></label>
@@ -91,12 +92,19 @@
                     <br>
                     <br>
                     <input type="number" name="phone" id="phone">
-                    <br>
+                    <p id="phn-validation"></p>
                     <br>
                     
+                    
+                    
                 </form>
-                <br>
+                <p id="enter-otp">enter OTP</p>
+                <input type="number" name="" id="otp">
+                <button id="validate">Validate</button>
+                <p id="wrong-otp">wrong otp</p>
                 <button id="number-varification">CLICK & VERIFY YOUR NUMBER</button>
+                
+                
             </div>
         </div>
     </div>
@@ -131,5 +139,6 @@
             <p class="copyright normal"> REGISTERED OFFICE: WATERSMEAD, LITTLEHAMPTON, WEST SUSSEX, BN17 6LS, UNITED KINGDOM; REGISTERED IN ENGLAND NO. 1284170</p>
 
     </div>
+    <script src="registration_page.js"></script>
 </body>
 </html>
