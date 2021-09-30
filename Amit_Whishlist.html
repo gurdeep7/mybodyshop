@@ -126,19 +126,21 @@
 /*amits css starts from here */
 
 #cont{
-    border:1px solid black;
+    
     margin: 20px auto;
     width:89%;
     display:grid;
     grid-gap:4px;
     grid-template-columns: 25% 25% 25% 25%;
     padding: 1%;
+    
 }
 #cont>div{
     width:50%;
     padding: 7%;
     border:1px solid;
     margin-left: 16%;
+    
 }
 #title{
     margin-top:20%;
@@ -147,6 +149,12 @@
 #title:hover{
     color:rgb(31, 141, 31);
     transition: .7s;
+}
+#cont>div>div:nth-child(2){
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 
@@ -282,29 +290,20 @@
     <div id = "title">
         <h2>WISHLIST ITEMS</h2>
         <h3 id = "head" style ="text-align: right;padding-right: 5%;">Go to Cart</h3>
-    </div>
-    <div id = "cont" >
+        <button id = "clear">RESET</button>
         
+    </div>
+        <div id = "cont" >
     </div>
 
 
 
     <script>
-        if(localStorage.getItem("wish") == null ){
-            localStorage.setItem("wish",JSON.stringify([]));
+        if(localStorage.getItem("wishlist") == null ){
+            localStorage.setItem("wishlist",JSON.stringify([]));
         }
-        var wishData = [
-            obj = {
-               img:"https://images.unsplash.com/photo-1604085572504-a392ddf0d86a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b3JhbmdlJTIwZmxvd2VyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
-               name: "radhe",
-               price: 400,
-           },
-           obj = {
-               img:"https://images.unsplash.com/photo-1566208541068-ffdb5471e9bf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c21hbGwlMjBmbG93ZXJzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
-               name:"shyam",
-               price: 500,
-           },
-        ]
+        var wishData = JSON.parse(localStorage.getItem("wishlist"))
+
        
 
         var cont = document.getElementById("cont")
@@ -324,9 +323,14 @@
         var div2 = document.createElement("div")
         var div3 = document.createElement("div")
         var div4 = document.createElement("div")
+        var div5 = document.createElement("div")
+        div5.style.verticalAlign = "bottom";
+
 
         var btn = document.createElement("button")
         btn.innerText = "Add To Cart"
+    
+        
         
         var div_block = document.createElement("div")
 
@@ -342,12 +346,22 @@
        price = "₹ "+product.price
 
        
-
-       div1.append(img)
+        div1.style.height = "150px"
+        div1.append(img)
+       div1.style.backgroundColor = "green"
+       
        
        div3.append(name)
        div4.append(price)
-       div2.append(div3,div4,btn)
+
+       div5.append(btn)
+       
+       div2.append(div3,div4,div5)
+      
+
+       
+       div2.style.height = "120px"
+       
        div_block.append(div1,div2)
        cont.append(div_block)
       })
@@ -358,6 +372,13 @@
           alert("it is clicked")
       }
        
+      var reset = document.getElementById("clear")
+      reset.addEventListener("click",clear)
+
+      function clear(){
+         wishData = []
+         localStorage.setItem("wishlist",JSON.stringify(wishData));
+      }
        
 
     </script>

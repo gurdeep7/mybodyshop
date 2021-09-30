@@ -296,7 +296,7 @@ background-color: black;
             <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/myaccount.png"/>
         </div>
         <div id = "gs_wishlist" style="vertical-align: top; margin-top: 10px;">
-            <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/wish-list.png"/>
+            <img id = "ay-wish" src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/wish-list.png"/>
             <div id= "gs_wishlist_value" style="margin-top: -100%; text-align: center;"></div>
         </div>
         <div id = "gs_cart">
@@ -491,7 +491,7 @@ background-color: black;
         
         <input type="search">
     </div>
-    <div id="table"style="width: 90%; margin:auto 5%">
+    <div  id="table"style="width: 90%; margin:auto 5%">
         <div>
             <p><strong>LOVE YOUR BODY CLUB</strong></p>
             <p>FAQs</p>
@@ -808,6 +808,14 @@ background-color: black;
       }else {
         return true;
       }
+    }
+    //amit code starts from here //
+    var img = document.getElementById("ay-wish")
+    img.addEventListener("click",ay_wishlist)
+    var anchor = document.createElement("a")
+
+    function ay_wishlist(){
+      window.location.href = "Amit_Whishlist.html"
     }
     </script>
     
