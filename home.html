@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -186,6 +187,7 @@ background-color: black;
   height: 30px;
 }
 .gs_add_bag_btn:hover{
+  transition: .2s;
   background-color: black;
   color: white;
 }
@@ -262,6 +264,7 @@ background-color: black;
   height: 350px;
       }
       .gs_heart:hover{
+        transition: .6s;
         background-color:lightgray;
       }
 
@@ -530,7 +533,44 @@ background-color: black;
         <p><strong>India</strong></p>
         <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/payment_icons.png">
     </div>
-</body>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
 </html>
 <script>
     // slideshow functionality start
@@ -648,22 +688,22 @@ background-color: black;
     let bestData = [
         {
             name : "Vitamin E Quench Sheet Mask",
-            price : "₹" + 375.00,
+            price :375.00,
             img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/e/p/eps_jpg_1089009_1_sheet_mask_vitamin_e_18ml_a0x_brnz_v2_incrhps078.jpg",
         },
         {
             name : "Vitamin E Intense Moisture Cream",
-            price: "₹" + 1245.00,
+            price:1245.00,
             img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/e/p/eps_jpg_1060712_1_moisturiser_intense_vit_e_50ml_brnz_innpdps576.jpg",
         },
         {
             name : "Vitamin E Lip Care SPF 15",
-            price : "₹" + 395.00,
+            price :395.00,
             img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/v/i/vitamin_e_moisture-protect_lip_care_spf_15_42g_1_inrslps688_1_.jpg",
         },
         {
             name : "Tea Tree Oil",
-            price : "₹" + 695.00,
+            price :695.00,
             img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/t/e/tea_tree_oil_10ml.jpg",
         },
         {
@@ -673,17 +713,17 @@ background-color: black;
         },
         {
             name : "Seaweed Cleansing Facial Wash",
-            price : "₹" + 945.00,
+            price :945.00,
             img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/s/bs-20014001-1.jpg",
         },
         {
             name : "Tea Tree Skin Mattifying Toner",
-            price : "₹" + 795.00,
+            price :795.00,
             img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/s/bs-52110001-1.jpg",
         },
         {
             name : "Tea Tree Skin Clearing Foaming Cleanser",
-            price : "₹" + 945.00,
+            price :945.00,
             img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/s/bs-52109001-1.jpg",
         },
     ];
@@ -708,7 +748,7 @@ background-color: black;
             name.textContent = best_items.name;
 
             let price = document.createElement("p");
-            price.textContent = best_items.price;
+            price.textContent ="₹"+best_items.price;
             let heart = document.createElement("img");
             heart.setAttribute("class","gs_heart")
             heart.src ="images/gs-heart.png"
