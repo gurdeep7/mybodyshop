@@ -136,7 +136,7 @@
 .gs-section,.gs-code{margin-top:16px;margin-bottom:16px}
 .gs-large{font-size:18px}
 .gs-text-white,.gs-hover-text-white:hover{color:#fff}
-.gs-display-middle{ position:relative;left:50%;bottom:-110%;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%);color: black;}
+.gs-display-middle{ position:relative;left:50%;bottom:-110%;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%);color: rgb(250, 248, 248);cursor: pointer;}
 .gs-badge{ background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center; border-radius:50%}
 .gs-border{border:1px solid #ccc}
 .gs-transparent,.gs-hover-none:hover{background-color:transparent}
@@ -384,7 +384,8 @@ background-color: black;
             </div>
         </div>
         <div class="gs_dropdown">
-            <button class="gs_dropbtn">ABOUT US</button>
+          <!--added id (ay-about) for redirection to about us page-->
+            <button class="gs_dropbtn"><span id ="ay-about">ABOUT US</span></button>
             <div class="gs_dropdown-content">
               <a href="#">Link 1</a>
               <a href="#">Link 2</a>
@@ -783,11 +784,19 @@ background-color: black;
       window.location.href="cat2.html"
     }
     var img = document.getElementById("ay-wish")
+    var abt = document.getElementById("ay-about")
+
+    abt.addEventListener("click",about_section)
     img.addEventListener("click",ay_wishlist)
     var anchor = document.createElement("a")
 
     function ay_wishlist(){
       window.location.href = "Amit_Whishlist.html"
       }
+    
+    function about_section(){
+      window.location.href = "Amit_AboutUS.html"
+    }
+      
     </script>
     
