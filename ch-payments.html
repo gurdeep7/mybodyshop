@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check OUt</title>
+    <style>
+
+        #ch-main-title{
+            display: flex; flex-direction: row;
+            background-color: black;
+            margin : -0.5%;
+
+        }
+
+        #text1{
+            display: flex; flex-direction: row;
+            text-align: center;
+            margin-left : 30%;
+        }
+        #ch-add{
+            display:flex; flex-direction: row;
+        }
+        #ch-details{
+            width: 75%;
+            margin: 2%;
+            background-color: rgb(238, 237, 237);
+            display:flex; flex-direction: column;
+        }
+        .gifts{
+            background-color: rgb(168, 168, 168);
+            text-align: center;
+            font-size: X-large;
+            margin: 2%;
+        }
+        #myCheck{
+            margin-left:2%;
+            flex-direction: row;
+            border: 1px solid red;
+        }
+        #text{
+            border: 1px solid red;
+            width: 73%;
+            margin-left: 2%;
+        }
+        #check{
+            margin-top: 20%;;
+        }
+        #ch-hidebox{
+            margin-top:20%;
+            margin-left:3%;
+        }
+        #proceed_btn{
+            margin-top: 20%;
+            margin-left: 10%;
+            padding:2%;
+        }#myCheck2{
+            margin-left:2%;
+            flex-direction: row;
+            border: 1px solid red;
+        }
+        #myCheck3{
+            margin-left:2%;
+            flex-direction: row;
+            border: 1px solid red;
+        }
+        #check2{
+            margin-top: 10%;;
+        }
+        #check3{
+            margin-top: 10%;;
+        }
+        #second {
+            margin-left: 2%;;
+        }
+        #third{
+            margin-left:2%;
+        }
+        #ch-sum{
+            width: 30%;
+            margin:2%;
+            background-color: rgb(209, 209, 209);
+            height: 200px;
+            border: 2px solid grey;
+        }
+        #inside_change{
+            margin:2%;
+            width: 30%;
+        }
+        .Process{
+            margin-bottom: 5%;
+            margin-left:2%;
+        }
+        #imgs{
+            margin:2%;background-color: rgb(172, 171, 171);
+            display: flex; flex-direction: row;
+        }
+        #imgs > div:nth-child(1){
+            margin-left:40%;
+        }
+        #imgs > div{
+            margin: 0.5%;
+        }
+        #lastimg{
+            margin-left: 33%;
+        }
+        .sub-div{
+            border: 1px solid grey;
+            width: 100%;
+            background-color: grey;
+        }
+        .ch-head1{
+            background-color: grey;
+            padding: 2%;
+            display:flex;
+            flex-direction: row;
+        }
+        .inner-sub{
+            background-color: white;
+            padding: 1%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="ch-main-title">
+        <p style="color: white; margin-right: 25%">Back to Shop</p>
+        <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/tbs-logo-white.svg">
+    </div>
+
+    <h1 style="text-align: center;">CHECKOUT</h1>
+
+    <div id="text1">
+        <p style="margin-right: 3%"><strong>DETAILS & SHIPPING METHODS</strong></p>
+        <p style="color:rgb(221, 221, 221)">REVIEW & PAYMENTS</p>
+    </div>
+
+    <div id="ch-add">
+
+        <div id="ch-details">
+
+            <div class="gifts"><strong>APPLY GIFT CARD *T&C</strong></div>
+
+            <input type="text" id="inside_change";placeholder="ENTER GIFT CARD CODE">
+
+            <p style="margin:2%"><strong>PAYMENT METHOD:</strong></p>
+
+            <input type="checkbox" id="myCheck" onclick="myFunction()">
+            <label for="mycheck" class="Process"> Pay using Credit Card / Debit Card / Net Banking (Ccavenuepay)</label>
+            <div id="text">
+                <ul>
+                    <li>You will be redirected to CCAvenue website when you place an order.</li>
+                </ul>
+                <input type="checkbox"id="check" name=check >
+                <label for ="check">My billing and shipping address are the same</label>
+                <button id="proceed_btn"; style="width:25%; background-color: green;color: white">PROCEED</button>
+            </div>
+
+            <input type="checkbox" id="myCheck2" onclick="functionAgain()">
+            <label for="mycheck" class="Process">Paytm</label>
+            <div id="text2">
+                <input type="checkbox"id="check2" name=check >
+                <label for ="check">My billing and shipping address are the same</label>
+                <button id="proceed_btn"; style="width:25%; background-color: green;color: white">PROCEED</button>
+            </div>
+
+            <input type="checkbox" id="myCheck3" onclick="dualFunction()">
+            <label for="mycheck" class="Process">Cash on delivery</label>
+            <div id="text3">
+                <input type="checkbox"id="check3" name=check >
+                <label for ="check">My billing and shipping address are the same</label>
+                <p>To confirm your Cash on delivery order, click on the VERIFY button, a 6 digit verification code will be sent to your mobile number</p>
+                <button id="proceed_btn"; style="width:25%;">CONFIRM</button>
+            </div>
+
+
+
+        </div>
+
+        <div id="ch-sum">
+            <div class="ch-head1">ORDER SUMMARY</div>
+            <div class="inner-sub">Cart Subtotal</div>
+            <div class="sub-div"></div>
+            <div class="inner-sub">Total discount</div>
+            <div class="sub-div"></div>
+            <div class="inner-sub">Shipping</div>
+            <div class="sub-div"></div>
+            <div class="inner-sub">Order Total(incl. GST)</div>
+            <div class="ch-head1">
+                <div>1 Product in Cart</div>
+                <div style="margin-left:45%;">Edit Bag</div>
+            </div>
+            <div class="sub-div"></div>
+            <div class="inner-sub"></div>
+        </div>
+    </div>
+
+    <div id= "imgs">
+        <div>
+            <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/checkout/secured.png">
+        </div>
+        <div>
+            <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/checkout/master-card.png">
+        </div>
+        <div>
+            <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/checkout/visa.png">
+        </div>
+        <div>
+            <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/checkout/american-express.png">
+        </div>
+    </div>
+
+    <p style="text-align: center;"><strong>© 2021 THE BODY SHOP INTERNATIONAL LIMITED</strong></p>
+    <div id="lastimg" >
+        <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/payment_icons.png">
+    </div>
+    <div class="finalPargh" style="text-align:center; margin:2%;">
+        <p>® A REGISTERED TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED™ A TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED ALL RIGHTS RESERVED.
+
+            REGISTERED OFFICE: WATERSMEAD, LITTLEHAMPTON, WEST SUSSEX, BN17 6LS, UNITED KINGDOM; REGISTERED IN ENGLAND NO. 1284170</p>
+    </div>
+</body>
+</html>
+<script>
+
+
+function myFunction() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+myFunction();
+
+function functionAgain() {
+  var checkBox2 = document.getElementById("myCheck2");
+  var text2 = document.getElementById("text2");
+  if (checkBox2.checked == true){
+    text2.style.display = "block";
+  } else {
+     text2.style.display = "none";
+  }
+}
+functionAgain();
+
+function dualFunction() {
+  var checkBox3 = document.getElementById("myCheck3");
+  var text3 = document.getElementById("text3");
+  if (checkBox3.checked == true){
+    text3.style.display = "block";
+  } else {
+     text3.style.display = "none";
+  }
+}
+dualFunction();
+</script>
