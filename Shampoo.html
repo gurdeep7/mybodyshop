@@ -176,7 +176,15 @@ background-color: black;
 #empty > img{
     margin-bottom: 10%;
 }
-
+#ch-pic{
+    width: 90%;
+    margin: auto;
+    max-height: 30%;
+}
+#ch-pic > img{
+    width: 100%;
+    margin-bottom: 3%;
+}
 #ch-some{
   margin-top: 80%;
   width: 90%;
@@ -213,40 +221,6 @@ background-color: black;
   border: 1px solid #000;
   margin-bottom: 20%;
 }
-.social{
-   
-   background-color: rgba(231, 231, 231, 0.795);
-  
-   display:flex;
-   justify-content: center;
-}
-.social>div:nth-child(2){
-   padding:17px;
-   margin-left: 50px;
-   
-}
-.social>div:nth-child(1){
-  
-   margin-left: 50px;
-   padding-top: 10px;
-   font-size: large;
-}
-/* input{
-   block-size: 22px;
-   padding:0% 12%
-} */
-.list{
-  margin:2%;
-   display:grid;
-   grid-template-columns: 24% 24% 24% 24%;
-}
-.last{
-   display: flex; 
-   
-}
-.last>div:nth-child(2){
-   padding:1%;
-}
 .gs_add_bag_btn{
   background-color: white;
   color: black;
@@ -260,6 +234,38 @@ background-color: black;
 select{
   font-size: 20px;
 }
+#ch-tagbar{
+            margin: 1%;
+            display: flex;
+            background-color: #e9e9e9;
+            margin-right: 1%;
+            flex-direction: row;
+        }
+#ch-tagbar > div{
+            font-size: 26px;
+            margin: 1%;
+        }
+        #ch-tagbar > img{
+            width:2%;
+            margin: 1%;
+        }
+        #table{
+            margin:1%;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+        #table > div{
+            display: grid;
+            font-size: small;
+        }
+        .last{
+            margin:1%;
+            display: inline-block;
+            width: 45%;
+            font-size: small;
+        }
+
+
 </style>
 <body>
     <!-- fixed menu start -->
@@ -393,7 +399,11 @@ select{
 <div id="empty"></div>
 <div id="ch-some">
 
-  <p><a href="home.html">Home</a>| Category - Buy3get1 Free</p>
+  <p><a href="home.html">Home</a>| Hair | Shampoos</p>
+</div>
+
+<div id= "ch-pic">
+  <img src="https://staticbodyshop.gumlet.io/pub/media/catalog/category/Sub-Cat-Body-Hair.jpg">
 </div>
 
 
@@ -420,65 +430,65 @@ select{
   </div>
   <div id="ch-cat1Items"></div>
 </div>
-<div class = "social">
+
+<div id="ch-tagbar"style="width: 90%; margin:auto 5%">
+  <div>Join us on social media</div>
   <div>
-       <h4>JOIN US ON SOCIAL</h4>
+      <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/icons/twitter.png"width=10px>
   </div>
   <div>
-      <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/icons/twitter.png" >
-      <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/facebook-icon.png" >
-      <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/instagram-icon.png" >
-      <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/yt_logo_mono_light-new.png" >
+      <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/facebook-icon.png"width="2%;">
   </div>
-  <div style="padding:2%">
-      <input type="text" name="" id="" placeholder="SIGNUP FOR EXCLUSIVE OFFERS">
+  <div>
+      <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/instagram-icon.png" width="2%">
+  </div>
+  <div>
+      <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/yt_logo_mono_light-new.png" width="3%;">
   </div>
   
+  <input type="search">
 </div>
-<div class = "list"  >
-   <div>
-       <h4>LOVE YOUR BODY CLUB</h4>
-       <span>FAQs</span><br>
-       <span>Loyalty Club</span>
-   </div>
-   <div>
-       <h4>ABOUT US</h4>
-       <span>About Us</span><br>
-       <span>Affiliates</span><br>
-       <span>Careers</span><br>
-       <span>Dame Anita Roddick</span><br>
-       <span>Contact Us</span><br>
-   </div>
-   <div>
-       <h4>USING THE WEBSITE</h4>
-       <span>Terms & Conditions</span><br>
-       <span>Privacy Policy</span><br>
-       <span>Policy Documentation</span><br>
-       <span>Packaging & Delivery FAQ's</span><br>
-       <span>Sitemap</span><br>
-       <span>FAQ Services</span><br>
+<div id="table"style="width: 90%; margin:auto 5%">
+  <div>
+      <p><strong>LOVE YOUR BODY CLUB</strong></p>
+      <p>FAQs</p>
+      <p>Loyalty Club</p>
+  </div>
+  <div>
+      <p><strong>ABOUT US</strong></p>
+      <p>About Us</p>
+      <p>Affiliates</p>
+      <p>Careers</p>
+      <p>Dame Anita Roddick</p>
+      <p>Contact Us</p>
+  </div>
+  <div>
+      <p><strong>USING THE WEBSITE</strong></p>
+      <p>Terms & Conditions</p>
+      <p>Privacy Policy</p>
+      <p>Policy Documentation</p>
+      <p>E-GV</p>
+      <p>Sitemap</p>
+      <p>FAQ Services</p>
+  </div>
+  <div>
+      <p><strong>COMMITMENT</strong></p>
+      <p>Community Trade</p>
+      <p>Ethical Trade</p>
+      <p>Campaigns</p>
+      <p>Latest Stories</p>
+      <p>Our Commitment</p>
+  </div>
+</div>
+<div class="last"style="width: 90%; margin:auto 5%">
+  <p><strong>© 2021 THE BODY SHOP INTERNATIONAL LIMITED</strong></p>
+  <p>® A REGISTERED TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED™ A TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED ALL RIGHTS RESERVED.
 
-   </div>
-   <div>
-       <h4>COMMITMENT</h4>
-       <span>Community Trade</span><br>
-       <span>Ethical Trade</span><br>
-       <span>Campaigns</span><br>
-       <span>Our Commitment</span><br>
-   </div>
+      REGISTERED OFFICE: WATERSMEAD, LITTLEHAMPTON, WEST SUSSEX, BN17 6LS, UNITED KINGDOM; REGISTERED IN ENGLAND NO. 1284170</p>
 </div>
-<div class = "last">
-   <div>
-       <h4>© 2021 THE BODY SHOP INTERNATIONAL LIMITED</h4>
-       <p style = "font-size: small;">® A REGISTERED TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED™ A TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED ALL RIGHTS RESERVED.
-
-           REGISTERED OFFICE: WATERSMEAD, LITTLEHAMPTON, WEST SUSSEX, BN17 6LS, UNITED KINGDOM; REGISTERED IN ENGLAND NO. 1284170</p>
-   </div>
-   <div>
-       india
-       <img style ="width:100%" src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/payment_icons.png" >
-   </div>
-</div>
+<div class="last"style="width: 90%; margin:auto 5%">
+  <p><strong>India</strong></p>
+  <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/payment_icons.png">
 </div>
      
 </body>
@@ -491,56 +501,56 @@ select{
     
     let cat1Data = [
       {
-        name : "Limited Edition Hot Chocolate Lip Juicer",
-        price :795.00,
-        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1098216_lip_juicer_hot_chocolate_4g_ltd_ed_a0x_brnz_inecops147.jpg",
+        name : "Ginger Anti Dandruff Shampoo 60ML",
+        price : 275.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/g/i/ginger_antidandruff_shampoo_60ml_1.jpg",
       },
       {
-        name : "British Rose Shower Gel",
-        price :345.00,
-        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/r/british_rose_shower_gel_250ml.jpg",
+        name : "Banana Shampoo 60ML",
+        price : 275.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/a/banana_truly_nourishing_shampoo_60ml.jpg",
     
       },
       {
-        name : "Tea Tree Facial Wash",
-        price :745.00,
-        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/t/e/tea_tree_skin_clearing_facial_wash_250ml_1.jpg",
+        name : "Moringa Shine & Protection Shampoo",
+        price : 745.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1097746_shampoo_moringa_250mlbrnz_inaaups037.jpg",
     
       },
       {
-        name : "Strawberry Shower Gel",
-        price :345.00,
-        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/s/t/strawberry_shower_gel_250ml_1_inrsdps515.jpg",
+        name : "Tea Tree Purifying & Balancing Shampoo 400ML",
+        price : 1045.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1097734_tea_tree_purifying_shampoo_400ml_brnz_inaaups030.jpg",
     
       },
       {
-        name : "Moringa Shower Gel",
-        price :345.00,
-        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/m/o/moringa_shower_gel.jpg",
+        name : "Tea Tree Purifying & Balancing Shampoo",
+        price : 745.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1097735_shampoo_tea_tree_250mlbrnz_inaaups031.jpg",
     
       },
       {
-        name : "Shea Shower Cream",
-        price :345.00,
-        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/s/bs-44968001-1.jpg",
+        name : "Shea Butter Richly Replenishing Shampoo 400ML",
+        price : 1045.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/e/p/eps_jpg_1062021_1_shampoo_shea_400ml_a0x_brnz_inrbfps010.jpg",
     
       },
       {
-        name : "Body Yogurt British Rose",
-        price :995.00,
-        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1055090_1_born_lippy_strawberry_brnz_innpdps138.eps.jpg",
+        name : "Ginger Anti Dandruff Shampoo 400ML",
+        price : 1045.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/e/p/eps_jpg_1061942_1_shampoo_ginger_400ml_a0x_brnz_2_innpdps705_1.jpg",
     
       },
       {
-        name : "Born Lippy Pot Balm - Strawberry",
-        price :295.00,
-        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/s/bs-55005001-1-new.jpg",
+        name : "Strawberry Clearly Glossing Shampoo 400ML",
+        price : 1045.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/s/t/strawberry_clearly_glossing_shampoo_400ml.jpg",
     
       },
       {
-        name : "Vitamin E Gentle Facial Wash",
-        price :745.00,
-        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/s/bs-55005001-1-new.jpg",
+        name : "Banana Truly Nourishing Shampoo 400ML",
+        price : 1045.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1097893_shampoo_banana_400ml_brnz_inaaups016.jpg",
     
       }
     

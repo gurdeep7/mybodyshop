@@ -176,7 +176,15 @@ background-color: black;
 #empty > img{
     margin-bottom: 10%;
 }
-
+#ch-pic{
+    width: 90%;
+    margin: auto;
+    max-height: 30%;
+}
+#ch-pic > img{
+    width: 100%;
+    margin-bottom: 3%;
+}
 #ch-some{
   margin-top: 80%;
   width: 90%;
@@ -213,40 +221,6 @@ background-color: black;
   border: 1px solid #000;
   margin-bottom: 20%;
 }
-.social{
-   
-   background-color: rgba(231, 231, 231, 0.795);
-  
-   display:flex;
-   justify-content: center;
-}
-.social>div:nth-child(2){
-   padding:17px;
-   margin-left: 50px;
-   
-}
-.social>div:nth-child(1){
-  
-   margin-left: 50px;
-   padding-top: 10px;
-   font-size: large;
-}
-/* input{
-   block-size: 22px;
-   padding:0% 12%
-} */
-.list{
-  margin:2%;
-   display:grid;
-   grid-template-columns: 24% 24% 24% 24%;
-}
-.last{
-   display: flex; 
-   
-}
-.last>div:nth-child(2){
-   padding:1%;
-}
 .gs_add_bag_btn{
   background-color: white;
   color: black;
@@ -260,6 +234,38 @@ background-color: black;
 select{
   font-size: 20px;
 }
+#ch-tagbar{
+            margin: 1%;
+            display: flex;
+            background-color: #e9e9e9;
+            margin-right: 1%;
+            flex-direction: row;
+        }
+#ch-tagbar > div{
+            font-size: 26px;
+            margin: 1%;
+        }
+        #ch-tagbar > img{
+            width:2%;
+            margin: 1%;
+        }
+        #table{
+            margin:1%;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+        #table > div{
+            display: grid;
+            font-size: small;
+        }
+        .last{
+            margin:1%;
+            display: inline-block;
+            width: 45%;
+            font-size: small;
+        }
+
+
 </style>
 <body>
     <!-- fixed menu start -->
@@ -393,7 +399,11 @@ select{
 <div id="empty"></div>
 <div id="ch-some">
 
-  <p><a href="home.html">Home</a>| Category - Buy3get1 Free</p>
+  <p><a href="home.html">Home</a>| Hair | Hair styling</p>
+</div>
+
+<div id= "ch-pic">
+  <img src="https://staticbodyshop.gumlet.io/pub/media/catalog/category/8846792163358_3.jpg">
 </div>
 
 
@@ -420,65 +430,65 @@ select{
   </div>
   <div id="ch-cat1Items"></div>
 </div>
-<div class = "social">
+
+<div id="ch-tagbar"style="width: 90%; margin:auto 5%">
+  <div>Join us on social media</div>
   <div>
-       <h4>JOIN US ON SOCIAL</h4>
+      <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/icons/twitter.png"width=10px>
   </div>
   <div>
-      <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/icons/twitter.png" >
-      <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/facebook-icon.png" >
-      <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/instagram-icon.png" >
-      <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/yt_logo_mono_light-new.png" >
+      <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/facebook-icon.png"width="2%;">
   </div>
-  <div style="padding:2%">
-      <input type="text" name="" id="" placeholder="SIGNUP FOR EXCLUSIVE OFFERS">
+  <div>
+      <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/instagram-icon.png" width="2%">
+  </div>
+  <div>
+      <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/yt_logo_mono_light-new.png" width="3%;">
   </div>
   
+  <input type="search">
 </div>
-<div class = "list"  >
-   <div>
-       <h4>LOVE YOUR BODY CLUB</h4>
-       <span>FAQs</span><br>
-       <span>Loyalty Club</span>
-   </div>
-   <div>
-       <h4>ABOUT US</h4>
-       <span>About Us</span><br>
-       <span>Affiliates</span><br>
-       <span>Careers</span><br>
-       <span>Dame Anita Roddick</span><br>
-       <span>Contact Us</span><br>
-   </div>
-   <div>
-       <h4>USING THE WEBSITE</h4>
-       <span>Terms & Conditions</span><br>
-       <span>Privacy Policy</span><br>
-       <span>Policy Documentation</span><br>
-       <span>Packaging & Delivery FAQ's</span><br>
-       <span>Sitemap</span><br>
-       <span>FAQ Services</span><br>
+<div id="table"style="width: 90%; margin:auto 5%">
+  <div>
+      <p><strong>LOVE YOUR BODY CLUB</strong></p>
+      <p>FAQs</p>
+      <p>Loyalty Club</p>
+  </div>
+  <div>
+      <p><strong>ABOUT US</strong></p>
+      <p>About Us</p>
+      <p>Affiliates</p>
+      <p>Careers</p>
+      <p>Dame Anita Roddick</p>
+      <p>Contact Us</p>
+  </div>
+  <div>
+      <p><strong>USING THE WEBSITE</strong></p>
+      <p>Terms & Conditions</p>
+      <p>Privacy Policy</p>
+      <p>Policy Documentation</p>
+      <p>E-GV</p>
+      <p>Sitemap</p>
+      <p>FAQ Services</p>
+  </div>
+  <div>
+      <p><strong>COMMITMENT</strong></p>
+      <p>Community Trade</p>
+      <p>Ethical Trade</p>
+      <p>Campaigns</p>
+      <p>Latest Stories</p>
+      <p>Our Commitment</p>
+  </div>
+</div>
+<div class="last"style="width: 90%; margin:auto 5%">
+  <p><strong>© 2021 THE BODY SHOP INTERNATIONAL LIMITED</strong></p>
+  <p>® A REGISTERED TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED™ A TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED ALL RIGHTS RESERVED.
 
-   </div>
-   <div>
-       <h4>COMMITMENT</h4>
-       <span>Community Trade</span><br>
-       <span>Ethical Trade</span><br>
-       <span>Campaigns</span><br>
-       <span>Our Commitment</span><br>
-   </div>
+      REGISTERED OFFICE: WATERSMEAD, LITTLEHAMPTON, WEST SUSSEX, BN17 6LS, UNITED KINGDOM; REGISTERED IN ENGLAND NO. 1284170</p>
 </div>
-<div class = "last">
-   <div>
-       <h4>© 2021 THE BODY SHOP INTERNATIONAL LIMITED</h4>
-       <p style = "font-size: small;">® A REGISTERED TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED™ A TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED ALL RIGHTS RESERVED.
-
-           REGISTERED OFFICE: WATERSMEAD, LITTLEHAMPTON, WEST SUSSEX, BN17 6LS, UNITED KINGDOM; REGISTERED IN ENGLAND NO. 1284170</p>
-   </div>
-   <div>
-       india
-       <img style ="width:100%" src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/payment_icons.png" >
-   </div>
-</div>
+<div class="last"style="width: 90%; margin:auto 5%">
+  <p><strong>India</strong></p>
+  <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/payment_icons.png">
 </div>
      
 </body>
@@ -491,56 +501,56 @@ select{
     
     let cat1Data = [
       {
-        name : "Limited Edition Hot Chocolate Lip Juicer",
-        price :795.00,
-        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1098216_lip_juicer_hot_chocolate_4g_ltd_ed_a0x_brnz_inecops147.jpg",
+        name : "Moringa Shine & Protection Hair Mist",
+        price : 1345.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1097732_hair_mist_moringa_100ml_brnz_inaaups039.jpg",
       },
       {
-        name : "British Rose Shower Gel",
-        price :345.00,
-        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/r/british_rose_shower_gel_250ml.jpg",
+        name : "Clementine & Starfruit Hair & Body Mist",
+        price : 1595.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1097699_hr_and_bdy_mist_clemtn_and_starfrt_150ml_a0x_brnz_inecmps666_1_1.jpg",
     
       },
       {
-        name : "Tea Tree Facial Wash",
-        price :745.00,
-        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/t/e/tea_tree_skin_clearing_facial_wash_250ml_1.jpg",
+        name : "Lemon Caring & Purifying Hair Mist",
+        price : 1345.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1012279_hair_mist_lemon_100ml_a0x_brnz_inecmps423_1_1.jpg",
     
       },
       {
-        name : "Strawberry Shower Gel",
-        price :345.00,
-        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/s/t/strawberry_shower_gel_250ml_1_inrsdps515.jpg",
+        name : "Pink Pepper & Lychee Hair & Body Mist",
+        price : 1495.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1093051_hrampbdy_mist_pink_pepperamplychee_150ml_a0x_brnz1_inpstps078_1_.jpeg",
     
       },
       {
-        name : "Moringa Shower Gel",
-        price :345.00,
-        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/m/o/moringa_shower_gel.jpg",
+        name : "Lime & Matcha Hair & Body Mist",
+        price : 1495.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1083805_hrampbdy_mist_lime_amp_matcha_150ml_a0x_brnz1_inpstps084.jpeg",
     
       },
       {
-        name : "Shea Shower Cream",
-        price :345.00,
-        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/s/bs-44968001-1.jpg",
+        name : "Pomegranate & Red Berries Hair & Body Mist",
+        price : 1495.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1083809_hrampbdy_mist_pmgrteampred_berries_150ml_a0x_brnz1_inpstps087_1.jpeg",
     
       },
       {
-        name : "Body Yogurt British Rose",
-        price :995.00,
-        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1055090_1_born_lippy_strawberry_brnz_innpdps138.eps.jpg",
+        name : "Coconut & Yazu Hair & Body Mist",
+        price : 1495.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1083807_hrampbdy_mist_coconut_amp_yuzu_150ml_a0x_brnz1_inpstps081_1.jpeg",
     
       },
       {
-        name : "Born Lippy Pot Balm - Strawberry",
-        price :295.00,
-        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/s/bs-55005001-1-new.jpg",
+        name : "Apricot & Agave Hair & Body Mist",
+        price : 1495.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1083806_hrampbdy_mist_apricot_amp_agave_150ml_a0x_brnz1_inpstps075_1.jpeg",
     
       },
       {
-        name : "Vitamin E Gentle Facial Wash",
-        price :745.00,
-        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/s/bs-55005001-1-new.jpg",
+        name : "Grapeseed Glossing Serum",
+        price : 1045.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/g/r/grapessed_image_main.jpg",
     
       }
     
