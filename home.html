@@ -186,6 +186,7 @@ background-color: black;
   height: 30px;
 }
 .gs_add_bag_btn:hover{
+  transition: .2s;
   background-color: black;
   color: white;
 }
@@ -262,6 +263,7 @@ background-color: black;
         height: 350px;
       }
       .gs_heart:hover{
+        transition: .6s;
         background-color:lightgray;
       }
 
@@ -315,7 +317,7 @@ background-color: black;
         <div class="gs_dropdown">
             <button class="gs_dropbtn">SKIN CARE</button>
             <div class="gs_dropdown-content">
-              <a href="#">Link 1</a>
+              <a href="cat1.html">Sensitive Skin Care</a>
               <a href="#">Link 2</a>
               <a href="#">Link 3</a>
             </div>
@@ -323,7 +325,7 @@ background-color: black;
         <div class="gs_dropdown">
             <button class="gs_dropbtn">BODY</button>
             <div class="gs_dropdown-content">
-              <a href="#">Link 1</a>
+              <a href="cat2.html">Body Care</a>
               <a href="#">Link 2</a>
               <a href="#">Link 3</a>
             </div>
@@ -418,7 +420,7 @@ background-color: black;
       </div>
       <!-- grid categories start -->
       <div id ="gs_grid_categories">
-        <img src="images/gs_grid_bodycare.jpg"/>
+        <img onclick="category2()" src="images/gs_grid_bodycare.jpg"/>
         <img src="images/gs_grid_cruelity.jpg"/>
         <img src="images/gs_grid_sheetmask.jpg"/>
         <img src="images/gs_grid_travel.jpg"/>
@@ -648,22 +650,22 @@ background-color: black;
     let bestData = [
         {
             name : "Vitamin E Quench Sheet Mask",
-            price : "₹" + 375.00,
+            price :375.00,
             img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/e/p/eps_jpg_1089009_1_sheet_mask_vitamin_e_18ml_a0x_brnz_v2_incrhps078.jpg",
         },
         {
             name : "Vitamin E Intense Moisture Cream",
-            price: "₹" + 1245.00,
+            price:1245.00,
             img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/e/p/eps_jpg_1060712_1_moisturiser_intense_vit_e_50ml_brnz_innpdps576.jpg",
         },
         {
             name : "Vitamin E Lip Care SPF 15",
-            price : "₹" + 395.00,
+            price :395.00,
             img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/v/i/vitamin_e_moisture-protect_lip_care_spf_15_42g_1_inrslps688_1_.jpg",
         },
         {
             name : "Tea Tree Oil",
-            price : "₹" + 695.00,
+            price :695.00,
             img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/t/e/tea_tree_oil_10ml.jpg",
         },
         {
@@ -673,17 +675,17 @@ background-color: black;
         },
         {
             name : "Seaweed Cleansing Facial Wash",
-            price : "₹" + 945.00,
+            price :945.00,
             img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/s/bs-20014001-1.jpg",
         },
         {
             name : "Tea Tree Skin Mattifying Toner",
-            price : "₹" + 795.00,
+            price :795.00,
             img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/s/bs-52110001-1.jpg",
         },
         {
             name : "Tea Tree Skin Clearing Foaming Cleanser",
-            price : "₹" + 945.00,
+            price :945.00,
             img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/s/bs-52109001-1.jpg",
         },
     ];
@@ -708,7 +710,7 @@ background-color: black;
             name.textContent = best_items.name;
 
             let price = document.createElement("p");
-            price.textContent = best_items.price;
+            price.textContent ="₹"+best_items.price;
             let heart = document.createElement("img");
             heart.setAttribute("class","gs_heart")
             heart.src ="images/gs-heart.png"
@@ -768,6 +770,13 @@ background-color: black;
       }else {
         return true;
       }
+    }
+
+
+
+    // page changing functions
+    function category2(){
+      window.location.href="cat2.html"
     }
     </script>
     

@@ -29,6 +29,17 @@
         display: inline-block
         
     }
+    #gsbagvalue{
+      margin-top: -20px;
+      margin-left: 10px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: black;
+      color:white;
+      text-align: center;
+      text-shadow: wheat;
+    }
     .gs_maintxt{
         box-sizing: border-box;
         margin-top: 0%;
@@ -240,21 +251,6 @@ background-color: black;
     height: 5%;
     width: 30%;
 }
-#table{
-    margin:1%;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-}
-#table > div{
-    display: grid;
-    font-size: small;
-}
-.last{
-            margin:1%;
-            display: inline-block;
-            width: 45%;
-            font-size: small;
-        }
 
 
 
@@ -426,49 +422,8 @@ background-color: black;
     </div>
 </div>
 
-<div id="table"style="width: 90%; margin:auto 5%">
-    <div>
-        <p><strong>LOVE YOUR BODY CLUB</strong></p>
-        <p>FAQs</p>
-        <p>Loyalty Club</p>
-    </div>
-    <div>
-        <p><strong>ABOUT US</strong></p>
-        <p>About Us</p>
-        <p>Affiliates</p>
-        <p>Careers</p>
-        <p>Dame Anita Roddick</p>
-        <p>Contact Us</p>
-    </div>
-    <div>
-        <p><strong>USING THE WEBSITE</strong></p>
-        <p>Terms & Conditions</p>
-        <p>Privacy Policy</p>
-        <p>Policy Documentation</p>
-        <p>E-GV</p>
-        <p>Sitemap</p>
-        <p>FAQ Services</p>
-    </div>
-    <div>
-        <p><strong>COMMITMENT</strong></p>
-        <p>Community Trade</p>
-        <p>Ethical Trade</p>
-        <p>Campaigns</p>
-        <p>Latest Stories</p>
-        <p>Our Commitment</p>
-    </div>
-</div>
-
-<div class="last"style="width: 90%; margin:auto 5%">
-    <p><strong>© 2021 THE BODY SHOP INTERNATIONAL LIMITED</strong></p>
-    <p>® A REGISTERED TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED™ A TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED ALL RIGHTS RESERVED.
-
-        REGISTERED OFFICE: WATERSMEAD, LITTLEHAMPTON, WEST SUSSEX, BN17 6LS, UNITED KINGDOM; REGISTERED IN ENGLAND NO. 1284170</p>
-</div>
-<div class="last"style="width: 90%; margin:auto 5%">
-    <p><strong>India</strong></p>
-    <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/payment_icons.png">
-</div>
+<div>1</div>
+<div>2</div>
      
 </body>
 </html>
@@ -547,8 +502,7 @@ background-color: black;
           name.textContent = cat4.name;
 
           let price = document.createElement("p");
-          price.style.fontWeight = "bold";
-          price.textContent = "₹" + cat4.price;
+          price.textContent = cat4.price;
 
           let product_visit_btn = document.createElement("button");
           product_visit_btn.innerText = "ADD TO BAG";

@@ -12,10 +12,13 @@
             color:white;
             padding:1%;
             background-color: black;
-            margin: -0.5%;
+           
         }
         img{
-            margin-left: 30%;
+            display: block;
+            align-self: center;
+            margin-left: auto;
+            margin-right: auto;
         }
         #inner-box{
             width:50%;
@@ -52,15 +55,22 @@
     <div id="inner-box">
         <div class="ch-text">
             <div class="ch-innertext">
-                <h2 style="color:skyblue">THANK YOU</h2>
-                <p style="font-style: italic; font-size: medium;">YOUR ORDER IS PLACED SUCCESSFULLY.</p>
+                <h2 style="color:skyblue">THANK YOU For SHOPPING WITH US</h2>
+                <P id="timer"></p>
             </div>
         </div>
     </div>
-    <button class="gohome">Go Home</button>
 </body>
 </html>
-
 <script>
-
+    let timer = document.getElementById("timer");
+    setTimeout(function(){
+        window.location.href="Amit_AboutUs.html"
+    },5000)
+    var i = 5;
+    timer.textContent= "We will redirect to you on About us page in "+i+" seconds";
+    setInterval(() => {
+        i--;
+        timer.textContent= "We will redirect to you on About us page in "+i+" seconds";
+    },1000);
 </script>
