@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+    <title>Cruelty-Free &amp; Beauty Products| The Body Shop</title>
+</head>
+<style>
+    /* fixed above menu start */
+    #gs_main{
+        width: 90%;
+        /* background-color: aqua; */
+        margin: 0% 5%;
+        position: fixed;
+        padding-top: 10px;
+        top: 0px;
+        background-color: white;
+        /* display: flex; */
+    }
+    #gs_mainflex{
+        width: 100%;
+    }
+    #gs_mainflex > div{
+        display: inline-block
+        
+    }
+    #gsbagvalue{
+      margin-top: -20px;
+      margin-left: 10px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: black;
+      color:white;
+      text-align: center;
+      text-shadow: wheat;
+    }
+    .gs_maintxt{
+        box-sizing: border-box;
+        margin-top: 0%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    #gs_mainleft > div{
+        display: inline-block;
+    }
+    #gs_mainleft{
+       vertical-align: bottom;
+      margin-top: 25px;
+    }
+    #gs_mainright{
+        float: right;   
+    }
+    #gs_mainright > div{
+        display: inline-block;
+        margin-left: 10px;
+    }
+    #gs_dropdown_navbar{
+        margin-top: 1%;
+    }
+    .gs_dropbtn {
+        width: 100%;
+        background-color: white;
+  color: black;
+  padding: 12px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  text-decoration:solid;
+  font-weight: bold;
+}
+.gs_dropdown {
+    /* width: 7%; */
+  position: relative;
+  display: inline-block;
+}
+.gs_heart:hover{
+        transition: .6s;
+        background-color:lightgray;
+      }
+.gs_dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.gs_dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.gs_dropdown-content a:hover {color: #c7c1c1}
+.gs_dropdown:hover .gs_dropdown-content {
+  display: block;
+}
+.gs_dropdown:hover .gs_dropbtn {
+  text-decoration: underline;
+}
+#gs_btn_essential{
+    padding: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: white;
+  text-decoration:solid;
+    border: none;
+  color: red;
+}
+#gs_btn_essential:hover{
+    text-decoration: underline;
+}
+#gs_offer{
+    background-color: #b8cb84;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 11px;
+}
+/* fixed above menu end */
+
+/* slide show start */
+.gs-content{
+    max-width:90%; margin: 165px auto auto auto;
+}
+
+.gs_mySlides {display:block}
+
+.gs-badge {cursor:pointer}
+.gs-badge {height:13px;width:13px;padding:0}
+.gs-center{text-align:center}
+.gs-container:after,.gs-container:before,
+.gs-container{margin-top:16px;margin-bottom:16px ; position: relative;}
+.gs-section,.gs-code{margin-top:16px;margin-bottom:16px}
+.gs-large{font-size:18px}
+.gs-text-white,.gs-hover-text-white:hover{color:#fff}
+.gs-display-middle{ position:relative;left:50%;bottom:-110%;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%);color: black;}
+.gs-badge{ background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center; border-radius:50%}
+.gs-border{border:1px solid #ccc}
+.gs-transparent,.gs-hover-none:hover{background-color:transparent}
+.gs-left{
+position:absolute;
+left: 0%;
+font-size: 60px;
+bottom: 1400%;
+} .gs-right{
+    position:absolute;
+right: 0%;
+font-size: 60px;
+bottom: 1400%;
+} 
+.gs-hover-text-khaki:hover{color: #b4aa50}
+.gs-badge:hover{
+background-color: black;
+}
+/* slideshow end */
+#gs_grid_categories{
+    display: grid;
+    max-width: 100%;
+    margin: auto;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+}
+#gs_grid_categories>img{
+    width:100%;
+}
+#empty{
+    width: 90%;
+    height: 150px;
+}
+#empty > img{
+    margin-bottom: 10%;
+}
+#ch-pic{
+    width: 90%;
+    margin: auto;
+    max-height: 30%;
+}
+#ch-pic > img{
+    width: 100%;
+    margin-bottom: 3%;
+}
+#ch-some{
+  margin-top: 80%;
+  width: 90%;
+  margin: auto;
+  font-size: medium;
+}
+#ch-innermargin{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+#ch-filter{
+  width: 20%;
+  margin-right: 10%;
+  height:400px;
+  background-color: lightcoral;
+}
+#ch-cat1Items{
+  width: 65%;
+  margin-right: 1%;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 35% 35% 35%;
+  margin-bottom: 5%;
+}
+#ch-cat1Items > div > img{
+  width: 100%;
+}
+#ch-cat1Items > div > button{
+  width: 35%;
+  padding: 3%;
+  font-size: 12px;
+  border: 1px solid #000;
+  margin-bottom: 20%;
+}
+.gs_add_bag_btn{
+  background-color: white;
+  color: black;
+  border: black solid;
+  height: 30px;
+}
+.gs_add_bag_btn:hover{
+  background-color: black;
+  color: white;
+}
+select{
+  font-size: 20px;
+}
+#ch-tagbar{
+            margin: 1%;
+            display: flex;
+            background-color: #e9e9e9;
+            margin-right: 1%;
+            flex-direction: row;
+        }
+#ch-tagbar > div{
+            font-size: 26px;
+            margin: 1%;
+        }
+        #ch-tagbar > img{
+            width:2%;
+            margin: 1%;
+        }
+        #table{
+            margin:1%;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+        #table > div{
+            display: grid;
+            font-size: small;
+        }
+        .last{
+            margin:1%;
+            display: inline-block;
+            width: 45%;
+            font-size: small;
+        }
+
+
+</style>
+<body>
+    <!-- fixed menu start -->
+    <div id = "gs_main">
+<div id= "gs_mainflex"> 
+<div id ="gs_mainleft">
+    <div id = "gs_stores">
+        <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/icons/stores.png"/>
+        <span class="gs_maintxt">Stores</span>
+    </div>
+    <div id = "gs_bodyclub" style="box-sizing: border-box; vertical-align: top;">
+        <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/icons/loyality-card.png"/>
+        <span class="gs_maintxt"> Love Your Body™️ Club</span>
+    </div>
+    <div id = "gs_bodyclub">
+    <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/truck1.jpg"/>
+    <span class="gs_maintxt">Track Order</span>
+</div>
+    </div>
+    <div id ="gs_mainlog" style="width: 30%; margin-left: 10%;" >
+        <img style="width: 100%;" src ="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/logo.svg"/>
+    </div>
+    <div id ="gs_mainright">
+        <div id = "gs_user">
+            <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/myaccount.png"/>
+        </div>
+        <div id = "gs_wishlist" style="vertical-align: top;margin-top: 10px;">
+            <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/wish-list.png"/>
+            <div id= "gs_wishlist_value" style="margin-top: -100%; text-align: center;"></div>
+        </div>
+        <div id = "gs_cart">
+            <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/body-shop-icons-thick_bag.png"/>
+            <div id="gsbagvalue"></div>
+        </div>
+    </div>
+</div>
+<div id="gs_dropdown_navbar">
+    <button id="gs_btn_essential" onclick="">Daily Essential</button>
+    <div class="gs_dropdown">
+        <button class="gs_dropbtn">TRENDING</button>
+        <div class="gs_dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">SKIN CARE</button>
+            <div class="gs_dropdown-content">
+              <a href="cat1.html">Sensitive Skin Care</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">BODY</button>
+            <div class="gs_dropdown-content">
+              <a href="cat2.html">Body care</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">HAIR</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">MAKE UP</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">FRAGRANCE</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">GIFTS</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">RANGE</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">TIPS & ADVICE</button>
+            <div class="gs_dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_dropdown">
+            <button class="gs_dropbtn">ABOUT US</button>
+            <div class="gs_dropdown-content">
+              <a href="Amit_AboutUs.html">Know About uS</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="gs_search-container" style="float: right;">
+              <input type="text" style="height: 30px; vertical-align:top" placeholder="Search.." name="search">
+              <button class="material-icons" style="height: 35px;">
+                search</button>
+          </div>
+    </div>
+    <div id= "gs_offer">
+        FREE STRAWBERRY BODY BUTTER ON ORDER ABOVE RS 3999*- <a href = "#" style="color: black;">SHOP NOW</a> |<a href = "#" style="color: black;"> T&C APPLY</a>
+    </div>
+  </div>
+</div>
+<!-- fixed menu end -->
+<div id="empty"></div>
+<div id="ch-some">
+
+  <p><a href="home.html">Home</a>| Skin Care | Eye care</p>
+</div>
+
+<div id= "ch-pic">
+  <img src="https://staticbodyshop.gumlet.io/pub/media/catalog/category/EYE_CARE_SKIN_CARE.jpg">
+</div>
+
+
+<select id = gs_sort style="margin-right: 5%; float: right;">
+  <option value="select">Sort by:</option>
+  <option value ="name">By Name</option>
+  <option value ="lowtohigh">Price (Lowest First)</option>
+  <option value ="hightolow">Price (highest First)</option>
+
+</select>
+<div id="productcount" style="margin-left:30%; font-size: 20px;"></div>
+<div id="ch-innermargin">
+
+  <div id="ch-filter">
+    <span style="font-size: 20px;">Filter By</span>
+    <br>
+    <select id="gs_filter">
+      <option value="select" >Select</option>
+      <option value="lessthan500">Price less than ₹500</option>
+      <option value="morethan500">Price more than ₹500</option>
+    </select>
+
+
+  </div>
+  <div id="ch-cat1Items"></div>
+</div>
+
+<div id="ch-tagbar"style="width: 90%; margin:auto 5%">
+  <div>Join us on social media</div>
+  <div>
+      <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/icons/twitter.png"width=10px>
+  </div>
+  <div>
+      <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/facebook-icon.png"width="2%;">
+  </div>
+  <div>
+      <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/instagram-icon.png" width="2%">
+  </div>
+  <div>
+      <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/yt_logo_mono_light-new.png" width="3%;">
+  </div>
+  
+  <input type="search">
+</div>
+<div id="table"style="width: 90%; margin:auto 5%">
+  <div>
+      <p><strong>LOVE YOUR BODY CLUB</strong></p>
+      <p>FAQs</p>
+      <p>Loyalty Club</p>
+  </div>
+  <div>
+      <p><strong>ABOUT US</strong></p>
+      <p>About Us</p>
+      <p>Affiliates</p>
+      <p>Careers</p>
+      <p>Dame Anita Roddick</p>
+      <p>Contact Us</p>
+  </div>
+  <div>
+      <p><strong>USING THE WEBSITE</strong></p>
+      <p>Terms & Conditions</p>
+      <p>Privacy Policy</p>
+      <p>Policy Documentation</p>
+      <p>E-GV</p>
+      <p>Sitemap</p>
+      <p>FAQ Services</p>
+  </div>
+  <div>
+      <p><strong>COMMITMENT</strong></p>
+      <p>Community Trade</p>
+      <p>Ethical Trade</p>
+      <p>Campaigns</p>
+      <p>Latest Stories</p>
+      <p>Our Commitment</p>
+  </div>
+</div>
+<div class="last"style="width: 90%; margin:auto 5%">
+  <p><strong>© 2021 THE BODY SHOP INTERNATIONAL LIMITED</strong></p>
+  <p>® A REGISTERED TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED™ A TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED ALL RIGHTS RESERVED.
+
+      REGISTERED OFFICE: WATERSMEAD, LITTLEHAMPTON, WEST SUSSEX, BN17 6LS, UNITED KINGDOM; REGISTERED IN ENGLAND NO. 1284170</p>
+</div>
+<div class="last"style="width: 90%; margin:auto 5%">
+  <p><strong>India</strong></p>
+  <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/payment_icons.png">
+</div>
+     
+</body>
+</html>
+<script>
+    let gs_filter =document.getElementById("gs_filter");
+      gs_filter.addEventListener("change",filterproduct);
+
+    let parent = document.getElementById("ch-cat1Items");
+    
+    let cat1Data = [
+      {
+        name : "Drops of Youth™ Youth Bouncy Eye Mask",
+        price : 1795.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/e/p/eps_jpg_1078327_1_eye_cream_doy_20mla0x_brnz_innedps005.jpg",
+      },
+      {
+        name : "Drops Of Light™ Pure Healthy Brightening Eye Cream",
+        price : 2795.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1059591drops_of_light_eye_cream_brnz_inrenps362.eps_1.jpg",
+    
+      },
+      {
+        name : "Camomile Gentle Eye Makeup Remover",
+        price : 895.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/c/a/camomile_gentle_eye_makeup_remover_250ml.jpg",
+    
+      },
+      {
+        name : "Oils Of Life Eye Cream-Gel",
+        price : 2495.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/s/bs-54606001-1.jpg",
+    
+      },
+      {
+        name : "Camomile Waterproof Eye & Lip Make Up Remover",
+        price : 1045.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/e/p/eps_jpg_1052757camomile_waterproof_lip_eye_make_up_remover_inrenps177.jpg",
+    
+      },
+      {
+        name : "Vitamin E Eye Cream",
+        price : 995.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/s/bs-52935001-1.jpg",
+    
+      },
+      {
+        name : "Body Yogurt British Rose",
+        price :995.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1055090_1_born_lippy_strawberry_brnz_innpdps138.eps.jpg",
+    
+      },
+      {
+        name : "Born Lippy Pot Balm - Strawberry",
+        price :295.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/s/bs-55005001-1-new.jpg",
+    
+      },
+      {
+        name : "Vitamin E Gentle Facial Wash",
+        price :745.00,
+        img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/s/bs-55005001-1-new.jpg",
+    
+      }
+    
+    ];
+    
+       let gs_sort= document.getElementById("gs_sort");
+        gs_sort.addEventListener("change",sortproduct)
+      let productcount=document.getElementById("productcount")
+      function showcat1Items(){
+        parent.innerHTML = "";
+        cat1Data.forEach(function(cat1){
+          
+          let div = document.createElement("div");
+
+          let img = document.createElement("img");
+          img.src = cat1.img;
+
+          let name = document.createElement("p");
+          name.textContent = cat1.name;
+
+          let price = document.createElement("p");
+          price.textContent ="₹"+cat1.price;
+
+          let item_visit_btn = document.createElement("button");
+            item_visit_btn.setAttribute("class","gs_add_bag_btn")
+            item_visit_btn.onclick = function(){
+              addtobag(cat1);
+            }
+            item_visit_btn.innerText = "ADD TO BAG";
+            let heart = document.createElement("img");
+            heart.setAttribute("class","gs_heart")
+            heart.src ="images/gs-heart.png"
+            heart.style.verticalAlign="top"
+            heart.style.marginLeft="10px"
+            heart.style.width = "30px"
+            heart.style.height= "30px"
+            heart.style.marginTop = "-2spx"
+            heart.onclick = function(){
+              addtowishlist(cat1);
+            }
+
+          div.append(img, name, price, item_visit_btn,heart);
+
+          parent.append(div)
+        })
+        productcount.textContent = cat1Data.length+" Products";
+      }
+      showcat1Items()
+          if(localStorage.getItem("bag")===null){
+      localStorage.setItem("bag",JSON.stringify([]));
+    }
+    let bag = JSON.parse(localStorage.getItem("bag"));
+    let gsbagvalue = document.getElementById("gsbagvalue");
+    if(bag.length != 0){
+    gsbagvalue.textContent = bag.length;
+    }
+    let gs_wishlist_value = document.getElementById("gs_wishlist_value");
+    if(localStorage.getItem("wishlist")=== null){
+      localStorage.setItem("wishlist",JSON.stringify([]));
+    }
+    let wishlist = JSON.parse(localStorage.getItem("wishlist"));
+    if(wishlist.length != 0){
+    gs_wishlist_value.textContent = wishlist.length;
+    }
+    
+    function addtobag(product){
+      if(gsduplicity(product.name) == true){
+        let con = confirm("This product is already in bag, Are you sure to add?")
+        if(con == false){
+          return;
+        }
+      }
+      bag.push(product);
+      localStorage.setItem("bag",JSON.stringify(bag));
+      gsbagvalue.textContent = bag.length;
+    }
+    function addtowishlist(product){
+      if(gsduplicity2(product.name) == true){
+        alert("This product is already in wishlist")
+          return;
+      }
+      wishlist.push(product);
+      localStorage.setItem("wishlist",JSON.stringify(wishlist));
+      gs_wishlist_value.textContent = wishlist.length;
+    }
+    function gsduplicity(name){
+      var flag = 0;
+      for(var i = 0; i < bag.length; i++){
+        if(name == bag[i].name){
+          flag++;
+        }
+      }
+      if(flag == 0){
+        return false;
+      }else {
+        return true;
+      }
+    }
+    function gsduplicity2(name){
+      var flag = 0;
+      for(var i = 0; i < wishlist.length; i++){
+        if(name == wishlist[i].name){
+          flag++;
+        }
+      }
+      if(flag == 0){
+        return false;
+      }else {
+        return true;
+      }
+    }
+
+    function sortproduct(){
+      console.log("sort")
+      if(gs_sort.value == "hightolow"){
+        cat1Data.sort(function(a,b){return b.price - a.price})
+        showcat1Items()
+      }else if(gs_sort.value == "lowtohigh"){
+        cat1Data.sort(function(a,b){return a.price - b.price})
+        showcat1Items()
+      }else if(gs_sort.value == "name"){
+     cat1Data.sort((a,b) => a.name.localeCompare(b.name))
+     showcat1Items();
+    }
+        
+    }
+  // Filter functionality start
+  
+    let filter_product = [];
+    function filterproduct() {
+      filter_product = [];
+      if(gs_filter.value == "lessthan500"){
+        filter_product = cat1Data.filter(function(product){
+          if(product.price < 500){
+            return product;
+          }
+        })
+        showcatfilterItems();
+
+      }else if(gs_filter.value == "morethan500"){
+        filter_product = cat1Data.filter(function(product){
+          if(product.price > 500){
+            return product;
+          }
+        })
+        showcatfilterItems();
+      }else{
+        showcat1Items();
+      }
+       
+      }
+      
+      function showcatfilterItems(){
+        parent.innerHTML = "";
+        filter_product.forEach(function(cat1){
+          
+          let div = document.createElement("div");
+
+          let img = document.createElement("img");
+          img.src = cat1.img;
+
+          let name = document.createElement("p");
+          name.textContent = cat1.name;
+
+          let price = document.createElement("p");
+          price.textContent ="₹"+cat1.price;
+
+          let item_visit_btn = document.createElement("button");
+            item_visit_btn.setAttribute("class","gs_add_bag_btn")
+            item_visit_btn.onclick = function(){
+              addtobag(cat1);
+            }
+            item_visit_btn.innerText = "ADD TO BAG";
+            let heart = document.createElement("img");
+            heart.setAttribute("class","gs_heart")
+            heart.src ="images/gs-heart.png"
+            heart.style.verticalAlign="top"
+            heart.style.marginLeft="10px"
+            heart.style.width = "30px"
+            heart.style.height= "30px"
+            heart.style.marginTop = "-2px"
+            heart.onclick = function(){
+              addtowishlist(cat1);
+            }
+
+          div.append(img, name, price, item_visit_btn,heart);
+
+          parent.append(div)
+        })
+        productcount.textContent = filter_product.length+" Products";
+      }
+    
+
+
+  //Filter functionality stop
+</script>
