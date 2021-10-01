@@ -194,6 +194,11 @@
     color: blanchedalmond;
     transition: .7s;
 }
+#checkout:hover{
+    cursor:pointer;
+    background-color: rgba(204, 204, 204, 0.781);
+    transition: .4s;
+}
 
 
 
@@ -326,7 +331,13 @@
         </div>
     </div>
     <!--amits code start from here cheers-->
-    <div style = "margin: -100px 0% 0% 5% ;position: fixed;"><span id = "ay-home"  >Home</span></div>
+    <div>
+        <div  style = "margin: -100px 0% 0% 5% ;position: fixed;"><span id = "ay-home"  >Home</span></div>
+        <div style="margin: -70px 0% 0% 5% ;position: fixed; right: 10%;"><span>Total price :<span id = "total"></span></span><br>
+            <!--here is checkout button-->
+            <span id ="checkout">CHECKOUT</span>
+        </div>
+    </div>
     <div id = "title">
        
         <h3 id = "head" style ="text-align: right;padding-right: 5%;"></h3>
@@ -366,6 +377,7 @@
 
         var c = 0;
         var b = 0; 
+        var sum = 0;
 
         if( (wishData.length == 0) && ( bag.length == 0 )){
             cont.append(nothing)      
@@ -400,6 +412,10 @@
        var price = document.createElement("h4") 
        price = "₹ "+product.price + " (whishListed)"
 
+       
+       sum = sum + product.price
+       
+
        var wishtag = document.getElementById("wishtag")
        var tag = document.createElement("h4")
         c++
@@ -429,6 +445,8 @@
        div_block.append(div1,div2)
        cont.append(div_block)
       })
+      
+
     /*wish list items function ends at here*/
 
     /*bag items function start frm here*/
@@ -461,6 +479,8 @@
        var price = document.createElement("h4") 
        price = "₹ "+pro.price +" (cart items)"
 
+       sum = sum + pro.price
+
        
 
         div1.style.height = "150px"
@@ -492,12 +512,21 @@
        cont2.append(div_block)
       })
       /*bag item function ends here*/
+      var total = document.getElementById("total")
+      total.append( "₹ "+sum )
     }
+
 
       
 
       function tocart(){
           window.location.href = "cart.html"
+      }
+      var checkout = document.getElementById("checkout")
+      checkout.addEventListener("click",check)
+      /*here is payment href*/
+      function check(){
+          window.location.href = "payment.html"
       }
        
       var reset = document.getElementById("clear")
