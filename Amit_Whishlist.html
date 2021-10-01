@@ -135,12 +135,38 @@
     padding: 1%;
     
 }
+#cont>div:hover{
+    transform: scale(1.07);
+    transition: .4s;
+    background-color: rgb(243, 243, 243);
+}
+#cont2{
+    
+    margin: 20px auto;
+    width:89%;
+    display:grid;
+    grid-gap:4px;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 1%;
+    
+}
+#cont2>div:hover{
+    transform: scale(1.07);
+    transition: .4s;
+    background-color: rgb(226, 233, 167);
+}
 #cont>div{
     width:50%;
     padding: 7%;
     border:1px solid;
     margin-left: 16%;
     
+}
+#cont2>div{
+    width:50%;
+    padding: 7%;
+    border:1px solid;
+    margin-left: 16%;
 }
 #title{
     margin-top:20%;
@@ -156,6 +182,19 @@
     flex-direction: column;
     justify-content: flex-end;
 }
+#cont2>div>div:nth-child(2){
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#ay-home:hover{
+    font-size: x-large;
+    background-color: black;
+    color: blanchedalmond;
+    transition: .7s;
+}
+
 
 
 </style>
@@ -287,13 +326,18 @@
         </div>
     </div>
     <!--amits code start from here cheers-->
+    <div style = "margin: -100px 0% 0% 5% ;position: fixed;"><span id = "ay-home"  >Home</span></div>
     <div id = "title">
-        <h2>WISHLIST ITEMS</h2>
-        <h3 id = "head" style ="text-align: right;padding-right: 5%;">Go to Cart</h3>
+       
+        <h3 id = "head" style ="text-align: right;padding-right: 5%;"></h3>
         <button id = "clear">RESET</button>
         
     </div>
-        <div id = "cont" >
+    <span id ="wishtag" style="color:rgba(152, 161, 163, 0.925); margin:12px 0% 0% 8%; padding: 4% ;"></span>
+    <div id = "cont" >
+    </div>
+    <div id = "cont2">
+        <span id="bagtag" style="color:rgba(152, 161, 163, 0.925); margin:12px 0% 0% 8%; padding: 4% ;"></span>
     </div>
 
 
@@ -304,20 +348,29 @@
         }
         var wishData = JSON.parse(localStorage.getItem("wishlist"))
 
+        if(localStorage.getItem("bag") == null){
+            localStorage.setItem("bag",JSON.stringify([]))
+        }
+        var bag = JSON.parse(localStorage.getItem("bag"))
+
        
 
         var cont = document.getElementById("cont")
-        var gotocart  = document.getElementById("head")
-        gotocart.addEventListener("click",tocart)
+        var cont2 = document.getElementById("cont2")
+        
+       
 
         var nothing = document.createElement("h1")
-        nothing.textContent ="YOU HAVE NOTHING IN THE WISHLIST PLEASE ADD SOMETHING"
+        nothing.textContent ="YOU HAVE NOTHING IN CART PLEASE ADD SOMETHING"
         nothing.style.color = "red"
 
-        if(wishData.length == 0){
+        var c = 0;
+        var b = 0; 
+
+        if( (wishData.length == 0) && ( bag.length == 0 )){
             cont.append(nothing)      
         }else{
-
+    /*wishlist items functions start frm here*/
       wishData.forEach(function(product){
         var div1 = document.createElement("div")
         var div2 = document.createElement("div")
@@ -328,7 +381,7 @@
 
 
         var btn = document.createElement("button")
-        btn.innerText = "Add To Cart"
+        btn.innerText = "remove item"
     
         
         
@@ -340,12 +393,23 @@
        
 
        var name = document.createElement("h3")
-       name = product.name
+       name = product.name 
+
+        
 
        var price = document.createElement("h4") 
-       price = "₹ "+product.price
+       price = "₹ "+product.price + " (whishListed)"
 
-       
+       var wishtag = document.getElementById("wishtag")
+       var tag = document.createElement("h4")
+        c++
+        if(c<2){
+            tag.textContent = "This is Wishlist items:--" 
+            tag.style.marginLeft = "9%";
+        }
+        wishtag.append(tag)
+
+
         div1.style.height = "150px"
         div1.append(img)
        
@@ -365,7 +429,71 @@
        div_block.append(div1,div2)
        cont.append(div_block)
       })
+    /*wish list items function ends at here*/
+
+    /*bag items function start frm here*/
+      bag.forEach(function(pro){
+        var div1 = document.createElement("div")
+        var div2 = document.createElement("div")
+        var div3 = document.createElement("div")
+        var div4 = document.createElement("div")
+        var div5 = document.createElement("div")
+        div5.style.verticalAlign = "bottom";
+
+
+        var btn = document.createElement("button")
+        btn.innerText = "remove item"
+    
+        
+        
+        var div_block = document.createElement("div")
+
+       var img = document.createElement("img")
+       img.src = pro.img
+       img.style.width = "100%";
+       
+
+       var name = document.createElement("h3")
+       name = pro.name 
+
+        
+
+       var price = document.createElement("h4") 
+       price = "₹ "+pro.price +" (cart items)"
+
+       
+
+        div1.style.height = "150px"
+        div1.append(img)
+
+        var bagtag = document.getElementById("bagtag")
+       var tag = document.createElement("h4")
+        b++
+        if(b<2){
+            tag.textContent = "This is cart items:---" 
+            tag.style.marginLeft = "9%";
+        }
+        bagtag.append(tag)
+       
+       
+       
+       div3.append(name)
+       div4.append(price)
+
+       div5.append(btn)
+       
+       div2.append(div3,div4,div5)
+      
+
+       
+       div2.style.height = "120px"
+       
+       div_block.append(div1,div2)
+       cont2.append(div_block)
+      })
+      /*bag item function ends here*/
     }
+
       
 
       function tocart(){
@@ -375,12 +503,23 @@
       var reset = document.getElementById("clear")
       reset.addEventListener("click",clear)
 
+      var ay_home = document.getElementById("ay-home")
+      ay_home.addEventListener("click",redirect2H)
+
       function clear(){
          wishData = []
+         bag = []
          localStorage.setItem("wishlist",JSON.stringify(wishData));
+         localStorage.setItem("bag",JSON.stringify(bag));
          location.reload()
       }
-       
+       function redirect2H(){
+           window.location.href = "home.html"
+       }
+
+
+
+
 
     </script>
 </body>
