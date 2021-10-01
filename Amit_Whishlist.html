@@ -193,6 +193,7 @@
     background-color: black;
     color: blanchedalmond;
     transition: .7s;
+    cursor: pointer;
 }
 #checkout:hover{
     cursor:pointer;
@@ -333,7 +334,7 @@
     <!--amits code start from here cheers-->
     <div>
         <div  style = "margin: -100px 0% 0% 5% ;position: fixed;"><span id = "ay-home"  >Home</span></div>
-        <div style="margin: -70px 0% 0% 5% ;position: fixed; right: 10%;"><span>Total price :<span id = "total"></span></span><br>
+        <div style="margin: -70px 0% 0% 5% ;position: fixed; right: 10%;"><span>Total cart price :<span id = "total"></span></span><br>
             <!--here is checkout button-->
             <span id ="checkout">CHECKOUT</span>
         </div>
@@ -413,7 +414,7 @@
        price = "₹ "+product.price + " (whishListed)"
 
        
-       sum = sum + product.price
+       
        
 
        var wishtag = document.getElementById("wishtag")
