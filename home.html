@@ -304,7 +304,7 @@ background-color: black;
             <div id= "gs_wishlist_value" style="margin-top: -100%; text-align: center;"></div>
         </div>
         <div id = "gs_cart">
-            <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/body-shop-icons-thick_bag.png"/>
+            <img id = "ay-wish2" src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/body-shop-icons-thick_bag.png"/>
             <div id="gsbagvalue"></div>
         </div>
     </div>
@@ -784,10 +784,15 @@ background-color: black;
       window.location.href="cat2.html"
     }
     var img = document.getElementById("ay-wish")
+    var img2 = document.getElementById("ay-wish2")
+
     var abt = document.getElementById("ay-about")
+    
 
     abt.addEventListener("click",about_section)
     img.addEventListener("click",ay_wishlist)
+    img2.addEventListener("click",ay_wishlist)
+
     var anchor = document.createElement("a")
 
     function ay_wishlist(){
