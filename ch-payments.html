@@ -315,6 +315,7 @@ function validation(){
     }, 3000);
     function validate(){
     if(cardotp.value == random){
+        localStorage.setItem("bag",JSON.stringify([]));
         window.location.href = "ch-thankyou.html"
     }else{
         alert("Wrong OTP")
@@ -340,17 +341,17 @@ itemcount.textContent = bag.length;
 
 let applypromocode = document.getElementById("applypromocode");
 applypromocode.addEventListener("click", promoapply)
- 
+var flag = 0;
  function promoapply(){
 let promocodevalue = document.getElementById("promocodevalue").value;
-flag = 0;
-if(promocodevalue == "masai30"){
+if(promocodevalue == "masai30" && flag == 0){
     discount = Math.floor(sum*.30);
     totaldiscount.textContent ="₹"+ discount;
     cart_total.textContent = "₹"+ (sum - discount);
     flag++
+    alert("Gift card code Applied");
 }else{
-    alert("Invalid Gift Card Code")
+    alert("Invalid Gift Card Code/ Already used Gift card code")
 }
  }
 </script>
