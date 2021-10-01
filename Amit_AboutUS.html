@@ -76,7 +76,7 @@
   text-decoration: none;
   display: block;
 }
-.gs_dropdown-content a:hover {color: #c7c1c1}
+.gs_dropdown-content a:hover {color: #c7c1c1;}
 .gs_dropdown:hover .gs_dropdown-content {
   display: block;
 }
@@ -146,6 +146,7 @@
 .discover:hover{
     background-color:#ECEFF1;
     transition: .6s;
+    font-size: large;
 }
 .discover_new{
     border:1px solid grey;
@@ -157,6 +158,7 @@
 .discover_new:hover{
     background-color: #E0E0E0;
     transition: .6s;
+    font-size: x-large;
 }
 
 .bott{
@@ -204,6 +206,13 @@ input{
 }
 .last>div:nth-child(2){
     padding:1%;
+}
+#ay-home:hover{
+    background-color: rgb(7, 1, 15);
+    transition: .4s;
+    color:white;
+    font-size: xx-large;
+    cursor: pointer;
 }
 
 
@@ -265,7 +274,7 @@ input{
                 <div class="gs_dropdown">
                     <button class="gs_dropbtn">BODY</button>
                     <div class="gs_dropdown-content">
-                      <a href="cat2.html">Body Care</a>
+                      <a href="#">Link 1</a>
                       <a href="#">Link 2</a>
                       <a href="#">Link 3</a>
                     </div>
@@ -321,7 +330,7 @@ input{
                 <div class="gs_dropdown">
                     <button class="gs_dropbtn">ABOUT US</button>
                     <div class="gs_dropdown-content">
-                      <a href="Amit_AboutUs.html">Know About Us</a>
+                      <a href="#">Link 1</a>
                       <a href="#">Link 2</a>
                       <a href="#">Link 3</a>
                     </div>
@@ -339,7 +348,7 @@ input{
     </div>
    <!---amit code start here-->
     <div id = "ay" class = "ay-cont">
-        <div>Home | About Us</div>
+        <div><span id = "ay-home">Home</span> | About Us</div>
         <div >
             <div id ="big"></div>
             <h1 id="head">ABOUT US</h1>
@@ -500,6 +509,8 @@ input{
         
 
         img.src = data[0].img
+       
+        
 
         img1.src  = block_img[0]
         img2.src  = block_img[1]
@@ -509,6 +520,7 @@ input{
         img6.src  = block_img[5]
         img7.src  = block_img[6]
 
+        img.style = "width:100%";
         img1.style="width:100%"
         img2.style="width:100%"
         img3.style="width:100%"
@@ -529,8 +541,9 @@ input{
         var bottom1 = document.getElementById("bottom1")
         var bottom2 = document.getElementById("bottom2")
         var bottom3 = document.getElementById("bottom3")
+        var ay_home = document.getElementById("ay-home")
 
-
+            
 
         head.textContent = "ABOUT US"
         div.append(img)
@@ -542,6 +555,10 @@ input{
         bottom2.append(img6)
         bottom3.append(img7)
 
+        ay_home.addEventListener("click",home)
+        function home(){
+            window.location.href = "home.html"
+        }
     </script>
 </body>
 </html>
