@@ -144,7 +144,7 @@
                         </tr>
                         <tr>
                             <td>Gift Card Code</td>
-                            <td><input type="text" id="inside_change";placeholder="ENTER GIFT CARD CODE"></td>
+                            <td><input type="text" id="promocodevalue"placeholder="ENTER GIFT CARD CODE"></td>
                             <td><button id="applypromocode">Apply</button></td>
                         </tr>
                     </table>
@@ -208,24 +208,24 @@
             <input type="radio" name="pc" id="myCheck3" onclick="dualFunction()">
             <label for="mycheck" class="Process">Cash on delivery</label>
             <div id="text3">
+                <button id="proceed_btn"; style=" width:25%; height: 60px; background-color: green;color: white">CONFIRM</button>
             </div>
-
+            
 
 
         </div>
 
         <div id="ch-sum">
             <div class="ch-head1">ORDER SUMMARY</div>
-            <div class="inner-sub">Cart Subtotal</div>
+            <div class="inner-sub">Cart Subtotal<span id ="subtotal" style="color: red; float: right;"></span></div>
             <div class="sub-div"></div>
-            <div class="inner-sub">Total discount</div>
+            <div class="inner-sub">Total discount<span id ="totaldiscount" style="color: green; float: right;"></span></div>
             <div class="sub-div"></div>
-            <div class="inner-sub">Shipping</div>
+            <div class="inner-sub">Shipping<span style="color: green; float: right;">Free</span></div>
             <div class="sub-div"></div>
-            <div class="inner-sub">Order Total(incl. GST)</div>
+            <div class="inner-sub">Order Total(incl. GST)<span id ="cart_total" style="color: black; float: right;"></span></div>
             <div class="ch-head1">
-                <div>1 Product in Cart</div>
-                <div style="margin-left:45%;">Edit Bag</div>
+                <div><span id= "itemcount"></span> Product in Cart</div>
             </div>
             <div class="sub-div"></div>
             <div class="inner-sub"></div>
@@ -281,7 +281,7 @@ function myFunction() {
      text3.style.display = "none";
   } 
 }
-
+let bag = JSON.parse(localStorage.getItem("bag"));
 function functionAgain() {
   var checkBox2 = document.getElementById("myCheck2");
   if (checkBox2.checked == true){
@@ -308,8 +308,49 @@ function validation(){
     let random = Math.floor(Math.random()*9999.99);
     proceed_btn_card.style.display = "none";
     setTimeout(() => {
+        alert("Your otp is: " + random );
+        otprow.style.display= "block";
         confirm_otp.style.display ="block";
         confirm_otp.addEventListener("click", validate);
     }, 3000);
+    function validate(){
+    if(cardotp.value == random){
+        window.location.href = "ch-thankyou.html"
+    }else{
+        alert("Wrong OTP")
+        location.reload();
+    }
 }
+}
+// adding values to right division
+var sum = 0;
+ let discount = 0;
+ for(var i = 0; i < bag.length; i++){
+     sum += bag[i].price
+ }
+
+ let subtotal = document.getElementById("subtotal");
+ subtotal.textContent ="₹"+ sum;
+ let totaldiscount = document.getElementById("totaldiscount");
+ totaldiscount.textContent ="₹"+ discount;
+ let cart_total = document.getElementById("cart_total")
+cart_total.textContent = "₹"+ (sum - discount);
+let itemcount = document.getElementById("itemcount")
+itemcount.textContent = bag.length;
+
+let applypromocode = document.getElementById("applypromocode");
+applypromocode.addEventListener("click", promoapply)
+ 
+ function promoapply(){
+let promocodevalue = document.getElementById("promocodevalue").value;
+flag = 0;
+if(promocodevalue == "masai30"){
+    discount = Math.floor(sum*.30);
+    totaldiscount.textContent ="₹"+ discount;
+    cart_total.textContent = "₹"+ (sum - discount);
+    flag++
+}else{
+    alert("Invalid Gift Card Code")
+}
+ }
 </script>
