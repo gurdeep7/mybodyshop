@@ -379,12 +379,18 @@ background-color: black;
             </div>
         </div>
         <div class="gs_dropdown">
+<<<<<<< Updated upstream
             <button class="gs_dropbtn">ABOUT US</button>
             <div class="gs_dropdown-content">
+=======
+          <!--added id (ay-about) for redirection to about us page-->
+            <button class="gs_dropbtn"><span id ="ay-about">ABOUT US</span></button>
+            <!-- <div class="gs_dropdown-content">
+>>>>>>> Stashed changes
               <a href="#">Link 1</a>
               <a href="#">Link 2</a>
               <a href="#">Link 3</a>
-            </div>
+            </div> -->
         </div>
         <div class="gs_search-container" style="float: right;">
               <input type="text" style="height: 30px; vertical-align:top" placeholder="Search.." name="search">
@@ -633,10 +639,10 @@ background-color: black;
 
             let item_visit_btn = document.createElement("button");
             item_visit_btn.setAttribute("class","gs_add_bag_btn")
-            item_visit_btn.onclick = function(){
-              addtobag(product);
-            }
-            item_visit_btn.innerText = "ADD TO BAG";
+            // item_visit_btn.onclick = function(){
+            //   addtobag(product);
+            // }
+            item_visit_btn.innerText = "VIEW";
 
 
             div.append(img, name, price, item_visit_btn);
