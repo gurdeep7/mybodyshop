@@ -66,10 +66,15 @@ phn.oninput=function phnCheck(){
          document.getElementById("phn-validation").style.color="red";
          document.getElementById("number-varification").style.display="none";
     }else if(phn.value.length==10){
-       document.getElementById("phn-validation").textContent="number is valid";
+       document.getElementById("phn-validation").textContent="Phone number is valid";
        document.getElementById("phn-validation").style.color="green";
        document.getElementById("phn-validation").style.margin="0";
         document.getElementById("number-varification").style.marginTop="0";
+    }else if(phn.value.length>10){
+        document.getElementById("phn-validation").textContent="Minimum length of this field should be 10 digits. Only numbers allowed and mobile number should start with 7 or 8 or 9.";
+
+         document.getElementById("phn-validation").style.color="red";
+         document.getElementById("number-varification").style.display="none";
     }
     else{
         document.getElementById("phn-validation").textContent="";
@@ -102,24 +107,13 @@ let click_verify=document.getElementById("number-varification");
 let wrong_otp=document.getElementById("wrong-otp");
 let num=0;
 click_verify.onclick=function signup(){
-    let user_info=JSON.parse(localStorage.getItem("user_data"));
+    
 
-   let user={
-        email: email.value,
-        password:create_password.value,
-        first_name:first_name.value,
-        last_name:last_name.value,
-        date_of_birth:date_of_birth.value,
-        gender:gender.value,
-        pincode:pincode.value,
-        phone:phone.value
-    }
-
-    user_info.push(user);
+    
     num=Math.floor(Math.random()*2222);
     console.log(num);
 
-    localStorage.setItem("user_data",JSON.stringify(user_info));
+    
 
     click_verify.style.display="none";
     enter_otp.style.display="block";
@@ -129,6 +123,24 @@ click_verify.onclick=function signup(){
 
 validate.onclick=function check(){
     if(num==otp.value){
+        let user_info=JSON.parse(localStorage.getItem("user_data"));
+
+     let user={
+        email: email.value,
+        password:create_password.value,
+        first_name:first_name.value,
+        last_name:last_name.value,
+        date_of_birth:date_of_birth.value,
+        gender:gender.value,
+        pincode:pincode.value,
+        phone:phone.value
+     }
+     user_info.push(user);
+     localStorage.setItem("user_data",JSON.stringify(user_info));
+
+        let old_password=JSON.parse(localStorage.getItem("existing_password"));
+        old_password.push(create_password.value);
+        localStorage.setItem("existing_password",JSON.stringify(old_password));
         location.href="login.html";
     }else{
        wrong_otp.style.display="block";
