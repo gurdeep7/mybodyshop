@@ -192,11 +192,13 @@
        #ch-filter{
          width: 20%;
          margin-right: 10%;
-         height:400px;
-         background-color: lightcoral;
+         padding: 1%;
+         text-align: center;
+         height:150px;
+         background-color: rgb(204, 201, 201);
        }
        #ch-cat3Items{
-         width: 65%;
+         width: 73%;
          margin-right: 1%;
          display: grid;
          text-align: center;
@@ -299,37 +301,37 @@
        <div id="gs_dropdown_navbar">
            <button id="gs_btn_essential" onclick="">Daily Essential</button>
            <div class="gs_dropdown">
-               <button class="gs_dropbtn">TRENDING</button>
-               <div class="gs_dropdown-content">
-                 <a href="#">Link 1</a>
-                 <a href="#">Link 2</a>
-                 <a href="#">Link 3</a>
-               </div>
-               </div>
-               <div class="gs_dropdown">
-                   <button class="gs_dropbtn">SKIN CARE</button>
-                   <div class="gs_dropdown-content">
-                     <a href="cat1.html">Skin Care</a>
-                     <a href="#">Link 2</a>
-                     <a href="#">Link 3</a>
-                   </div>
-               </div>
-               <div class="gs_dropdown">
-                   <button class="gs_dropbtn">BODY</button>
-                   <div class="gs_dropdown-content">
-                     <a href="cat2.html">Body care</a>
-                     <a href="#">Link 2</a>
-                     <a href="#">Link 3</a>
-                   </div>
-               </div>
-               <div class="gs_dropdown">
-                   <button class="gs_dropbtn">HAIR</button>
-                   <div class="gs_dropdown-content">
-                     <a href="#">Link 1</a>
-                     <a href="#">Link 2</a>
-                     <a href="#">Link 3</a>
-                   </div>
-               </div>
+            <button class="gs_dropbtn">TRENDING</button>
+            <div class="gs_dropdown-content">
+              <a href="new in.html">New In</a>
+              <a href="top Rated.html">Top Rated</a>
+              <a href="#">Vegan</a>
+            </div>
+            </div>
+            <div class="gs_dropdown">
+                <button class="gs_dropbtn">SKIN CARE</button>
+                <div class="gs_dropdown-content">
+                  <a href="cat1.html">Sensitive Skin Care</a>
+                  <a href="Eye Care.html">Eye Care</a>
+                  <a href="moisturisers">Moisturisers</a>
+                </div>
+            </div>
+            <div class="gs_dropdown">
+                <button class="gs_dropbtn">BODY</button>
+                <div class="gs_dropdown-content">
+                  <a href="cat2.html">Body Care</a>
+                  <a href="Body Butters.html">Body Butters</a>
+                  <a href="Soaps.html">Soaps</a>
+                </div>
+            </div>
+            <div class="gs_dropdown">
+                <button class="gs_dropbtn">HAIR</button>
+                <div class="gs_dropdown-content">
+                  <a href="Shampoo.html">Shampoos</a>
+                  <a href="Hair styling.html">Hair styling</a>
+                  <a href="Conditioners.html">Conditioners</a>
+                </div>
+            </div>
                <div class="gs_dropdown">
                    <button class="gs_dropbtn">MAKE UP</button>
                    <div class="gs_dropdown-content">
@@ -379,7 +381,7 @@
                    </div>
                </div>
                <div class="gs_search-container" style="float: right;">
-                     <input type="text" style="height: 30px; vertical-align:top" placeholder="Search.." name="search">
+                     <input type="text" style="height: 30px;width: 140px; vertical-align:top" placeholder="Search.." name="search">
                      <button class="material-icons" style="height: 35px;">
                        search</button>
                  </div>
@@ -410,8 +412,10 @@
          <div id="ch-filter">
            <span style="font-size: 20px;">Filter By</span>
            <br>
+           <div style="width:97%; border:1px solid grey; background-color: grey; margin:1%; margin-bottom: 5%"></div>
+
            <select id="gs_filter">
-             <option value="select" >Select</option>
+             <option value="select" >Price</option>
              <option value="lessthan500">Price less than ₹1000</option>
              <option value="morethan500">Price more than ₹1000</option>
            </select>
@@ -526,7 +530,7 @@
            
              },
              {
-               name : "Lip Juicer Acai Blueberry & Dragonfruit",
+               name : "Lip Juicer Acai Blueberry",
                price :695.00,
                img : "https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1077664_1_lip_juicer_purple_11g_brnz_innpdps374_1_1.jpg",
            
@@ -563,9 +567,12 @@
                  name.textContent = cat3.name;
        
                  let price = document.createElement("p");
+                 price.style.fontWeight="bold";
                  price.textContent ="₹"+cat3.price;
        
                  let item_visit_btn = document.createElement("button");
+                 item_visit_btn.style.fontWeight="bold";
+                 item_visit_btn.style.width="40%";
                    item_visit_btn.setAttribute("class","gs_add_bag_btn")
                    item_visit_btn.onclick = function(){
                      addtobag(cat3);
