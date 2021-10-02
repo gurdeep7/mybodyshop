@@ -261,7 +261,7 @@ background-color: black;
 }
 .last>div:nth-child(2) > img{
    padding:1%;
-}s
+}
         #newDiv{
           text-align: center;
           font-size: 25px;
@@ -435,12 +435,12 @@ background-color: black;
       </div>
       <!-- grid categories start -->
       <div id ="gs_grid_categories">
-        <img onclick="category2()" src="images/gs_grid_bodycare.jpg"/>
-        <img src="images/gs_grid_cruelity.jpg"/>
-        <img src="images/gs_grid_sheetmask.jpg"/>
-        <img src="images/gs_grid_travel.jpg"/>
-        <img src="images/gs_grid_makeup.jpg"/>
-        <img src="images/gs_grid_callnow.jpg"/>
+        <a href="cat1.html"><img src="images/gs_grid_bodycare.jpg"/></a>
+        <a href = "cat3.html"><img src="images/gs_grid_cruelity.jpg"/></a>
+        <a href = "cat5.html"><img src="images/gs_grid_sheetmask.jpg"/></a>
+        <a href = "cat4.html"><img src="images/gs_grid_travel.jpg"/></a>
+        <a href = "cat1.html"><img src="images/gs_grid_makeup.jpg"/></a>
+        <a href = "AboutUs.html"><img src="images/gs_grid_callnow.jpg"/></a>
       </div>
       <!-- grid categories end -->
       <h2 style="text-align: center;"><u>NEW IN</u></h2>
@@ -649,10 +649,10 @@ background-color: black;
 
             let item_visit_btn = document.createElement("button");
             item_visit_btn.setAttribute("class","gs_add_bag_btn")
-            item_visit_btn.onclick = function(){
-              addtobag(product);
-            }
-            item_visit_btn.innerText = "ADD TO BAG";
+            // item_visit_btn.onclick = function(){
+            //   addtobag(product);
+            // }
+            item_visit_btn.innerText = "VIEW";
 
 
             div.append(img, name, price, item_visit_btn);
