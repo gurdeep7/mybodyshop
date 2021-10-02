@@ -115,6 +115,12 @@
             background-color: white;
             padding: 1%;
         }
+            /* removing arrows from input field */
+    input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
     </style>
 </head>
@@ -126,7 +132,7 @@
 
     <h1 style="text-align: center;">CHECKOUT</h1>
 
-    <div id="text1" style="text-align: center; background-color: aqua;">
+    <div id="text1" style="text-align: center;">
         <p style="text-align: center;"><strong>DETAILS & SHIPPING METHODS</strong></p>
     </div>
 
@@ -140,7 +146,7 @@
                             <td><input type="text" id="useraddress" placeholder="Shipping Address" style="width: 300%; height: 60px;"></td>
                         </tr>
                         <tr><td>Pin Code</td>
-<td><input type="tel"  maxlength="6" minlength="6"/></td>
+<td><input id="pincode" max="999999" min="100000" type="number"/></td>
                         </tr>
                         <tr>
                             <td>Gift Card Code</td>
@@ -161,7 +167,7 @@
                     <li>Enter your Debit card/ Credit Card details</li>
                 </ul>
                 <table>
-                    <tr>
+                    <tr class ="cardData">
                         <td>
                             Enter your 16 digit card number
                         </td>
@@ -169,15 +175,15 @@
                             <input type="number" id="cardNumber"/>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class ="cardData">
                         <td>
                             Card Holder Name
                         </td>
                         <td>
-                            <input type="number" id="cardName"/>
+                            <input type="text" id="cardName"/>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class ="cardData">
                         <td>
                             Expiry Date
                         </td>
@@ -200,7 +206,7 @@
 
             <input type="radio"name="pc" id="myCheck2" onclick="functionAgain()">
             <label for="mycheck" class="Process">Paytm/Net banking</label>
-            <div id="text2">
+            <div id="text2" style="background:b;">
                 <input type="checkbox"id="check2" name=check >
                 <button id="proceed_btn"; style=" width:25%; height: 60px; background-color: green;color: white">PROCEED</button>
             </div>
@@ -208,7 +214,7 @@
             <input type="radio" name="pc" id="myCheck3" onclick="dualFunction()">
             <label for="mycheck" class="Process">Cash on delivery</label>
             <div id="text3">
-                <button id="proceed_btn"; onclick="window.location.href='ch-thankyou.html'" style=" width:25%; height: 60px; background-color: green;color: white">CONFIRM</button>
+                <button id="proceed_btn"; onclick="window.location.href='thankyou.html'" style=" width:25%; height: 60px; background-color: green;color: white">CONFIRM</button>
             </div>
             
 
@@ -263,10 +269,10 @@ let proceed_btn = document.getElementById("proceed_btn");
 var checkBox = document.getElementById("myCheck");
   var text = document.getElementById("text");
   var text2 = document.getElementById("text2");
-  var cardotp = document.getElementById("cardotp");
   var otprow = document.getElementById("otprow");
   var proceed_btn_card = document.getElementById("proceed_btn_card");
     var confirm_otp = document.getElementById("confirm_otp");
+var cardData = document.querySelectorAll(".cardData");
   text.style.display ="none";
   text2.style.display = "none";
   text3.style.display = "none";
@@ -276,6 +282,16 @@ var checkBox = document.getElementById("myCheck");
 function myFunction() {
   console.log("hello");
   if (checkBox.checked == true){
+    if(checkaddress()== false){
+          alert("Please eneter address more than 10 Characters");
+          checkBox.checked = false;
+          return;
+      }
+    if(checkpincode()== false){
+          alert("Please enter 6 digit pincode");
+          checkBox.checked = false;
+          return;
+      }
     text.style.display = "block";
     text2.style.display = "none";
      text3.style.display = "none";
@@ -295,6 +311,17 @@ function dualFunction() {
   var checkBox3 = document.getElementById("myCheck3");
   var text3 = document.getElementById("text3");
   if (checkBox3.checked == true){
+    if(checkaddress()== false){
+          alert("Please eneter address more than 10 Characters");
+          checkBox3.checked = false;
+          return;
+      }
+      if(checkpincode()== false){
+          alert("Please enter 6 digit pincode");
+          checkBox3.checked = false;
+          return;
+      }
+     
     text3.style.display = "block";
     text.style.display = "none";
      text2.style.display = "none";
@@ -305,21 +332,30 @@ function dualFunction() {
 
 
 function validation(){
+    if( checkcardNumber() == false){
+        alert("Enter 16 digit card Number")
+        return;
+    }
     let random = Math.floor(Math.random()*9999.99);
     proceed_btn_card.style.display = "none";
+    otprow.style.display= "block";
+    confirm_otp.style.display ="block";
+    for(let i = 0; i < cardData.length; i++){
+        cardData[i].style.display = "none";
+        
+    }
     setTimeout(() => {
         alert("Your otp is: " + random );
-        otprow.style.display= "block";
-        confirm_otp.style.display ="block";
         confirm_otp.addEventListener("click", validate);
     }, 3000);
     function validate(){
-    if(cardotp.value == random){
+        var cardotp = document.getElementById("cardotp").value;
+        console.log(cardotp,random)
+    if(cardotp == random){
         localStorage.setItem("bag",JSON.stringify([]));
-        window.location.href = "ch-thankyou.html"
+        window.location.href = "thankyou.html"
     }else{
-        alert("Wrong OTP")
-        location.reload();
+        alert("Wrong OTP, OTP is "+ random)
     }
 }
 }
@@ -353,5 +389,31 @@ if(promocodevalue == "masai30" && flag == 0){
 }else{
     alert("Invalid Gift Card Code/ Already used Gift card code")
 }
+ }
+ function  checkpincode(){
+    var pincode = document.getElementById("pincode").value
+
+    if(pincode.length == 6){
+        return true;
+    }else{
+        return false;
+    }
+ }
+ function checkaddress(){
+     var useraddress = document.getElementById("useraddress").value
+     if(useraddress.length < 11){
+         return false;
+     }else {
+         return true;
+     }
+ }
+ 
+ function checkcardNumber(){
+     var cardNumber = document.getElementById("cardNumber").value
+     if(cardNumber.length == 16){
+         return true;
+     }else{
+         return false;
+     }
  }
 </script>
