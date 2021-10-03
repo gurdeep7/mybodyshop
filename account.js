@@ -30,6 +30,7 @@ next_btn.onclick=function (){
 
     if(flag){
 
+        
         location.href="login.html";
 
     }else{
@@ -37,12 +38,6 @@ next_btn.onclick=function (){
         localStorage.setItem("emails",JSON.stringify(emails_id));
         location.href="registration_page.html";
 
-    }
 
-    
-     
-
-    
-
-            
+    }           
 }

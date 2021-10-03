@@ -145,4 +145,5 @@ validate.onclick=function check(){
     }else{
        wrong_otp.style.display="block";
     }
+    
 }
