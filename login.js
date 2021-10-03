@@ -7,7 +7,7 @@ signin_btn.onclick=function rediract(){
     if(document.getElementById("password").value==saved_password[saved_password.length-1]){
         location.href="payment.html";
     }else{
-             alert("Wrong Password");
+       alert("Wrong Password");
     }
     
 }
