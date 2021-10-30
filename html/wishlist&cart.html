@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/wishlist&cart.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id = "gs_main">
+        <div id= "gs_mainflex"> 
+        <div id ="gs_mainleft">
+            <div id = "gs_stores">
+                <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/icons/stores.png"/>
+                <span class="gs_maintxt">Stores</span>
+            </div>
+            <div id = "gs_bodyclub" style="box-sizing: border-box; vertical-align: top;">
+                <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/icons/loyality-card.png"/>
+                <span class="gs_maintxt"> Love Your Body™️ Club</span>
+            </div>
+            <div id = "gs_bodyclub">
+            <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/truck1.jpg"/>
+            <span class="gs_maintxt">Track Order</span>
+        </div>
+            </div>
+            <div id ="gs_mainlog" style="width: 30%; margin-left: 10%;" >
+                <img style="width: 100%;" src ="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/logo.svg"/>
+            </div>
+            <div id ="gs_mainright">
+              <div id = "gs_user">
+                <a href="account.html"><img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/myaccount.png"/></a>
+            </div>
+            <div id = "gs_wishlist" style="vertical-align: top;margin-top: 10px;">
+               <a href="wishlist&cart.html"> <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/wish-list.png"/></a>
+                <div id= "gs_wishlist_value" style="margin-top: -100%; text-align: center;"></div>
+            </div>
+            <div id = "gs_cart">
+              <a href="wishlist&cart.html"> <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/body-shop-icons-thick_bag.png"/></a>
+                <div id="gsbagvalue"></div>
+                </div>
+            </div>
+        </div>
+        <div id="gs_dropdown_navbar">
+            <button id="gs_btn_essential" onclick="">Daily Essential</button>
+            <div class="gs_dropdown">
+              <button class="gs_dropbtn">TRENDING</button>
+              <div class="gs_dropdown-content">
+                <a href="new in.html">New In</a>
+                <a href="top Rated.html">Top Rated</a>
+                <a href="#">Vegan</a>
+              </div>
+              </div>
+              <div class="gs_dropdown">
+                  <button class="gs_dropbtn">SKIN CARE</button>
+                  <div class="gs_dropdown-content">
+                    <a href="cat1.html">Sensitive Skin Care</a>
+                    <a href="Eye Care.html">Eye Care</a>
+                    <a href="moisturisers.html">Moisturisers</a>
+                  </div>
+              </div>
+              <div class="gs_dropdown">
+                  <button class="gs_dropbtn">BODY</button>
+                  <div class="gs_dropdown-content">
+                    <a href="cat2.html">Body Care</a>
+                    <a href="Body Butters.html">Body Butters</a>
+                    <a href="Soaps.html">Soaps</a>
+                  </div>
+              </div>
+              <div class="gs_dropdown">
+                  <button class="gs_dropbtn">HAIR</button>
+                  <div class="gs_dropdown-content">
+                    <a href="Shampoo.html">Shampoos</a>
+                    <a href="Hair styling.html">Hair styling</a>
+                    <a href="Conditioners.html">Conditioners</a>
+                  </div>
+              </div>
+                <div class="gs_dropdown">
+                    <button class="gs_dropbtn">MAKE UP</button>
+                   
+                </div>
+                <div class="gs_dropdown">
+                    <button class="gs_dropbtn">FRAGRANCE</button>
+                   
+                </div>
+                <div class="gs_dropdown">
+                    <button class="gs_dropbtn">GIFTS</button>
+                   
+                </div>
+                <div class="gs_dropdown">
+                    <button class="gs_dropbtn">RANGE</button>
+                   
+                </div>
+                <div class="gs_dropdown">
+                    <button class="gs_dropbtn">TIPS & ADVICE</button>
+                   
+                </div>
+                <div class="gs_dropdown">
+                    <button class="gs_dropbtn">ABOUT US</button>
+                    <div class="gs_dropdown-content">
+                      <a href="AboutUs.html">Know About uS</a>
+                     
+                    </div>
+                </div>
+                <div class="gs_search-container" style="float: right;">
+                      <input type="text" style="height: 30px;width:140px; vertical-align:top" placeholder="Search.." name="search">
+                      <button class="material-icons" style="height: 35px;">
+                        search</button>
+                  </div>
+            </div>
+            <div id= "gs_offer">
+                FREE STRAWBERRY BODY BUTTER ON ORDER ABOVE RS 3999*- <a href = "#" style="color: black;">SHOP NOW</a> |<a href = "#" style="color: black;"> T&C APPLY</a>
+            </div>
+          </div>
+        </div>
+    <!--amits code start from here cheers-->
+    <div>
+        <div  style = "margin: -100px 0% 0% 5% ;position: fixed;"><span id = "ay-home"  >Home</span></div>
+        <div style="margin: -70px 0% 0% 5% ;position: fixed; right: 10%;"><span>Total price :<span id = "total"></span></span><br>
+            <!--here is checkout button-->
+            <span id ="checkout">PLACE ORDER</span>
+        </div>
+    </div>
+    <div id = "title">
+       
+        <h3 id = "head" style ="text-align: right;padding-right: 5%;"></h3>
+        <button id = "clear">RESET</button>
+        
+    </div>
+    <span id ="wishtag" style="color:rgba(152, 161, 163, 0.925); margin:12px 0% 0% 8%; padding: 4% ;"></span>
+    <div id = "cont" >
+    </div>
+    <div id = "cont2">
+        <span id="bagtag" style="color:rgba(152, 161, 163, 0.925); margin:12px 0% 0% 8%; padding: 4% ;"></span>
+    </div>
+</body>
+</html>
+<script src="../scripts/wishlist&cart.js"></script>

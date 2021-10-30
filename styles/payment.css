@@ -1,0 +1,117 @@
+
+
+#ch-main-title{
+    display: flex; flex-direction: row;
+    background-color: black;
+    margin : -0.5%;
+
+}
+
+#text1{
+    
+    text-align: center;
+
+}
+#ch-add{
+    display:flex; flex-direction: row;
+}
+#ch-details{
+    width: 75%;
+    margin: 2%;
+    background-color: rgb(238, 237, 237);
+    display:flex; flex-direction: column;
+}
+.gifts{
+    background-color: rgb(168, 168, 168);
+    text-align: center;
+    font-size: X-large;
+    margin: 2%;
+}
+#myCheck{
+    margin-left:2%;
+    flex-direction: row;
+    
+}
+#text{
+    
+    width: 73%;
+    margin-left: 2%;
+}
+#check{
+    margin-top: 20%;;
+}
+#ch-hidebox{
+    margin-top:20%;
+    margin-left:3%;
+}
+#proceed_btn{
+    margin-left: 10%;
+    padding:2%;
+}#myCheck2{
+    margin-left:2%;
+    flex-direction: row;
+    
+}
+#myCheck3{
+    margin-left:2%;
+    flex-direction: row;
+    
+}
+#check2{
+    margin-top: 10%;;
+}
+#check3{
+    margin-top: 10%;;
+}
+#second {
+    margin-left: 2%;;
+}
+#third{
+    margin-left:2%;
+}
+#ch-sum{
+    width: 30%;
+    margin:2%;
+    background-color: rgb(209, 209, 209);
+    height: 200px;
+    border: 2px solid grey;
+}
+.Process{
+    margin-bottom: 5%;
+    margin-left:2%;
+}
+#imgs{
+    margin:2%;background-color: rgb(172, 171, 171);
+    display: flex; flex-direction: row;
+}
+#imgs > div:nth-child(1){
+    margin-left:40%;
+}
+#imgs > div{
+    margin: 0.5%;
+}
+#lastimg{
+    margin-left: 33%;
+}
+.sub-div{
+    border: 1px solid grey;
+    width: 100%;
+    background-color: grey;
+}
+.ch-head1{
+    background-color: grey;
+    padding: 2%;
+    display:flex;
+    flex-direction: row;
+}
+.inner-sub{
+    background-color: white;
+    padding: 1%;
+}
+    /* removing arrows from input field */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+

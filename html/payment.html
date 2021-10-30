@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/payment.css">
+    <title>Check OUt</title>
+
+</head>
+<body>
+    <div id="ch-main-title">
+        <p style="color: white; margin-right: 25%">Back to Shop</p>
+        <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/tbs-logo-white.svg">
+    </div>
+
+    <h1 style="text-align: center;">CHECKOUT</h1>
+
+    <div id="text1" style="text-align: center;">
+        <p style="text-align: center;"><strong>DETAILS & SHIPPING METHODS</strong></p>
+    </div>
+
+    <div id="ch-add">
+
+        <div id="ch-details">
+                <div>
+                    <table>
+                        <tr>
+                            <td>Shipping Address:-</td>
+                            <td><input type="text" id="useraddress" placeholder="Shipping Address" style="width: 300%; height: 60px;"></td>
+                        </tr>
+                        <tr><td>Pin Code</td>
+<td><input id="pincode" max="999999" min="100000" type="number"/></td>
+                        </tr>
+                        <tr>
+                            <td>Gift Card Code</td>
+                            <td><input type="text" id="promocodevalue"placeholder="ENTER GIFT CARD CODE"></td>
+                            <td><button id="applypromocode">Apply</button></td>
+                        </tr>
+                    </table>
+
+                </div>
+            
+
+            <p style="margin:2%"><strong>PAYMENT METHOD:</strong></p>
+
+            <input type="radio"name="pc" id="myCheck" onclick="myFunction()">
+            <label for="mycheck" class="Process"> Pay using Credit Card / Debit Card</label>
+            <div id="text">
+                <ul>
+                    <li>Enter your Debit card/ Credit Card details</li>
+                </ul>
+                <table>
+                    <tr class ="cardData">
+                        <td>
+                            Enter your 16 digit card number
+                        </td>
+                        <td>
+                            <input type="number" id="cardNumber"/>
+                        </td>
+                    </tr>
+                    <tr class ="cardData">
+                        <td>
+                            Card Holder Name
+                        </td>
+                        <td>
+                            <input type="text" id="cardName"/>
+                        </td>
+                    </tr>
+                    <tr class ="cardData">
+                        <td>
+                            Expiry Date
+                        </td>
+                        <td>
+                            <input type="month" min="2021-11" id="cardExpiry"/>
+                        </td>
+                    </tr>
+                    <tr id="otprow">
+                    <td>
+                        Enter otp:
+                    </td>
+                    <td>
+                        <input type="number" id="cardotp"/>
+                    </td>
+                </tr>
+                </table>
+                <button id="proceed_btn_card"; style="margin-left: 50%;width:25%;height: 30px; background-color: green;color: white">PROCEED</button>
+                <button id="confirm_otp"; style="margin-left: 50%;width:25%;height: 30px; background-color: green;color: white">CONFIRM</button>
+            </div>
+
+            <input type="radio"name="pc" id="myCheck2" onclick="functionAgain()">
+            <label for="mycheck" class="Process">Paytm/Net banking</label>
+            <div id="text2" style="background:b;">
+                <input type="checkbox"id="check2" name=check >
+                <button id="proceed_btn"; style=" width:25%; height: 60px; background-color: green;color: white">PROCEED</button>
+            </div>
+
+            <input type="radio" name="pc" id="myCheck3" onclick="dualFunction()">
+            <label for="mycheck" class="Process">Cash on delivery</label>
+            <div id="text3">
+                <button id="proceed_btn"; onclick="window.location.href='thankyou.html'" style=" width:25%; height: 60px; background-color: green;color: white">CONFIRM</button>
+            </div>
+            
+
+
+        </div>
+
+        <div id="ch-sum">
+            <div class="ch-head1">ORDER SUMMARY</div>
+            <div class="inner-sub">Cart Subtotal<span id ="subtotal" style="color: red; float: right;"></span></div>
+            <div class="sub-div"></div>
+            <div class="inner-sub">Total discount<span id ="totaldiscount" style="color: green; float: right;"></span></div>
+            <div class="sub-div"></div>
+            <div class="inner-sub">Shipping<span style="color: green; float: right;">Free</span></div>
+            <div class="sub-div"></div>
+            <div class="inner-sub">Order Total(incl. GST)<span id ="cart_total" style="color: black; float: right;"></span></div>
+            <div class="ch-head1">
+                <div><span id= "itemcount"></span> Product in Cart</div>
+            </div>
+            <div class="sub-div"></div>
+            <div class="inner-sub"></div>
+        </div>
+    </div>
+
+    <div id= "imgs">
+        <div>
+            <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/checkout/secured.png">
+        </div>
+        <div>
+            <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/checkout/master-card.png">
+        </div>
+        <div>
+            <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/checkout/visa.png">
+        </div>
+        <div>
+            <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/checkout/american-express.png">
+        </div>
+    </div>
+
+    <p style="text-align: center;"><strong>© 2021 THE BODY SHOP INTERNATIONAL LIMITED</strong></p>
+    <div id="lastimg" >
+        <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/payment_icons.png">
+    </div>
+    <div class="finalPargh" style="text-align:center; margin:2%;">
+        <p>® A REGISTERED TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED™ A TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED ALL RIGHTS RESERVED.
+
+            REGISTERED OFFICE: WATERSMEAD, LITTLEHAMPTON, WEST SUSSEX, BN17 6LS, UNITED KINGDOM; REGISTERED IN ENGLAND NO. 1284170</p>
+    </div>
+</body>
+</html>
+<script src="../scripts/payment.js"></script>
