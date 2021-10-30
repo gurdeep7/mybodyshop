@@ -1,0 +1,215 @@
+
+         #gs_main{
+            width: 90%;
+            /* background-color: aqua; */
+            margin: 0% 5%;
+            position: fixed;
+            padding-top: 10px;
+            top: 0px;
+            background-color: white;
+            /* display: flex; */
+    }
+    #gs_mainflex{
+        width: 100%;
+    }
+    #gs_mainflex > div{
+        display: inline-block
+        
+    }
+    .gs_maintxt{
+        box-sizing: border-box;
+        margin-top: 0%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    #gs_mainleft > div{
+        display: inline-block;
+    }
+    #gs_mainleft{
+       vertical-align: bottom;
+      margin-top: 25px;
+    }
+    #gs_mainright{
+        float: right;   
+    }
+    #gs_mainright > div{
+        display: inline-block;
+        margin-left: 10px;
+    }
+    #gs_dropdown_navbar{
+        margin-top: 1%;
+    }
+    .gs_dropbtn {
+        width: 100%;
+        background-color: white;
+  color: black;
+  padding: 12px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  text-decoration:solid;
+  font-weight: bold;
+}
+.gs_dropdown {
+    /* width: 7%; */
+  position: relative;
+  display: inline-block;
+}
+.gs_dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.gs_dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.gs_dropdown-content a:hover {color: #c7c1c1;}
+.gs_dropdown:hover .gs_dropdown-content {
+  display: block;
+}
+.gs_dropdown:hover .gs_dropbtn {
+  text-decoration: underline;
+}
+#gs_btn_essential{
+    padding: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: white;
+  text-decoration:solid;
+    border: none;
+  color: red;
+}
+#gs_btn_essential:hover{
+    text-decoration: underline;
+}
+#gs_offer{
+    background-color: #b8cb84;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 11px;
+}
+/*amits css code begins*/
+.ay-cont{
+    padding:11%;
+    justify-content: center;
+}
+
+#head{
+    text-align: center;
+    margin: -30px;
+}
+#after-abt{
+    font-size: xx-large;
+}
+#ay>div:nth-child(3){
+    text-align: center;
+    padding: 0% 2%;
+}
+.blocks{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-gap:3px;
+    justify-content: center;
+}
+.blocks>div{
+    
+    text-align: center;
+}
+.detail{
+   padding-top: 85px;
+   
+}
+.discover{
+    border:1px solid grey;
+    width:150px;
+    text-align: center;
+    margin:20px auto;
+    padding:12px;
+    color: grey;
+    
+
+}
+.discover:hover{
+    background-color:#ECEFF1;
+    transition: .6s;
+    font-size: large;
+    cursor: pointer;
+}
+.discover_new{
+    border:1px solid grey;
+    text-align: center;
+    margin:20px auto;
+    padding:12px;
+    color: grey;
+}
+.discover_new:hover{
+    background-color: #E0E0E0;
+    transition: .6s;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.bott{
+    display: grid;
+    grid-template-columns: 33% 33% 33%; 
+    justify-content: center;
+    padding:22px;
+    background-size: contain;
+    grid-gap:20px;
+}
+
+.new{
+    text-align: center;
+    font-size: large;
+}
+.social{
+   
+    background-color: rgba(231, 231, 231, 0.795);
+   
+    display:flex;
+    justify-content: center;
+}
+.social>div:nth-child(2){
+    padding:17px;
+    margin-left: 50px;
+    
+}
+.social>div:nth-child(1){
+   
+    margin-left: 50px;
+    padding-top: 10px;
+    font-size: large;
+}
+input{
+    block-size: 22px;
+    padding:0% 12%
+}
+.list{
+    display:grid;
+    grid-template-columns: 24% 24% 24% 24%;
+}
+.last{
+    display: flex; 
+    
+}
+.last>div:nth-child(2){
+    padding:1%;
+}
+#ay-home:hover{
+    background-color: rgb(7, 1, 15);
+    transition: .4s;
+    color:white;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+
+/*amits css ends */
+/* test */

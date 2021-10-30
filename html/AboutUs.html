@@ -5,223 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../styles/AboutUs.css">
     <title>Document</title>
-    <style>
-         #gs_main{
-        width: 90%;
-        /* background-color: aqua; */
-        margin: auto 5%;
-        position: fixed;
-        top: 10px;
-        background-color: white;
-        /* display: flex; */
-    }
-    #gs_mainflex{
-        width: 100%;
-    }
-    #gs_mainflex > div{
-        display: inline-block
-        
-    }
-    .gs_maintxt{
-        box-sizing: border-box;
-        margin-top: 0%;
-        display: inline-block;
-        vertical-align: top;
-    }
-    #gs_mainleft > div{
-        display: inline-block;
-    }
-    #gs_mainleft{
-       vertical-align: bottom;
-      margin-top: 25px;
-    }
-    #gs_mainright{
-        float: right;   
-    }
-    #gs_mainright > div{
-        display: inline-block;
-        margin-left: 10px;
-    }
-    #gs_dropdown_navbar{
-        margin-top: 1%;
-    }
-    .gs_dropbtn {
-        width: 100%;
-        background-color: white;
-  color: black;
-  padding: 12px;
-  font-size: 12px;
-  border: none;
-  cursor: pointer;
-  text-decoration:solid;
-  font-weight: bold;
-}
-.gs_dropdown {
-    /* width: 7%; */
-  position: relative;
-  display: inline-block;
-}
-.gs_dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.gs_dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-.gs_dropdown-content a:hover {color: #c7c1c1;}
-.gs_dropdown:hover .gs_dropdown-content {
-  display: block;
-}
-.gs_dropdown:hover .gs_dropbtn {
-  text-decoration: underline;
-}
-#gs_btn_essential{
-    padding: 12px;
-  font-size: 12px;
-  font-weight: bold;
-  background-color: white;
-  text-decoration:solid;
-    border: none;
-  color: red;
-}
-#gs_btn_essential:hover{
-    text-decoration: underline;
-}
-#gs_offer{
-    background-color: #b8cb84;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    padding: 11px;
-}
-/*amits css code begins*/
-.ay-cont{
-    padding:11%;
-    justify-content: center;
-}
-
-#head{
-    text-align: center;
-    margin: -30px;
-}
-#after-abt{
-    font-size: xx-large;
-}
-#ay>div:nth-child(3){
-    text-align: center;
-    padding: 0% 2%;
-}
-.blocks{
-    display:grid;
-    grid-template-columns: 50% 50%;
-    grid-gap:3px;
-    justify-content: center;
-}
-.blocks>div{
-    
-    text-align: center;
-}
-.detail{
-   padding-top: 85px;
-   
-}
-.discover{
-    border:1px solid grey;
-    width:150px;
-    text-align: center;
-    margin:20px auto;
-    padding:12px;
-    color: grey;
-    
-
-}
-.discover:hover{
-    background-color:#ECEFF1;
-    transition: .6s;
-    font-size: large;
-    cursor: pointer;
-}
-.discover_new{
-    border:1px solid grey;
-    text-align: center;
-    margin:20px auto;
-    padding:12px;
-    color: grey;
-}
-.discover_new:hover{
-    background-color: #E0E0E0;
-    transition: .6s;
-    font-size: x-large;
-    cursor: pointer;
-}
-
-.bott{
-    display: grid;
-    grid-template-columns: 33% 33% 33%; 
-    justify-content: center;
-    padding:22px;
-    background-size: contain;
-    grid-gap:20px;
-}
-
-.new{
-    text-align: center;
-    font-size: large;
-}
-.social{
-   
-    background-color: rgba(231, 231, 231, 0.795);
-   
-    display:flex;
-    justify-content: center;
-}
-.social>div:nth-child(2){
-    padding:17px;
-    margin-left: 50px;
-    
-}
-.social>div:nth-child(1){
-   
-    margin-left: 50px;
-    padding-top: 10px;
-    font-size: large;
-}
-input{
-    block-size: 22px;
-    padding:0% 12%
-}
-.list{
-    display:grid;
-    grid-template-columns: 24% 24% 24% 24%;
-}
-.last{
-    display: flex; 
-    
-}
-.last>div:nth-child(2){
-    padding:1%;
-}
-#ay-home:hover{
-    background-color: rgb(7, 1, 15);
-    transition: .4s;
-    color:white;
-    font-size: xx-large;
-    cursor: pointer;
-}
-
-
-/*amits css ends */
-/* test */
-
-    </style>
 </head>
 <body>
     <div id = "gs_main">
@@ -258,83 +43,61 @@ input{
         <div id="gs_dropdown_navbar">
             <button id="gs_btn_essential" onclick="">Daily Essential</button>
             <div class="gs_dropdown">
-                <button class="gs_dropbtn">TRENDING</button>
-                <div class="gs_dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
-                </div>
-                <div class="gs_dropdown">
-                    <button class="gs_dropbtn">SKIN CARE</button>
-                    <div class="gs_dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                    </div>
-                </div>
-                <div class="gs_dropdown">
-                    <button class="gs_dropbtn">BODY</button>
-                    <div class="gs_dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                    </div>
-                </div>
-                <div class="gs_dropdown">
-                    <button class="gs_dropbtn">HAIR</button>
-                    <div class="gs_dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                    </div>
-                </div>
+              <button class="gs_dropbtn">TRENDING</button>
+              <div class="gs_dropdown-content">
+                <a href="new in.html">New In</a>
+                <a href="top Rated.html">Top Rated</a>
+                <a href="#">Vegan</a>
+              </div>
+              </div>
+              <div class="gs_dropdown">
+                  <button class="gs_dropbtn">SKIN CARE</button>
+                  <div class="gs_dropdown-content">
+                    <a href="cat1.html">Sensitive Skin Care</a>
+                    <a href="Eye Care.html">Eye Care</a>
+                    <a href="moisturisers.html">Moisturisers</a>
+                  </div>
+              </div>
+              <div class="gs_dropdown">
+                  <button class="gs_dropbtn">BODY</button>
+                  <div class="gs_dropdown-content">
+                    <a href="cat2.html">Body Care</a>
+                    <a href="Body Butters.html">Body Butters</a>
+                    <a href="Soaps.html">Soaps</a>
+                  </div>
+              </div>
+              <div class="gs_dropdown">
+                  <button class="gs_dropbtn">HAIR</button>
+                  <div class="gs_dropdown-content">
+                    <a href="Shampoo.html">Shampoos</a>
+                    <a href="Hair styling.html">Hair styling</a>
+                    <a href="Conditioners.html">Conditioners</a>
+                  </div>
+              </div>
                 <div class="gs_dropdown">
                     <button class="gs_dropbtn">MAKE UP</button>
-                    <div class="gs_dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                    </div>
+        
                 </div>
                 <div class="gs_dropdown">
                     <button class="gs_dropbtn">FRAGRANCE</button>
-                    <div class="gs_dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                    </div>
+        
                 </div>
                 <div class="gs_dropdown">
                     <button class="gs_dropbtn">GIFTS</button>
-                    <div class="gs_dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                    </div>
+        
                 </div>
                 <div class="gs_dropdown">
                     <button class="gs_dropbtn">RANGE</button>
-                    <div class="gs_dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                    </div>
+        
                 </div>
                 <div class="gs_dropdown">
                     <button class="gs_dropbtn">TIPS & ADVICE</button>
-                    <div class="gs_dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                    </div>
+        
                 </div>
                 <div class="gs_dropdown">
                     <button class="gs_dropbtn">ABOUT US</button>
                     <div class="gs_dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
+                      <a href="AboutUs.html">Know About uS</a>
                     </div>
                 </div>
                 <div class="gs_search-container" style="float: right; width:20%">
@@ -479,88 +242,6 @@ input{
             </div>
         </div>
     </div>
-    
-
-
-    <script>
-        var data = [
-            big_img = {
-                img:"https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/About-Us-Header_1.png"
-            },
-        ]
-        var block_img = [
-            "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/story.png",
-            "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/community-trade.png",
-            "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/animal-testing.png",
-            "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/goog-beauty.png",
-            "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/commitment.png",
-            "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/wild.png",
-            "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/plastics.png"
-        ]
-        
-        var img = document.createElement("img")
-        var img1 = document.createElement("img")
-        var img2 = document.createElement("img")
-        var img3 = document.createElement("img")
-        var img4 = document.createElement("img")
-        var img5 = document.createElement("img")
-        var img6 = document.createElement("img")
-        var img7 = document.createElement("img")
-
-
-        
-
-        img.src = data[0].img
-       
-        
-
-        img1.src  = block_img[0]
-        img2.src  = block_img[1]
-        img3.src  = block_img[2]
-        img4.src  = block_img[3]
-        img5.src  = block_img[4]
-        img6.src  = block_img[5]
-        img7.src  = block_img[6]
-
-        img.style = "width:100%";
-        img1.style="width:100%"
-        img2.style="width:100%"
-        img3.style="width:100%"
-        img4.style="width:100%"
-        img5.style="width:100%"
-        img6.style="width:100%"
-        img7.style="width:100%"
-
-
-        
-
-        var div = document.getElementById("big")
-
-        var first = document.getElementById("first")
-        var second = document.getElementById("second")
-        var third = document.getElementById("third")
-        var fourth = document.getElementById("fourth")
-        var bottom1 = document.getElementById("bottom1")
-        var bottom2 = document.getElementById("bottom2")
-        var bottom3 = document.getElementById("bottom3")
-        var ay_home = document.getElementById("ay-home")
-
-            
-
-        head.textContent = "ABOUT US"
-        div.append(img)
-        first.append(img1)
-        second.append(img2)
-        third.append(img3)
-        fourth.append(img4)
-        bottom1.append(img5)
-        bottom2.append(img6)
-        bottom3.append(img7)
-
-        ay_home.addEventListener("click",home)
-        function home(){
-            window.location.href = "home.html"
-        }
-    </script>
 </body>
 </html>
+<script src="../scripts/AboutUs.js"></script>
