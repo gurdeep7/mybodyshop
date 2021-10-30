@@ -1,0 +1,229 @@
+body{
+    margin: 0;
+    font-family: monospace;
+}
+.header-ds{
+   
+    height: 50px;
+    line-height: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.header-ds >div:nth-child(1){
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    font-size: 16px;
+    
+    
+}
+@media (min-width: 768px){
+.header-ds >div:nth-child(1) {
+    flex-basis: 25%;
+    
+    
+}
+}
+
+@media (max-width: 767px){
+   .header-ds >div:nth-child(1)  {
+    display: none;
+     }
+}
+
+.header-ds >div:nth-child(2){
+     box-sizing: border-box;
+    
+     
+     display: inline;
+    
+     height: 34px;
+
+}
+
+@media (min-width: 768px){
+    .header-ds >div:nth-child(2) {
+         flex-basis: 48%;
+         padding: 2px 0 2px 0;
+         text-align: center;
+        
+    }
+}
+@media (max-width: 767px){
+    .header-ds >div:nth-child(2)  {
+           
+    
+         text-align: center;
+         margin: 0 auto;
+    
+    }
+    img{
+        vertical-align: middle;
+        height: 34px;
+        width: 100%;
+        
+    }
+}
+img{
+    vertical-align: middle;
+    height: 34px;
+    
+    
+}
+
+.text-center-ds{
+    text-align: center;
+}
+
+.page-heading-ds{
+    line-height: 34px;
+    font-size: 26px;
+    font-weight: 700;
+    padding: 15px 0;
+    text-align: center;
+    font-family:monospace ;
+    margin-bottom: 10px;
+    margin-top: 0;
+    letter-spacing: 1px;
+}
+
+.login-container{
+    margin: 1.8% 18% 10% 20% ;
+    height: 200px;
+    background: #f7f7f7;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    margin-bottom: 150px;
+    
+
+}
+
+@media (max-width: 767px){
+    .login-container  {
+        margin: 5px 0;
+        margin-bottom: 110px;
+        height: 260px;
+
+    }
+}
+.login-container >p{
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    font-weight:400;
+    letter-spacing: 1px;
+
+}
+
+.login-container >label{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.login-container > div{
+    display: flex;
+    margin-top:2% ;
+    height: 32%;
+
+}
+
+.login-container > div>div:nth-child(1){
+    flex-basis: 80%;
+}
+
+.login-container > div>div:nth-child(2){
+    flex-basis: 20%;
+}
+
+#email{
+    width: 93%;
+    height: 100%;
+    border: 2px solid black;
+    background-color:#f7f7f7 ;
+}
+#btn{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-color: green;
+    font-size: 21px;
+    color: white;
+    
+}
+
+@media (max-width: 767px){
+    .login-container > div{
+        display: flex;
+        margin-top:2% ;
+        height: 32%;
+        flex-direction: column;
+    
+    }
+    
+   #email{
+       width: 98.5%;
+       height: 43px;
+   }
+   #btn{
+       height: 45px;
+   }
+    
+    .login-container > div>div:nth-child(2){
+        
+        margin-top: 2%;
+    }
+   
+}
+
+.checkout-icons>ul >li{
+    display: inline;
+    padding: .5%;
+    
+}
+
+.checkout-icons{
+    text-align: center;
+    background-color:#f7f7f7 ;
+}
+.white{
+    background-color: white;
+}
+
+
+
+.img-responsive{
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+
+.footer>p{
+    text-align: center;
+    
+
+}
+
+.copyright{
+    margin-top: 4%;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 60px;
+}
+
+.normal{
+    margin-top: 1%;
+    font-weight: normal;
+    
+}
+
+#next-btn > a{
+    cursor: pointer;
+}

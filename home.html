@@ -136,7 +136,7 @@
 .gs-section,.gs-code{margin-top:16px;margin-bottom:16px}
 .gs-large{font-size:18px}
 .gs-text-white,.gs-hover-text-white:hover{color:#fff}
-.gs-display-middle{ position:relative;left:50%;bottom:-110%;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%);color: black;}
+.gs-display-middle{ position:relative;left:50%;bottom:-110%;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%);color: rgb(250, 248, 248);cursor: pointer;}
 .gs-badge{ background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center; border-radius:50%}
 .gs-border{border:1px solid #ccc}
 .gs-transparent,.gs-hover-none:hover{background-color:transparent}
@@ -165,7 +165,7 @@ background-color: black;
     grid-template-rows: 1fr 1fr;
     grid-gap: 20px;
 }
-#gs_grid_categories>img{
+#gs_grid_categories>a>img{
     width:100%;
 }
 #gs_new_product,#bestItems{
@@ -223,36 +223,45 @@ background-color: black;
             background-color: grey;
             margin-bottom: 5%;
         }
-        #ch-tagbar{
-            margin: 1%;
-            display: flex;
-            background-color: #e9e9e9;
-            margin-right: 1%;
-            flex-direction: row;
-        }
-        #ch-tagbar > div{
-            font-size: 26px;
-            margin: 1%;
-        }
-        #ch-tagbar > img{
-            width:2%;
-            margin: 1%;
-        }
-        #table{
-            margin:1%;
-            display: grid;
-            grid-template-columns: 25% 25% 25% 25%;
-        }
-        #table > div{
-            display: grid;
-            font-size: small;
-        }
-        .last{
-            margin:1%;
-            display: inline-block;
-            width: 45%;
-            font-size: small;
-        }
+        .social{
+   width: 90%;
+   margin: auto;
+   background-color: rgba(231, 231, 231, 0.795);
+  
+   display:flex;
+   justify-content: center;
+}
+.social>div:nth-child(2){
+   padding:17px;
+   margin-left: 50px;
+   
+}
+.social>div:nth-child(1){
+  
+   margin-left: 50px;
+   padding-top: 10px;
+   font-size: large;
+}
+/* input{
+   block-size: 22px;
+   padding:0% 12%
+} */
+.list{
+  width: 90%;
+  margin:auto;
+   display:grid;
+   grid-template-columns: 24% 24% 24% 24%;
+}
+.last{
+  width: 90%;
+  margin: auto;
+  display: flex; 
+  flex-direction: row;
+   
+}
+.last>div:nth-child(2) > img{
+   padding:1%;
+}
         #newDiv{
           text-align: center;
           font-size: 25px;
@@ -260,14 +269,18 @@ background-color: black;
           margin-top: 10px;
         }
         #bestItems>div>:nth-child(1){
-  height: 350px;
+        height: 350px;
       }
       .gs_heart:hover{
         transition: .6s;
-        background-color:lightgray;
+        transform: scale(1.2);
       }
 
         /* chandu copy end */
+        /*amit  css start*/
+      #ay-wish{
+        cursor:pointer;
+      }
 </style>
 <body>
     <!-- fixed menu start -->
@@ -291,15 +304,16 @@ background-color: black;
         <img style="width: 100%;" src ="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/logo.svg"/>
     </div>
     <div id ="gs_mainright">
-        <div id = "gs_user">
-            <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/myaccount.png"/>
+        <div id = "gs_user"><a href="account.html">
+            <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/myaccount.png"/></a>
         </div>
         <div id = "gs_wishlist" style="vertical-align: top; margin-top: 10px;">
-            <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/wish-list.png"/>
+          <!--here i added the id (ay-wish) to the image-->
+            <img id = "ay-wish" src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/wish-list.png"/>
             <div id= "gs_wishlist_value" style="margin-top: -100%; text-align: center;"></div>
         </div>
         <div id = "gs_cart">
-            <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/body-shop-icons-thick_bag.png"/>
+            <img id = "ay-wish2" src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/body-shop-icons-thick_bag.png"/>
             <div id="gsbagvalue"></div>
         </div>
     </div>
@@ -309,33 +323,33 @@ background-color: black;
     <div class="gs_dropdown">
         <button class="gs_dropbtn">TRENDING</button>
         <div class="gs_dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="new in.html">New In</a>
+          <a href="top Rated.html">Top Rated</a>
+          <a href="#">Vegan</a>
         </div>
         </div>
         <div class="gs_dropdown">
             <button class="gs_dropbtn">SKIN CARE</button>
             <div class="gs_dropdown-content">
               <a href="cat1.html">Sensitive Skin Care</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+              <a href="Eye Care.html">Eye Care</a>
+              <a href="moisturisers.html">Moisturisers</a>
             </div>
         </div>
         <div class="gs_dropdown">
             <button class="gs_dropbtn">BODY</button>
             <div class="gs_dropdown-content">
               <a href="cat2.html">Body Care</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+              <a href="Body Butters.html">Body Butters</a>
+              <a href="Soaps.html">Soaps</a>
             </div>
         </div>
         <div class="gs_dropdown">
             <button class="gs_dropbtn">HAIR</button>
             <div class="gs_dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+              <a href="Shampoo.html">Shampoos</a>
+              <a href="Hair styling.html">Hair styling</a>
+              <a href="Conditioners.html">Conditioners</a>
             </div>
         </div>
         <div class="gs_dropdown">
@@ -379,21 +393,16 @@ background-color: black;
             </div>
         </div>
         <div class="gs_dropdown">
-<<<<<<< Updated upstream
-            <button class="gs_dropbtn">ABOUT US</button>
-            <div class="gs_dropdown-content">
-=======
           <!--added id (ay-about) for redirection to about us page-->
             <button class="gs_dropbtn"><span id ="ay-about">ABOUT US</span></button>
-            <!-- <div class="gs_dropdown-content">
->>>>>>> Stashed changes
+            <div class="gs_dropdown-content">
               <a href="#">Link 1</a>
               <a href="#">Link 2</a>
               <a href="#">Link 3</a>
-            </div> -->
+            </div>
         </div>
         <div class="gs_search-container" style="float: right;">
-              <input type="text" style="height: 30px; vertical-align:top" placeholder="Search.." name="search">
+              <input type="text" style="height: 30px; width:140px; vertical-align:top" placeholder="Search.." name="search">
               <button class="material-icons" style="height: 35px;">
                 search</button>
           </div>
@@ -408,9 +417,9 @@ background-color: black;
     <!-- slideshow start -->
     <div class="gs-content gs-display-container">
         
-        <img class="gs_mySlides" src="https://staticbodyshop.gumlet.io/pub/media/weltpixel/owlcarouselslider/images/h/a/haircare_hpc_small.jpg" style="width:100%">
-        <img class="gs_mySlides" src="https://staticbodyshop.gumlet.io/pub/media/weltpixel/owlcarouselslider/images/b/b/bb_hpc_2.jpg" style="width:100%">
-        <img class="gs_mySlides" src="https://staticbodyshop.gumlet.io/pub/media/weltpixel/owlcarouselslider/images/s/u/superstar_essnetials_1.jpg" style="width:100%">
+        <img class="gs_mySlides" src="images/gs_slide1.jpg" style="width:100%">
+        <img class="gs_mySlides" src="images/gs_slide2.jpg" style="width:100%">
+        <img class="gs_mySlides" src="images/gs_slide3.jpg" style="width:100%">
         
         <div class="gs-center gs-container gs-section gs-large gs-text-white gs-display-middle" style="width:100%">
           <div class="gs-left gs-hover-text-khaki" onclick="gs_plusDivs(-1)">&larr;</div>
@@ -426,12 +435,12 @@ background-color: black;
       </div>
       <!-- grid categories start -->
       <div id ="gs_grid_categories">
-        <img onclick="category2()" src="images/gs_grid_bodycare.jpg"/>
-        <img src="images/gs_grid_cruelity.jpg"/>
-        <img src="images/gs_grid_sheetmask.jpg"/>
-        <img src="images/gs_grid_travel.jpg"/>
-        <img src="images/gs_grid_makeup.jpg"/>
-        <img src="images/gs_grid_callnow.jpg"/>
+        <a href="cat1.html"><img src="images/gs_grid_bodycare.jpg"/></a>
+        <a href = "cat3.html"><img src="images/gs_grid_cruelity.jpg"/></a>
+        <a href = "cat5.html"><img src="images/gs_grid_sheetmask.jpg"/></a>
+        <a href = "cat4.html"><img src="images/gs_grid_travel.jpg"/></a>
+        <a href = "cat1.html"><img src="images/gs_grid_makeup.jpg"/></a>
+        <a href = "AboutUs.html"><img src="images/gs_grid_callnow.jpg"/></a>
       </div>
       <!-- grid categories end -->
       <h2 style="text-align: center;"><u>NEW IN</u></h2>
@@ -479,64 +488,65 @@ background-color: black;
 
     <div class="ch-line"style="width: 90%; margin:auto 5%"></div>
 
-    <div id="ch-tagbar"style="width: 90%; margin:auto 5%">
-        <div>Join us on social media</div>
-        <div>
-            <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/icons/twitter.png"width=10px>
-        </div>
-        <div>
-            <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/facebook-icon.png"width="2%;">
-        </div>
-        <div>
-            <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/instagram-icon.png" width="2%">
-        </div>
-        <div>
-            <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/yt_logo_mono_light-new.png" width="3%;">
-        </div>
-        
-        <input type="search">
+    <div class = "social">
+      <div>
+           <h4>JOIN US ON SOCIAL</h4>
+      </div>
+      <div>
+          <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/icons/twitter.png" >
+          <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/facebook-icon.png" >
+          <img src="https://staticbodyshop.gumlet.io/pub/static/version1632753727/frontend/Tenovia/bodyshop/en_US/images/instagram-icon.png" >
+          <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/yt_logo_mono_light-new.png" >
+      </div>
+      <div style="padding:2%">
+          <input type="text" name="" id="" placeholder="SIGNUP FOR EXCLUSIVE OFFERS">
+      </div>
+      
     </div>
-    <div id="table"style="width: 90%; margin:auto 5%">
-        <div>
-            <p><strong>LOVE YOUR BODY CLUB</strong></p>
-            <p>FAQs</p>
-            <p>Loyalty Club</p>
-        </div>
-        <div>
-            <p><strong>ABOUT US</strong></p>
-            <p>About Us</p>
-            <p>Affiliates</p>
-            <p>Careers</p>
-            <p>Dame Anita Roddick</p>
-            <p>Contact Us</p>
-        </div>
-        <div>
-            <p><strong>USING THE WEBSITE</strong></p>
-            <p>Terms & Conditions</p>
-            <p>Privacy Policy</p>
-            <p>Policy Documentation</p>
-            <p>E-GV</p>
-            <p>Sitemap</p>
-            <p>FAQ Services</p>
-        </div>
-        <div>
-            <p><strong>COMMITMENT</strong></p>
-            <p>Community Trade</p>
-            <p>Ethical Trade</p>
-            <p>Campaigns</p>
-            <p>Latest Stories</p>
-            <p>Our Commitment</p>
-        </div>
+    <div class = "list"  >
+       <div>
+           <h4>LOVE YOUR BODY CLUB</h4>
+           <span>FAQs</span><br>
+           <span>Loyalty Club</span>
+       </div>
+       <div>
+           <h4>ABOUT US</h4>
+           <span>About Us</span><br>
+           <span>Affiliates</span><br>
+           <span>Careers</span><br>
+           <span>Dame Anita Roddick</span><br>
+           <span>Contact Us</span><br>
+       </div>
+       <div>
+           <h4>USING THE WEBSITE</h4>
+           <span>Terms & Conditions</span><br>
+           <span>Privacy Policy</span><br>
+           <span>Policy Documentation</span><br>
+           <span>Packaging & Delivery FAQ's</span><br>
+           <span>Sitemap</span><br>
+           <span>FAQ Services</span><br>
+    
+       </div>
+       <div>
+           <h4>COMMITMENT</h4>
+           <span>Community Trade</span><br>
+           <span>Ethical Trade</span><br>
+           <span>Campaigns</span><br>
+           <span>Our Commitment</span><br>
+       </div>
     </div>
-    <div class="last"style="width: 90%; margin:auto 5%">
-        <p><strong>© 2021 THE BODY SHOP INTERNATIONAL LIMITED</strong></p>
-        <p>® A REGISTERED TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED™ A TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED ALL RIGHTS RESERVED.
-
-            REGISTERED OFFICE: WATERSMEAD, LITTLEHAMPTON, WEST SUSSEX, BN17 6LS, UNITED KINGDOM; REGISTERED IN ENGLAND NO. 1284170</p>
+    <div class = "last">
+       <div>
+           <h4>© 2021 THE BODY SHOP INTERNATIONAL LIMITED</h4>
+           <p style = "font-size: small;">® A REGISTERED TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED™ A TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED ALL RIGHTS RESERVED.
+    
+               REGISTERED OFFICE: WATERSMEAD, LITTLEHAMPTON, WEST SUSSEX, BN17 6LS, UNITED KINGDOM; REGISTERED IN ENGLAND NO. 1284170</p>
+       </div>
+       <div>
+           india
+           <img style ="width:100%" src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/payment_icons.png" >
+       </div>
     </div>
-    <div class="last"style="width: 90%; margin:auto 5%">
-        <p><strong>India</strong></p>
-        <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/payment_icons.png">
     </div>
 </body>
 </html>
@@ -778,11 +788,30 @@ background-color: black;
       }
     }
 
-
-
+    
     // page changing functions
     function category2(){
       window.location.href="cat2.html"
     }
+    var img = document.getElementById("ay-wish")
+    var img2 = document.getElementById("ay-wish2")
+
+    var abt = document.getElementById("ay-about")
+    
+
+    abt.addEventListener("click",about_section)
+    img.addEventListener("click",ay_wishlist)
+    img2.addEventListener("click",ay_wishlist)
+
+    var anchor = document.createElement("a")
+
+    function ay_wishlist(){
+      window.location.href = "wishlist&cart.html"
+      }
+    
+    function about_section(){
+      window.location.href = "AboutUs.html"
+    }
+      
     </script>
     
