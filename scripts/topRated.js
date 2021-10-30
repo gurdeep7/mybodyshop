@@ -69,10 +69,22 @@
         cat1Data.forEach(function(cat1){
           
           let div = document.createElement("div");
-
+          div.style.position= "relative"
           let img = document.createElement("img");
           img.src = cat1.img;
-
+          let offer = document.createElement("div");
+            offer.style.boxSizing= "border-box"
+            offer.style.width = "100px"
+            offer.style.height = "100px"
+            offer.style.position = "absolute"
+            offer.style.top= "0px"
+            offer.style.borderRadius= "50%"
+            offer.style.paddingTop="10%"
+            offer.style.color= "white"
+            offer.style.backgroundColor = "red"
+            offer.style.textAlign ="center"
+            offer.style.fontWeight= "bold"
+            offer.textContent = "BUY 3 Get 1 FREE"
           let name = document.createElement("p");
           name.textContent = cat1.name;
 
@@ -100,7 +112,7 @@
               addtowishlist(cat1);
             }
 
-          div.append(img, name, price, item_visit_btn,heart);
+          div.append(img, name,offer, price, item_visit_btn,heart);
 
           parent.append(div)
         })
@@ -216,10 +228,22 @@
         filter_product.forEach(function(cat1){
           
           let div = document.createElement("div");
-
+          div.style.position= "relative"
           let img = document.createElement("img");
           img.src = cat1.img;
-
+          let offer = document.createElement("div");
+            offer.style.boxSizing= "border-box"
+            offer.style.width = "100px"
+            offer.style.height = "100px"
+            offer.style.position = "absolute"
+            offer.style.top= "0px"
+            offer.style.borderRadius= "50%"
+            offer.style.paddingTop="10%"
+            offer.style.color= "white"
+            offer.style.backgroundColor = "red"
+            offer.style.textAlign ="center"
+            offer.style.fontWeight= "bold"
+            offer.textContent = "BUY 3 Get 1 FREE"
           let name = document.createElement("p");
           name.textContent = cat1.name;
 
@@ -244,7 +268,7 @@
               addtowishlist(cat1);
             }
 
-          div.append(img, name, price, item_visit_btn,heart);
+          div.append(img, name, price,offer, item_visit_btn,heart);
 
           parent.append(div)
         })
