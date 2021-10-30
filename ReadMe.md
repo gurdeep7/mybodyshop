@@ -15,5 +15,6 @@ Team memebers worked on Project
 
 ## Snapshot from the Built Product
 
-> <img src = "https://drive.google.com/file/d/10UD1sfxWFoVvM_0e8CwAMft-Aj68ouiJ/view?usp=sharing" alt = "Home Page" /> &emsp;
+> <img src = "https://drive.google.com/thumbnail?id=10UD1sfxWFoVvM_0e8CwAMft-Aj68ouiJ" alt = "Home Page" /> &emsp;
+> 
 
