@@ -19,13 +19,13 @@ Team memebers worked on Project
 
 ## Snapshot from the Built Project
 
-> <img src = "https://drive.google.com/thumbnail?id=10UD1sfxWFoVvM_0e8CwAMft-Aj68ouiJ" alt = "Home Page" /> &emsp;
-<img src="https://drive.google.com/uc?export=view&id=10UD1sfxWFoVvM_0e8CwAMft-Aj68ouiJ">
+> <img src = "https://drive.google.com/uc?export=view&id=10UD1sfxWFoVvM_0e8CwAMft-Aj68ouiJ" alt = "Home Page" /> &emsp;
 
-> <img src = "https://drive.google.com/thumbnail?id=10UjU5-dwJdio-rlyfc0g0tmEF2LtVTUt" alt = "Category Page" /> &emsp;
-> <img src = "https://drive.google.com/thumbnail?id=10YcJbGyl7ZEDGSV2tD3EhAyL-Q2Ic0dN" alt = "Cart Page" /> &emsp;
-> <img src = "https://drive.google.com/thumbnail?id=10RoK7ihO4B_3Jc-HjtDaBBdbXQC8Ees0" alt = "Login PAge" /> &emsp;
-> <img src = "https://drive.google.com/thumbnail?id=10b2IRFVIwBeGe1m7pvmQULxwoTrV92QE" alt = "Registration PAge" /> &emsp;
-> <img src = "https://drive.google.com/thumbnail?id=10UEH7QtLZ9uLk318DLc6R7IgUD33Jx5n" alt = "Checkout Page" /> &emsp;
+
+> <img src = "https://drive.google.com/uc?export=view&id=10UjU5-dwJdio-rlyfc0g0tmEF2LtVTUt" alt = "Category Page" /> &emsp;
+> <img src = "https://drive.google.com/uc?export=view&id=10YcJbGyl7ZEDGSV2tD3EhAyL-Q2Ic0dN" alt = "Cart Page" /> &emsp;
+> <img src = "https://drive.google.com/uc?export=view&id=10RoK7ihO4B_3Jc-HjtDaBBdbXQC8Ees0" alt = "Login PAge" /> &emsp;uc?export=view&ida
+> <img src = "https://drive.google.com/uc?export=view&id=10b2IRFVIwBeGe1m7pvmQULxwoTrV92QE" alt = "Registration PAge" /> &emsp;
+> <img src = "https://drive.google.com/uc?export=view&id=10UEH7QtLZ9uLk318DLc6R7IgUD33Jx5n" alt = "Checkout Page" /> &emsp;
 
 
