@@ -19,7 +19,7 @@ Team memebers worked on Project
 
 ## Snapshot from the Built Project
 
-> <img src = "https://drive.google.com/uc?export=view&id=10UD1sfxWFoVvM_0e8CwAMft-Aj68ouiJ" alt = "Home Page" /> &emsp;
+> <img src = "images/homePage" alt = "Home Page" /> &emsp;
 
 
 > <img src = "images/homePage" style="width:500px" alt = "Category Page" /> &emsp;
