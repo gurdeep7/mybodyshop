@@ -21,7 +21,7 @@ Team memebers worked on Project
 
 > <img src = "images/homePage.png" style="width:300px" alt = "Home Page" />  &emsp;
 > <img src = "images/CategoryPage.png" style="width:300px" alt = "Category Page" /> &emsp;
- > <img src = "images/CartPage.png"style="width:300px" alt = "Cart Page" /> &emsp;
+> <img src = "images/CartPage.png"style="width:300px" alt = "Cart Page" /> &emsp;
 > <img src = "images/loginPage.png"style="width:300px" alt = "Login PAge" /> &emsp;
 > <img src = "images/registrtionPage.png"style="width:300px" alt = "Registration PAge" /> &emsp;
 > <img src = "images/CheckoutPage.png"style="width:300px" alt = "Checkout Page" /> &emsp; 
