@@ -17,7 +17,7 @@ Team memebers worked on Project
 > &ensp; <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" width = "100" height = "100" alt ="HTML Logo"/>
 > &ensp; <img src = "https://cdn.iconscout.com/icon/free/png-256/javascript-2752148-2284965.png" width = "100" height = "100" alt = "Javascript Logo">
 
-## Snapshot from the Built Product
+## Snapshot from the Built Project
 
 > <img src = "https://drive.google.com/thumbnail?id=10UD1sfxWFoVvM_0e8CwAMft-Aj68ouiJ" alt = "Home Page" /> &emsp;
 <img src="https://drive.google.com/uc?export=view&id=10UD1sfxWFoVvM_0e8CwAMft-Aj68ouiJ">
