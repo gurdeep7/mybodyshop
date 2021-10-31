@@ -19,7 +19,7 @@ Team memebers worked on Project
 
 ## Snapshot from the Built Project
 
-> <img src = "images/homePage.png" style="width:300px" alt = "Home Page" /> &emsp;
+> <img src = "images/homePage.png" style="width:300px" alt = "Home Page" />
 
 
 > <img src = "images/homePage.png" style="width:300px" alt = "Category Page" /> &emsp;
