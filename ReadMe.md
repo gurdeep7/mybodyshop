@@ -19,13 +19,11 @@ Team memebers worked on Project
 
 ## Snapshot from the Built Project
 
-> <img src = "images/homePage.png" style="width:300px" alt = "Home Page" />
-
-
-> <img src = "images/homePage.png" style="width:300px" alt = "Category Page" /> &emsp;
-<!-- > <img src = "https://drive.google.com/uc?export=view&id=10YcJbGyl7ZEDGSV2tD3EhAyL-Q2Ic0dN" alt = "Cart Page" /> &emsp;
-> <img src = "https://drive.google.com/uc?export=view&id=10RoK7ihO4B_3Jc-HjtDaBBdbXQC8Ees0" alt = "Login PAge" /> &emsp;uc?export=view&ida
-> <img src = "https://drive.google.com/uc?export=view&id=10b2IRFVIwBeGe1m7pvmQULxwoTrV92QE" alt = "Registration PAge" /> &emsp;
-> <img src = "https://drive.google.com/uc?export=view&id=10UEH7QtLZ9uLk318DLc6R7IgUD33Jx5n" alt = "Checkout Page" /> &emsp; -->
+> <img src = "images/homePage.png" style="width:300px" alt = "Home Page" />  &emsp;
+> <img src = "images/CategoryPage.png" style="width:300px" alt = "Category Page" /> &emsp;
+ > <img src = "images/CartPage.png" alt = "Cart Page" /> &emsp;
+> <img src = "images/loginPage.png" alt = "Login PAge" /> &emsp;
+> <img src = "images/registrtionPage.png" alt = "Registration PAge" /> &emsp;
+> <img src = "CheckoutPage.png" alt = "Checkout Page" /> &emsp; 
 
 
