@@ -6,7 +6,8 @@
 
 https://gurdeep7.github.io/mybodyshop/html/home
 
-Team memebers worked on Project
+##Contributors
+
 1. Gurdeep Singh
 2. Amit Kumar Yadav
 3. Dipankar Sarkar
