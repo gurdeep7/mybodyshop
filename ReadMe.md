@@ -6,7 +6,7 @@
 
 https://gurdeep7.github.io/mybodyshop/html/home
 
-##Contributors
+## Contributors
 
 1. Gurdeep Singh
 2. Amit Kumar Yadav
