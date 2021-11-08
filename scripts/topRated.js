@@ -84,7 +84,7 @@
             offer.style.backgroundColor = "red"
             offer.style.textAlign ="center"
             offer.style.fontWeight= "bold"
-            offer.textContent = "BUY 3 Get 1 FREE"
+            offer.textContent = "BUY 3 GET 1 FREE"
           let name = document.createElement("p");
           name.textContent = cat1.name;
 
@@ -243,7 +243,7 @@
             offer.style.backgroundColor = "red"
             offer.style.textAlign ="center"
             offer.style.fontWeight= "bold"
-            offer.textContent = "BUY 3 Get 1 FREE"
+            offer.textContent = "BUY 3 GET 1 FREE"
           let name = document.createElement("p");
           name.textContent = cat1.name;
 

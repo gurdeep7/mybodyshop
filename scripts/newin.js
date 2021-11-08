@@ -90,7 +90,7 @@ let gs_filter =document.getElementById("gs_filter");
             offer.style.backgroundColor = "red"
             offer.style.textAlign ="center"
             offer.style.fontWeight= "bold"
-            offer.textContent = "BUY 3 Get 1 FREE"
+            offer.textContent = "BUY 3 GET 1 FREE"
           let item_visit_btn = document.createElement("button");
           item_visit_btn.style.width="40%";
           item_visit_btn.style.fontWeight="bold";
@@ -240,7 +240,7 @@ let gs_filter =document.getElementById("gs_filter");
           offer.style.backgroundColor = "red"
           offer.style.textAlign ="center"
           offer.style.fontWeight= "bold"
-          offer.textContent = "BUY 3 Get 1 FREE"
+          offer.textContent = "BUY 3 GET 1 FREE"
           let img = document.createElement("img");
           img.src = cat1.img;
 
