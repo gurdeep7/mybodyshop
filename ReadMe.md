@@ -1,6 +1,6 @@
-# TheBodyShop.com
+# The Body Shop - Clone
 
->Bodyshop is online ecommerce company which deals with Personal care Products.
+>Thebodyshop is online ecommerce company which deals with Personal care Products.
 
 ## Hosted Platform
 
