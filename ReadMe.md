@@ -1,6 +1,6 @@
 # The Body Shop - Clone
 
->Thebodyshop is online ecommerce company which deals with Personal care Products.
+>Online E commerce cloned with the help of Html,css,javascript with added Cart functionality where data is being passed onto different page using local storage ,created OTP based login and logout functionality ,once the product is ordered successfully it redirects to about us pagethen to homepage itself
 
 ## Hosted Platform
 
